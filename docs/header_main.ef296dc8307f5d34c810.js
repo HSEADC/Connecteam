@@ -1,29 +1,29 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 346:
+/***/ 730:
 /***/ (() => {
 
 document.addEventListener('DOMContentLoaded', function () {
-  var buttons = document.querySelectorAll('.A_gradient_button');
-  var animationFrameId;
-  var position = 0;
-  function animateGradient(button) {
-    position = (position + 1) % 100;
-    button.style.backgroundPosition = "".concat(position, "% 50%");
-    animationFrameId = requestAnimationFrame(function () {
-      return animateGradient(button);
-    });
+  var burgerMenu = document.querySelector('.Q_hm_burger_menu');
+  var mobileMenu = document.querySelector('.O_header_main_mobile');
+  var menuClose = document.querySelector('.Q_header_main_mobile_close');
+  function openMenu() {
+    mobileMenu.classList.add('active');
+    document.body.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
   }
-  buttons.forEach(function (button) {
-    button.addEventListener('mouseover', function () {
-      animationFrameId = requestAnimationFrame(function () {
-        return animateGradient(button);
-      });
-    });
-    button.addEventListener('mouseout', function () {
-      cancelAnimationFrame(animationFrameId);
-    });
+  function closeMenuFunc() {
+    mobileMenu.classList.remove('active');
+    document.body.style.height = '';
+    document.body.style.overflow = '';
+  }
+  burgerMenu.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenuFunc);
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+      closeMenuFunc();
+    }
   });
 });
 
@@ -94,24 +94,12 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("header_about." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("header_main." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("0004924d11b40ee4584c")
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
+/******/ 		__webpack_require__.h = () => ("e16df4cd7e8ee8f7fe81")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -558,25 +546,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 		__webpack_require__.p = "/Connecteam/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/css loading */
@@ -688,7 +658,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			778: 0
+/******/ 			56: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1197,7 +1167,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(346);
+/******/ 	var __webpack_exports__ = __webpack_require__(730);
 /******/ 	
 /******/ })()
 ;

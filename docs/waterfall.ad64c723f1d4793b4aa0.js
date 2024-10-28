@@ -2,36 +2,31 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 362:
+/***/ 106:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
-/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(437);
 
-
-var scene = new three__WEBPACK_IMPORTED_MODULE_1__/* .Scene */ .Z58();
-var camera = new three__WEBPACK_IMPORTED_MODULE_1__/* .PerspectiveCamera */ .ubm(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.z = 5;
-var renderer = new three__WEBPACK_IMPORTED_MODULE_1__/* .WebGLRenderer */ .JeP();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-var geometry = new three__WEBPACK_IMPORTED_MODULE_1__/* .BoxGeometry */ .iNn();
-var material = new three__WEBPACK_IMPORTED_MODULE_1__/* .MeshBasicMaterial */ .V9B({
-  color: 0xfff
-});
-var cube = new three__WEBPACK_IMPORTED_MODULE_1__/* .Mesh */ .eaF(geometry, material);
-scene.add(cube);
-function animate() {
-  requestAnimationFrame(animate);
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-  renderer.render(scene, camera);
-}
-animate();
-window.addEventListener('resize', function () {
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
+var steps = document.querySelectorAll('.W_article_description_waterfall');
+var margins = [{
+  left: '0%',
+  right: '40%'
+}, {
+  left: '10%',
+  right: '30%'
+}, {
+  left: '20%',
+  right: '20%'
+}, {
+  left: '30%',
+  right: '10%'
+}, {
+  left: '40%',
+  right: '0%'
+}];
+steps.forEach(function (step, index) {
+  step.style.marginLeft = margins[index].left;
+  step.style.marginRight = margins[index].right;
 });
 
 /***/ }),
@@ -44,7 +39,7 @@ window.addEventListener('resize', function () {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1730090554360
+        // 1730091935022
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -175,24 +170,12 @@ window.addEventListener('resize', function () {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("articles." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("waterfall." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("0004924d11b40ee4584c")
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
+/******/ 		__webpack_require__.h = () => ("e16df4cd7e8ee8f7fe81")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -248,7 +231,7 @@ window.addEventListener('resize', function () {
 /******/ 	
 /******/ 	/* webpack/runtime/runtimeId */
 /******/ 	(() => {
-/******/ 		__webpack_require__.j = 178;
+/******/ 		__webpack_require__.j = 563;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hot module replacement */
@@ -644,25 +627,7 @@ window.addEventListener('resize', function () {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 		__webpack_require__.p = "/Connecteam/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/css loading */
@@ -774,7 +739,7 @@ window.addEventListener('resize', function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			178: 0
+/******/ 			563: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1310,7 +1275,7 @@ window.addEventListener('resize', function () {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [96], () => (__webpack_require__(362)))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [96], () => (__webpack_require__(106)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
