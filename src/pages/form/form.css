@@ -82,7 +82,7 @@ header{
 }
 
 .A_form_input{
-    font: var(--font-17);
+    font: var(--font-17l);
     padding: var(--spacing-10) var(--spacing-15);
     border: .2rem solid var(--color-gray);
     border-radius: var(--corner-12);
