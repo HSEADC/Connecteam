@@ -439,12 +439,39 @@
     }
 }
 
+@media (max-width: 1360px) {
+    .C_about_page_we_about img{
+        display: none;
+    }
+    .C_about_page_we_about{
+        gap: var(--spacing-30);
+        height: 16rem;
+    }
+    .C_about_page_we_about > div{
+        width: 25%;
+        transform: translateX(0);
+        background: var(--color-gradient-dark-gray);
+        border-radius: var(--corner-20);
+    }
+}
+
 @media (max-width: 1280px) {
     .W_about_page_nav_cards_block{
         flex-direction: column;
     }
     .W_about_page_text_card_block, .C_about_page_nav_cards{
         width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .C_about_page_we_about > div{
+        width: 100%;;
+    }
+    .C_about_page_we_about{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -484,5 +511,14 @@
     }
     .W_about_page_nav_card_content_waterfall_bg{
         background: url('../images/about/waterfall_background.png') no-repeat center/135%;
+    }
+}
+
+@media (max-width: 510px) {
+    .C_about_page_we_about{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        height: auto;
     }
 }
