@@ -12,6 +12,7 @@
     --color-purple: #952AFF;
     --color-blue: #4200FF;
     --color-deep-blue: #0D00CA;
+    
     --color-gradient-dark-gray: linear-gradient(0deg, #282828 0%, #1F1F1F 100%);
     --color-gradient: linear-gradient(90deg, #0B00A5 0%,#4200FF 23%, #952AFF 49%, #FF3DA8 77%, #F64704 100%);
     --color-gradient-gray: linear-gradient(0deg, #D7D7D7 0%, #C8C8C8 100%);
