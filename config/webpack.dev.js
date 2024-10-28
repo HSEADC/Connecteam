@@ -11,7 +11,7 @@ module.exports = merge(common, {
       watch: true, 
     },
     hot: true,
-    open: true,  
+    open: true,
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -21,11 +21,10 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.(sc|c)ss$/i,
+        test: /\.css$/i,
         use: [
           'style-loader',
           'css-loader',
-          'sass-loader',
           {
             loader: 'postcss-loader',
             options: {

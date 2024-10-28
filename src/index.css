@@ -1,12 +1,18 @@
-@import './stylesheets/reset.scss';
-@import './stylesheets/vars.scss';
-@import './stylesheets/fonts.scss';
-@import './stylesheets/basics.scss';
+@import './stylesheets/reset.css';
+@import './stylesheets/fonts.css';
+@import './stylesheets/vars.css';
+@import './stylesheets/basics.css';
 
-@import './stylesheets/index.scss';
-@import './pages/about/about.scss';
-@import './pages/interactives/interactives.scss';
-@import './pages/articles/articles.scss';
-@import './pages/cases/cases.scss';
+@import './stylesheets/index.css';
+@import './pages/interactives/interactives.css';
+@import './pages/articles/articles.css';
+@import './pages/cases/cases.css';
+@import './pages/form/form.css';
 
-@import './pages/articles/scrum/scrum.scss'
+@import './pages/articles/waterfall/waterfall.css';
+
+@import './partials/header_main/header_main.css';
+@import './partials/header_about/header_about.css';
+@import './partials/footer/footer.css';
+@import './partials/C_social_media/C_social_media.css';
+@import './partials/header_main_mobile/header_main_mobile.css'

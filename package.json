@@ -29,16 +29,16 @@
     "postcss": "^8.4.47",
     "postcss-loader": "^8.1.1",
     "postcss-preset-env": "^10.0.3",
-    "sass": "^1.78.0",
-    "sass-loader": "^16.0.1",
     "style-dictionary": "^4.1.2",
     "style-loader": "^4.0.0",
-    "webpack": "^5.94.0",
+    "webpack": "5.95.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0",
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
+    "favicons": "^7.2.0",
+    "favicons-webpack-plugin": "^6.0.1",
     "gsap": "^3.12.5",
     "three": "^0.169.0"
   }

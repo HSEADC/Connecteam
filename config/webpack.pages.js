@@ -1,20 +1,20 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-function createPages(template, filename, chunks) {
+function createPages(template, outputPath, chunks) {
   return new HtmlWebpackPlugin({
     template: template,
-    filename: filename,
-    chunks: chunks
+    filename: `${outputPath}/index.html`,
+    chunks: [...chunks, 'vendors']
   });
 }
 
 const htmlWebpackPlugins = [
-    createPages('./src/index.html', './index.html', ['index', 'vendors']),
-    createPages('./src/pages/articles/articles.html', './articles.html', ['articles', 'vendors']),
-    createPages('./src/pages/about/about.html', './about.html', ['about', 'vendors']),
-    createPages('./src/pages/cases/cases.html', './cases.html', ['cases', 'vendors']),
-    createPages('./src/pages/interactives/interactives.html', './interactives.html', ['interactives', 'vendors']),
-    createPages('./src/pages/articles/scrum/scrum.html', './articles/scrum.html', ['scrum', 'vendors']),
+  createPages('./src/index.html', '.', ['index', 'header_about']),
+  createPages('./src/pages/articles/articles.html', 'articles', ['articles']),
+  createPages('./src/pages/cases/cases.html', 'cases', ['cases']),
+  createPages('./src/pages/interactives/interactives.html', 'interactives', ['interactives']),
+  createPages('./src/pages/articles/waterfall/waterfall.html', 'articles/waterfall', ['waterfall', 'header_main']),
+  createPages('./src/pages/form/form.html', 'form', ['form', 'header_about'])
 ];
 
 module.exports = htmlWebpackPlugins;

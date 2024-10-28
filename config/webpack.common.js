@@ -1,5 +1,7 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const ThreeMinifierPlugin = require('@yushijinhun/three-minifier-webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const htmlWebpackPlugins = require('./webpack.pages')
 const htmlWebpackPartialsPlugins = require('./webpack.partials')
@@ -11,10 +13,13 @@ module.exports = {
   entry: {
     index: './src/index.js',
     articles: './src/pages/articles/articles.js',
-    about: './src/pages/about/about.js',
     cases: './src/pages/cases/cases.js',
     interactives: './src/pages/interactives/interactives.js',
-    scrum: './src/pages/articles/scrum/scrum.js'
+    waterfall: './src/pages/articles/waterfall/waterfall.js',
+    form: './src/pages/form/form.js',
+
+    header_about: './src/partials/header_about/header_about.js',
+    header_main: './src/partials/header_main/header_main.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -40,7 +45,7 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.(png|svg|jpg|jpeg|webp)/,
+        test: /\.(png|svg|gif)/,
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
@@ -48,9 +53,9 @@ module.exports = {
       },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]'
         }
       }
     ]
@@ -59,7 +64,19 @@ module.exports = {
     ...htmlWebpackPlugins,
     ...htmlWebpackPartialsPlugins,
     new webpack.HotModuleReplacementPlugin(),
-    new ThreeMinifierPlugin()
+    new ThreeMinifierPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        { 
+          from: 'src/images', 
+          to: 'images' }
+      ],
+    }),
+    new FaviconsWebpackPlugin({
+      logo: './src/images/favicon.png',
+      cache: true,
+      mode: 'webapp',
+    }),
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()],
