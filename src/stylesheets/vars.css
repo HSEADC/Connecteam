@@ -42,14 +42,14 @@
     --corner-12: 1.2rem;
     --corner-20: 2rem;
   
-    --font-16: 500 1.6rem/1.25 sans-serif;
-    --font-17: 600 1.7rem/1.25 sans-serif;
-    --font-17l: 500 1.7rem/1.25 sans-serif;
-    --font-18: 500 1.8rem/1.25 sans-serif;
-    --font-18m: 600 1.8rem/1.25 sans-serif;
-    --font-20: 500 2rem/1.25 sans-serif;
-    --font-25: 600 2.5rem/1.2 sans-serif;
-    --font-35: 600 3.5rem/1.2 sans-serif;
-    --font-40: 600 4rem/1.2 sans-serif;
+    --font-16: 500 1.6rem/1.25 'Inter', sans-serif;
+    --font-17: 600 1.7rem/1.25 'Inter', sans-serif;
+    --font-17l: 500 1.7rem/1.25 'Inter', sans-serif;
+    --font-18: 500 1.8rem/1.25 'Inter', sans-serif;
+    --font-18m: 600 1.8rem/1.25 'Inter', sans-serif;
+    --font-20: 500 2rem/1.25 'Inter', sans-serif;
+    --font-25: 600 2.5rem/1.2 'Inter', sans-serif;
+    --font-35: 600 3.5rem/1.2 'Inter', sans-serif;
+    --font-40: 600 4rem/1.2 'Inter', sans-serif;
     --font-footer: 600 5.4rem/1 'Hauora', sans-serif;
   }  
