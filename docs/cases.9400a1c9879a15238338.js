@@ -2,32 +2,11 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 106:
+/***/ 94:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
 
-var steps = document.querySelectorAll('.W_article_description_waterfall');
-var margins = [{
-  left: '0%',
-  right: '40%'
-}, {
-  left: '10%',
-  right: '30%'
-}, {
-  left: '20%',
-  right: '20%'
-}, {
-  left: '30%',
-  right: '10%'
-}, {
-  left: '40%',
-  right: '0%'
-}];
-steps.forEach(function (step, index) {
-  step.style.marginLeft = margins[index].left;
-  step.style.marginRight = margins[index].right;
-});
 
 /***/ }),
 
@@ -39,7 +18,7 @@ steps.forEach(function (step, index) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1730100992451
+        // 1733169985258
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -170,12 +149,12 @@ steps.forEach(function (step, index) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("waterfall." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("cases." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("97a10e21481472c7ac82")
+/******/ 		__webpack_require__.h = () => ("0902e5453663aa4f0708")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -243,7 +222,7 @@ steps.forEach(function (step, index) {
 /******/ 	
 /******/ 	/* webpack/runtime/runtimeId */
 /******/ 	(() => {
-/******/ 		__webpack_require__.j = 563;
+/******/ 		__webpack_require__.j = 794;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hot module replacement */
@@ -769,7 +748,7 @@ steps.forEach(function (step, index) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			563: 0
+/******/ 			794: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1305,7 +1284,7 @@ steps.forEach(function (step, index) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [96], () => (__webpack_require__(106)))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [96], () => (__webpack_require__(94)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

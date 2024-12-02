@@ -1,29 +1,29 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 346:
+/***/ 730:
 /***/ (() => {
 
 document.addEventListener('DOMContentLoaded', function () {
-  var buttons = document.querySelectorAll('.A_gradient_button');
-  var animationFrameId;
-  var position = 0;
-  function animateGradient(button) {
-    position = (position + 1) % 100;
-    button.style.backgroundPosition = "".concat(position, "% 50%");
-    animationFrameId = requestAnimationFrame(function () {
-      return animateGradient(button);
-    });
+  var burgerMenu = document.querySelector('.Q_hm_burger_menu');
+  var mobileMenu = document.querySelector('.O_header_main_mobile');
+  var menuClose = document.querySelector('.Q_header_main_mobile_close');
+  function openMenu() {
+    mobileMenu.classList.add('active');
+    document.body.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
   }
-  buttons.forEach(function (button) {
-    button.addEventListener('mouseover', function () {
-      animationFrameId = requestAnimationFrame(function () {
-        return animateGradient(button);
-      });
-    });
-    button.addEventListener('mouseout', function () {
-      cancelAnimationFrame(animationFrameId);
-    });
+  function closeMenuFunc() {
+    mobileMenu.classList.remove('active');
+    document.body.style.height = '';
+    document.body.style.overflow = '';
+  }
+  burgerMenu.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenuFunc);
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+      closeMenuFunc();
+    }
   });
 });
 
@@ -94,12 +94,12 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("header_about." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("header_main." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("97a10e21481472c7ac82")
+/******/ 		__webpack_require__.h = () => ("0902e5453663aa4f0708")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -688,7 +688,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			778: 0
+/******/ 			56: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1197,7 +1197,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(346);
+/******/ 	var __webpack_exports__ = __webpack_require__(730);
 /******/ 	
 /******/ })()
 ;
