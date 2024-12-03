@@ -8,6 +8,8 @@
 @import './pages/articles/articles.css';
 @import './pages/cases/cases.css';
 @import './pages/form/form.css';
+@import './pages/styleguide/styleguide.css';
+
 @import './pages/articles/waterfall/waterfall.css';
 
 @import './partials/header_main/header_main.css';
