@@ -241,11 +241,11 @@
 }
 
 .W_article_waterfall_example_ibm{
-    background: url(../../../images/articles/ibm.png) no-repeat center/100%;
+    background: url(../../../images/articles/ibm.webp) no-repeat center/100%;
 }
 
 .W_article_waterfall_example_cisco{
-    background: url(../../../images/articles/cisco.png) no-repeat center/100%;
+    background: url(../../../images/articles/cisco.webp) no-repeat center/100%;
 }
 
 .A_article_waterfall_interesting_subtext{
@@ -266,12 +266,12 @@
 }
 .W_article_waterfall_interesting_pm{
     bottom: 0;
-    background: url(../../../images/articles/pm.png) no-repeat center/100%;
+    background: url(../../../images/articles/pm.webp) no-repeat center/100%;
 }
 
 .W_article_waterfall_interesting_do{
     bottom: -2%;
-    background: url(../../../images/articles/do.png) no-repeat center/100%;
+    background: url(../../../images/articles/do.webp) no-repeat center/100%;
 }
 
 .A_article_waterfall_example_text, .A_article_waterfall_interesting_subtext{
