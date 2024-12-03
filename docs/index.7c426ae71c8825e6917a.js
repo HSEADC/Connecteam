@@ -2,37 +2,11 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 362:
+/***/ 954:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
-/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(437);
 
-
-var scene = new three__WEBPACK_IMPORTED_MODULE_1__/* .Scene */ .Z58();
-var camera = new three__WEBPACK_IMPORTED_MODULE_1__/* .PerspectiveCamera */ .ubm(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.z = 5;
-var renderer = new three__WEBPACK_IMPORTED_MODULE_1__/* .WebGLRenderer */ .JeP();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-var geometry = new three__WEBPACK_IMPORTED_MODULE_1__/* .BoxGeometry */ .iNn();
-var material = new three__WEBPACK_IMPORTED_MODULE_1__/* .MeshBasicMaterial */ .V9B({
-  color: 0xfff
-});
-var cube = new three__WEBPACK_IMPORTED_MODULE_1__/* .Mesh */ .eaF(geometry, material);
-scene.add(cube);
-function animate() {
-  requestAnimationFrame(animate);
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-  renderer.render(scene, camera);
-}
-animate();
-window.addEventListener('resize', function () {
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-});
 
 /***/ }),
 
@@ -44,7 +18,7 @@ window.addEventListener('resize', function () {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1733225812744
+        // 1733226292449
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -175,12 +149,12 @@ window.addEventListener('resize', function () {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("articles." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("index." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("0fe2ad97ae1f049642c7")
+/******/ 		__webpack_require__.h = () => ("0ebae0cad9c03b90aeb3")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -248,7 +222,7 @@ window.addEventListener('resize', function () {
 /******/ 	
 /******/ 	/* webpack/runtime/runtimeId */
 /******/ 	(() => {
-/******/ 		__webpack_require__.j = 178;
+/******/ 		__webpack_require__.j = 57;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hot module replacement */
@@ -774,7 +748,7 @@ window.addEventListener('resize', function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			178: 0
+/******/ 			57: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1310,7 +1284,7 @@ window.addEventListener('resize', function () {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [96], () => (__webpack_require__(362)))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [96], () => (__webpack_require__(954)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
