@@ -2,11 +2,32 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 930:
+/***/ 106:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
 
+var steps = document.querySelectorAll('.W_article_description_waterfall');
+var margins = [{
+  left: '0%',
+  right: '40%'
+}, {
+  left: '10%',
+  right: '30%'
+}, {
+  left: '20%',
+  right: '20%'
+}, {
+  left: '30%',
+  right: '10%'
+}, {
+  left: '40%',
+  right: '0%'
+}];
+steps.forEach(function (step, index) {
+  step.style.marginLeft = margins[index].left;
+  step.style.marginRight = margins[index].right;
+});
 
 /***/ }),
 
@@ -18,7 +39,7 @@
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1733185498773
+        // 1733225812744
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -149,12 +170,12 @@
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("interactives." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("waterfall." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("4b92312608f4dac67f30")
+/******/ 		__webpack_require__.h = () => ("0fe2ad97ae1f049642c7")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -222,7 +243,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/runtimeId */
 /******/ 	(() => {
-/******/ 		__webpack_require__.j = 675;
+/******/ 		__webpack_require__.j = 563;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hot module replacement */
@@ -748,7 +769,7 @@
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			675: 0
+/******/ 			563: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1284,7 +1305,7 @@
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [96], () => (__webpack_require__(930)))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [96], () => (__webpack_require__(106)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
