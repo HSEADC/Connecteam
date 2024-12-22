@@ -1,6 +1,7 @@
 .W_article{
-    padding-top: var(--spacing-50);
     align-items: center;
+
+    padding-top: var(--spacing-50);
 }
 
 .W_article_content {
@@ -9,9 +10,11 @@
 
 .Q_article_gradient_line{
     width: 100%;
+
     height: 2px;
-    background: var(--color-gradient-article);
     min-height: 2px;
+
+    background: var(--color-gradient-article);
 }
 
 .P_article_gradient_line{
@@ -19,9 +22,10 @@
 }
 
 .W_article_head{
-    width: 100%;
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
 }
 
 .A_article_head_title{
@@ -29,48 +33,60 @@
 }
 
 .A_article_back_button{
-    height: fit-content;
     width: fit-content;
+
+    height: fit-content;
+
     padding: var(--spacing-10) var(--spacing-25);
-    background: var(--color-light-black);
-    font: var(--font-17);
+
     color: var(--color-light-gray);
+
+    background: var(--color-light-black);
     border-radius: var(--corner-12);
+    font: var(--font-17);
 }
 
 .A_article_back_button_mobile{
     display: none;
+
     width: 1.8rem;
+
     height: 1.8rem;
-    background: url(../../../images/articles/close.svg) no-repeat center/100%;
+
+    background: url("../../../images/articles/close.svg") no-repeat center/100%;
 }
 
 .A_article_back_button_mobile > a{
     display: block;
+
     width: 100%;
+
     height: 100%;
 }
 
 .W_article_description{
     display: flex;
     justify-content: space-between;
-    gap: var(--spacing-50);
     align-items: center;
+    gap: var(--spacing-50);
 }
 
 .C_article_description{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-30);
-    font: var(--font-20);
-    color: var(--color-white);
+
     width: 60%;
+
+    color: var(--color-white);
+    font: var(--font-20);
 }
 
 .C_arcticle_description_waterfall{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-20);
+
     width: 40%;
 }
 
@@ -86,39 +102,41 @@
 
 .W_article_description_waterfall {
     position: relative;
-    padding: var(--spacing-15) var(--spacing-20);
-    border-radius: var(--corner-12);
     z-index: 1;
+
+    padding: var(--spacing-15) var(--spacing-20);
+
+    border-radius: var(--corner-12);
 }
 
 .W_article_description_waterfall::before {
-    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: var(--corner-12);
-    padding: 2px;
-    background: var(--color-gradient-article-content);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+    inset: 0;
     z-index: -1;
+
+    padding: 2px;
+
+    background: var(--color-gradient-article-content);
+    border-radius: var(--corner-12);
+    content: '';
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    mask-composite: exclude;
 }
 
 .A_article_description_waterfall{
-    font: var(--font-20);
     color: var(--color-white);
+    font: var(--font-20);
     white-space: nowrap;
 }
 
 .W_article_waterfall_stage_title{
     padding: var(--spacing-25) var(--spacing-30);
+
+    color: var(--color-white);
+
     background: var(--color-dark-gray);
     border-radius: var(--corner-20);
-    color: var(--color-white);
     font: var(--font-18m);
 }
 
@@ -128,8 +146,8 @@
 }
 
 .A_article_waterfall_stage_additional{
-    font: var(--font-18m);
     color: var(--color-light-gray);
+    font: var(--font-18m);
 }
 
 .C_article_waterfall_stages_content{
@@ -140,8 +158,8 @@
 
 .M_article_waterfall_stage{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
     gap: var(--spacing-30);
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .A_article_waterfall_stage_additional, .W_article_waterfall_stage_title, .A_article_waterfall_stage_text{
@@ -156,17 +174,19 @@
 }
 
 .A_article_watefall_versus_vs{
-    font: var(--font-25);
     color: var(--color-white);
+    font: var(--font-25);
 }
 
 .W_article_waterfall_versus_block{
-    padding: var(--spacing-25) var(--spacing-30);
-    background: var(--color-dark-gray);
-    border-radius: var(--corner-20);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-25);
+
+    padding: var(--spacing-25) var(--spacing-30);
+
+    background: var(--color-dark-gray);
+    border-radius: var(--corner-20);
 }
 
 .C_article_waterfall_versus_block{
@@ -180,12 +200,15 @@
 }
 
 .A_article_waterfall_versus_block{
-    color: var(--color-black);
-    font: var(--font-18);
-    background: var(--color-gray-white);
-    padding: var(--spacing-25) var(--spacing-30);
-    border-radius: var(--corner-20);
     max-width: 39rem;
+
+    padding: var(--spacing-25) var(--spacing-30);
+
+    color: var(--color-black);
+
+    background: var(--color-gray-white);
+    border-radius: var(--corner-20);
+    font: var(--font-18);
 }
 
 .A_article_waterfall_not_title{
@@ -193,41 +216,48 @@
 }
 
 .W_article_waterfall_not{
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-30);
+
+    width: 100%;
 }
 
 .C_article_waterfall_not_content{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-30);
+
     width: 66%;
+
     margin: 0 auto;
 }
 
 .W_article_waterfall_not_block{
     padding: var(--spacing-25) var(--spacing-30);
-    background: var(--color-dark-gray);
-    font: var(--font-18);
+
     color: var(--color-white);
+
+    background: var(--color-dark-gray);
     border-radius: var(--corner-20);
+    font: var(--font-18);
 }
 
 .W_article_waterfall_examples{
-    width: 100%;
-    color: var(--color-white);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-30);
+
+    width: 100%;
+
+    color: var(--color-white);
 }
 
 
 .C_article_waterfall_examples_content{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-30);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .W_article_waterfall_example{
@@ -235,17 +265,20 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: var(--spacing-10);
-    border-radius: var(--corner-20);
-    padding: var(--spacing-25) var(--spacing-30);
+
     height: 24rem;
+
+    padding: var(--spacing-25) var(--spacing-30);
+
+    border-radius: var(--corner-20);
 }
 
 .W_article_waterfall_example_ibm{
-    background: url(../../../images/articles/ibm.webp) no-repeat center/100%;
+    background: url("../../../images/articles/ibm.webp") no-repeat center/100%;
 }
 
 .W_article_waterfall_example_cisco{
-    background: url(../../../images/articles/cisco.webp) no-repeat center/100%;
+    background: url("../../../images/articles/cisco.webp") no-repeat center/100%;
 }
 
 .A_article_waterfall_interesting_subtext{
@@ -254,24 +287,30 @@
 
 .W_article_waterfall_interesting{
     position: relative;
+    
     background: var(--color-gradient-dark-gray);
     overflow: hidden;
 }
 
 .W_article_waterfall_interesting_do, .W_article_waterfall_interesting_pm{
     position: absolute;
-    width: 50%;
     right: 0;
+
+    width: 50%;
+
     height: 100%;
 }
+
 .W_article_waterfall_interesting_pm{
     bottom: 0;
-    background: url(../../../images/articles/pm.webp) no-repeat center/100%;
+
+    background: url('../../../images/articles/pm.webp') no-repeat center/100%;
 }
 
 .W_article_waterfall_interesting_do{
     bottom: -2%;
-    background: url(../../../images/articles/do.webp) no-repeat center/100%;
+
+    background: url('../../../images/articles/do.webp') no-repeat center/100%;
 }
 
 .A_article_waterfall_example_text, .A_article_waterfall_interesting_subtext{
@@ -282,6 +321,7 @@
 .P_article_waterfall{
     padding: var(--spacing-100) var(--spacing-50);
 }
+
 .O_header_main_mobile{
     display: none;
 }
@@ -304,6 +344,7 @@
     .W_article_description{
         flex-direction: column-reverse;
     }
+
     .C_article_description{
         width: 100%;
     }
@@ -316,32 +357,39 @@
         display: flex;
         flex-direction: column;
     }
+
     .W_article_waterfall_stage_title{
         width: fit-content;
     }
+
     .A_article_waterfall_stage_additional{
         display: none;
     }
+
     .W_article_waterfall_versus{
         flex-direction: column;
+
         width: 100%;
     }
+
     .W_article_waterfall_versus_block, .C_article_waterfall_versus_block{
         width: 100%;
     }
+
     .A_article_waterfall_versus_block{
         max-width: 100%;
     }
+
     .C_article_waterfall_versus_block{
         padding: 0 var(--spacing-20);
     }
+
     .C_article_waterfall_examples_content{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-
     .A_article_back_button{
         display: none;
     }

@@ -1,9 +1,12 @@
 :root {
     --color-white: #FFF;
-    --color-black: #161616;
+    --color-light-gray: #F2F2F2;
+    --color-grid-gray: #E2E2E2;
+    --color-black: #000;
     --color-light-black: #292929;
     --color-gray: #343434;
-    --color-light-gray: #5F5F5F;
+
+    /* --color-light-gray: #5F5F5F; */
     --color-lighter-gray: #818181;
     --color-dark-gray: #1F1F1F;
     --color-gray-white: #D7D7D7;
@@ -11,8 +14,8 @@
     --color-pink: #FF3DA8;
     --color-purple: #952AFF;
     --color-blue: #4200FF;
+    --color-grid-blue: #7140FF;
     --color-deep-blue: #0D00CA;
-    
     --color-gradient-dark-gray: linear-gradient(0deg, #282828 0%, #1F1F1F 100%);
     --color-gradient: linear-gradient(90deg, #0B00A5 0%,#4200FF 23%, #952AFF 49%, #FF3DA8 77%, #F64704 100%);
     --color-gradient-gray: linear-gradient(0deg, #D7D7D7 0%, #C8C8C8 100%);
@@ -21,16 +24,17 @@
     --color-gradient-data: linear-gradient(45deg, #9B35FF 0%, #A24AF8 43%, #161616 89%);
     --color-gradient-design: linear-gradient(0deg, #FF3DA8 0%, #6D224D 50%, #161616 100%);
     --color-gradient-manager: linear-gradient(0deg, #161616 0%, #F45B21 70%, #F64704 100%);
-    --color-gradient: linear-gradient(90deg, #0B00A5 0%,#4200FF 23%, #952AFF 49%, #FF3DA8 77%, #F64704 100%);
     --color-gradient-article: linear-gradient(90deg, #161616 1%, #0B00A5 6%,#4200FF 23%, #952AFF 49%, #FF3DA8 77%, #F64704 95%, #161616 99%);
     --color-gradient-article-content: linear-gradient(270deg, #161616 0%, #1D1D1D 40%, #363636 63%, #D8D8D8 100%);
-
     --spacing-5: .5rem;
+    --spacing-6: .6rem;
     --spacing-10: 1rem;
+    --spacing-12: 1.2rem;
     --spacing-15: 1.5rem;
     --spacing-20: 2rem;
     --spacing-25: 2.5rem;
     --spacing-30: 3rem;
+    --spacing-35: 3.5rem;
     --spacing-40: 4rem;
     --spacing-50: 5rem;
     --spacing-55: 5.5rem;
@@ -38,18 +42,22 @@
     --spacing-80: 8rem;
     --spacing-100: 10rem;
     --spacing-120: 12rem;
-  
+    --corner-5: .5rem;
     --corner-10: 1rem;
     --corner-12: 1.2rem;
     --corner-20: 2rem;
-  
-    --font-16: 500 1.6rem/1.25 'Inter', sans-serif;
-    --font-17: 600 1.7rem/1.25 'Inter', sans-serif;
-    --font-17l: 500 1.7rem/1.25 'Inter', sans-serif;
-    --font-18: 500 1.8rem/1.25 'Inter', sans-serif;
-    --font-18m: 600 1.8rem/1.25 'Inter', sans-serif;
-    --font-20: 500 2rem/1.25 'Inter', sans-serif;
-    --font-25: 600 2.5rem/1.2 'Inter', sans-serif;
+    --font-10-500: 500 1rem/1.2 'Hauora', sans-serif;
+    --font-11-500: 500 1.1rem/1.2 'Hauora', sans-serif;
+    --font-14-500: 500 1.4rem/1.2 'Hauora', sans-serif;
+    --font-15-500: 500 1.5rem/1.2 'Hauora', sans-serif;
+    --font-16: 500 1.6rem/1.2 'Inter', sans-serif;
+    --font-17: 600 1.7rem/1.2 'Inter', sans-serif;
+    --font-17l: 500 1.7rem/1.2 'Inter', sans-serif;
+    --font-18: 500 1.8rem/1.2 'Inter', sans-serif;
+    --font-18m: 600 1.8rem/1.2 'Inter', sans-serif;
+    --font-20-500: 500 2rem/1.2 'Hauora', sans-serif;
+    --font-25-500: 500 2.5rem/1.2 'Hauora', sans-serif;
+    --font-25-600: 600 2.5rem/1.2 'Hauora', sans-serif;
     --font-35: 600 3.5rem/1.2 'Inter', sans-serif;
     --font-40: 600 4rem/1.2 'Inter', sans-serif;
     --font-footer: 600 5.4rem/1 'Hauora', sans-serif;

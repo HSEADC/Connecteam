@@ -19,7 +19,8 @@ module.exports = {
     form: './src/pages/form/form.js',
 
     header_about: './src/partials/header_about/header_about.js',
-    header_main: './src/partials/header_main/header_main.js'
+    header_white: './src/partials/header_white/header_white.js',
+    header_black: './src/partials/header_black/header_black.js'
   },
   output: {
     filename: '[name].[contenthash].js',

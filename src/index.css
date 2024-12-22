@@ -12,7 +12,8 @@
 
 @import './pages/articles/waterfall/waterfall.css';
 
-@import './partials/header_main/header_main.css';
+@import './partials/header_white/header_white.css';
+@import './partials/header_black/header_black.css';
 @import './partials/header_about/header_about.css';
 @import './partials/footer/footer.css';
 @import './partials/C_social_media/C_social_media.css';
