@@ -7,7 +7,7 @@
     --color-gray: #343434;
 
     /* --color-light-gray: #5F5F5F; */
-    --color-lighter-gray: #818181;
+    --color-lighter-gray: #999;
     --color-dark-gray: #1F1F1F;
     --color-gray-white: #D7D7D7;
     --color-orange: #F64704;
@@ -31,6 +31,7 @@
     --spacing-10: 1rem;
     --spacing-12: 1.2rem;
     --spacing-15: 1.5rem;
+    --spacing-18: 1.8rem;
     --spacing-20: 2rem;
     --spacing-25: 2.5rem;
     --spacing-30: 3rem;
@@ -42,10 +43,13 @@
     --spacing-80: 8rem;
     --spacing-100: 10rem;
     --spacing-120: 12rem;
+    --spacing-150: 15rem;
     --corner-5: .5rem;
     --corner-10: 1rem;
     --corner-12: 1.2rem;
+    --corner-15: 1.5rem;
     --corner-20: 2rem;
+    --corner-30: 3rem;
     --font-10-500: 500 1rem/1.2 'Hauora', sans-serif;
     --font-11-500: 500 1.1rem/1.2 'Hauora', sans-serif;
     --font-14-500: 500 1.4rem/1.2 'Hauora', sans-serif;
@@ -53,11 +57,13 @@
     --font-16: 500 1.6rem/1.2 'Inter', sans-serif;
     --font-17: 600 1.7rem/1.2 'Inter', sans-serif;
     --font-17l: 500 1.7rem/1.2 'Inter', sans-serif;
-    --font-18: 500 1.8rem/1.2 'Inter', sans-serif;
+    --font-18-500: 500 1.8rem/1.2 'Hauora', sans-serif;
     --font-18m: 600 1.8rem/1.2 'Inter', sans-serif;
     --font-20-500: 500 2rem/1.2 'Hauora', sans-serif;
     --font-25-500: 500 2.5rem/1.2 'Hauora', sans-serif;
-    --font-25-600: 600 2.5rem/1.2 'Hauora', sans-serif;
+    --font-25-500i: 500 2.5rem/1.2 'Inter Tight', sans-serif;
+    --font-25-600: 6 00 2.5rem/1.2 'Hauora', sans-serif;
+    --font-35-500i: 500 3.5rem/1.2 'Inter Tight', sans-serif;
     --font-35: 600 3.5rem/1.2 'Inter', sans-serif;
     --font-40: 600 4rem/1.2 'Inter', sans-serif;
     --font-footer: 600 5.4rem/1 'Hauora', sans-serif;

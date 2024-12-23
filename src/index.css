@@ -1,20 +1,17 @@
-@import './stylesheets/reset.css';
-@import './stylesheets/fonts.css';
-@import './stylesheets/vars.css';
-@import './stylesheets/basics.css';
-
-@import './stylesheets/index.css';
-@import './pages/interactives/interactives.css';
-@import './pages/articles/articles.css';
-@import './pages/cases/cases.css';
-@import './pages/form/form.css';
-@import './pages/styleguide/styleguide.css';
-
-@import './pages/articles/waterfall/waterfall.css';
-
-@import './partials/header_white/header_white.css';
-@import './partials/header_black/header_black.css';
-@import './partials/header_about/header_about.css';
-@import './partials/footer/footer.css';
-@import './partials/C_social_media/C_social_media.css';
-@import './partials/header_main_mobile/header_main_mobile.css'
+@import url('./stylesheets/reset.css');
+@import url('./stylesheets/fonts.css');
+@import url('./stylesheets/vars.css');
+@import url('./stylesheets/basics.css');
+@import url('./stylesheets/index.css');
+@import url('./pages/interactives/interactives.css');
+@import url('./pages/articles/articles.css');
+@import url('./pages/cases/cases.css');
+@import url('./pages/form/form.css');
+@import url('./pages/styleguide/styleguide.css');
+@import url('./pages/articles/waterfall/waterfall.css');
+@import url('./partials/header_white/header_white.css');
+@import url('./partials/header_black/header_black.css');
+@import url('./partials/header_about/header_about.css');
+@import url('./partials/footer/footer.css');
+@import url('./partials/C_social_media/C_social_media.css');
+@import url('./partials/header_main_mobile/header_main_mobile.css')
