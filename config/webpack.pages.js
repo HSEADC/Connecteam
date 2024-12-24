@@ -13,7 +13,8 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/articles/articles.html', 'articles', ['articles', 'header_black']),
   createPages('./src/pages/cases/cases.html', 'cases', ['cases', 'header_black']),
   createPages('./src/pages/interactives/interactives.html', 'interactives', ['interactives', 'header_black']),
-  createPages('./src/pages/articles/waterfall/waterfall.html', 'articles/waterfall', ['waterfall', 'header_black']),
+  createPages('./src/pages/cases/case/case.html', 'cases/case', ['case', 'header_black']),
+  createPages('./src/pages/articles/article/article.html', 'articles/article', ['article', 'header_black']),
   createPages('./src/pages/form/form.html', 'form', ['form'])
 ];
 

@@ -208,3 +208,7 @@
 
     background: url('../../images/articles/opacityimageblock.svg') no-repeat center/90%;
 }
+
+#I_article_feedback:hover{
+    cursor: pointer;
+}

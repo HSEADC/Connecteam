@@ -15,8 +15,9 @@ module.exports = {
     articles: './src/pages/articles/articles.js',
     cases: './src/pages/cases/cases.js',
     interactives: './src/pages/interactives/interactives.js',
-    waterfall: './src/pages/articles/waterfall/waterfall.js',
+    article: './src/pages/articles/article/article.js',
     form: './src/pages/form/form.js',
+    case: './src/pages/cases/case/case.js',
 
     header_white: './src/partials/header_white/header_white.js',
     header_black: './src/partials/header_black/header_black.js'
