@@ -46,6 +46,7 @@
 
     color: var(--color-white);
     font: var(--font-18-500);
+    white-space: nowrap;
 }
 
 .O_footer_content{
@@ -88,12 +89,12 @@
 
 @media (max-width: 768px) {
     .SO_footer{
-        padding: var(--spacing-25) 0 0 0;
+        padding: var(--spacing-45) 0;
     }
 
     .O_footer_content{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: var(--spacing-30);
     }
 
@@ -107,10 +108,6 @@
         background: url("../../images/logo_black.svg") no-repeat center/100%;
     }
 
-    .A_footer_logo{
-        display: none;
-    }
-
     .W_footer_text{
         display: flex;
         justify-content: center;
@@ -119,40 +116,14 @@
     }
 
     .M_footer_team{
-        flex-direction: column-reverse;
+        display: none;
+    }
+
+    .A_footer_social_media_text{
+        display: none;
+    }
+
+    .W_footer_social_media{
         align-items: center;
-
-        width: 100%;
-
-        padding: var(--spacing-15) 0 var(--spacing-60);
-
-        color: var(--color-white);
-
-        background: var(--color-light-gray);
-    }
-
-    .C_footer_team_members{
-        display: grid;
-
-        width: 100%;
-
-        padding: 0 var(--spacing-25);
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .A_footer_team_member:nth-child(1){
-        display: block;
-        justify-self: flex-start;
-    }
-
-    .A_footer_team_member:nth-child(2){
-        display: block;
-        justify-self: center;
-    }
-
-    .A_footer_team_member:nth-child(3){
-        display: block;
-        justify-self: flex-end;
     }
 }

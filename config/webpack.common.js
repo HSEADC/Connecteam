@@ -18,6 +18,7 @@ module.exports = {
     article: './src/pages/articles/article/article.js',
     form: './src/pages/form/form.js',
     case: './src/pages/cases/case/case.js',
+    sticker: './src/partials/A_sticker/A_sticker.js',
 
     header_white: './src/partials/header_white/header_white.js',
     header_black: './src/partials/header_black/header_black.js'

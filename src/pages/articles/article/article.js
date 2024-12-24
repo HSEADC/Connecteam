@@ -1,15 +1,7 @@
 import '../../../index.css'
 
-const steps = document.querySelectorAll('.W_article_description_waterfall');
-const margins = [
-    { left: '0%', right: '40%' },
-    { left: '10%', right: '30%' },
-    { left: '20%', right: '20%' },
-    { left: '30%', right: '10%' },
-    { left: '40%', right: '0%' },
-];
+import { Sticker } from '../../../partials/A_sticker/A_sticker';
 
-steps.forEach((step, index) => {
-    step.style.marginLeft = margins[index].left;
-    step.style.marginRight = margins[index].right;
-});
+Sticker({ color: 'orange', content: 'Звонок в 13:00' });
+Sticker({ color: 'yellow', content: 'Встреча с командой' });
+Sticker({ color: 'blue', content: 'Купить продукты' });
