@@ -1,10 +1,26 @@
-export function Sticker({ color = 'orange', content = '' }) {
+export function Sticker({ imageSrc, content = '', maxLength = 100 }) {
     const sticker = document.createElement('div');
-    sticker.classList.add('sticker');
-    sticker.contentEditable = true;
-    sticker.style.backgroundColor = color;
+    sticker.classList.add('W_sticker');
+    sticker.style.backgroundImage = `url(${imageSrc})`;
+    sticker.style.backgroundSize = 'cover';
+    sticker.style.backgroundPosition = 'center';
   
-    sticker.innerText = content;
+    const textElement = document.createElement('p');
+    textElement.classList.add('A_sticker_text');
+    textElement.contentEditable = true;
+    textElement.innerText = content;
+  
+    textElement.addEventListener('input', () => {
+      if (textElement.innerText.length > maxLength) {
+        textElement.innerText = textElement.innerText.slice(0, maxLength);
+      }
+    });
+  
+    textElement.addEventListener('focus', () => {
+      textElement.style.outline = 'none';
+    });
+  
+    sticker.appendChild(textElement);
   
     sticker.style.position = 'absolute';
     sticker.style.top = `${Math.random() * (window.innerHeight - 150)}px`;
@@ -40,3 +56,4 @@ export function Sticker({ color = 'orange', content = '' }) {
       element.style.zIndex = '';
     });
   }
+  
