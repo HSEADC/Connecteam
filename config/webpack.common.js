@@ -15,11 +15,14 @@ module.exports = {
     articles: './src/pages/articles/articles.js',
     cases: './src/pages/cases/cases.js',
     interactives: './src/pages/interactives/interactives.js',
-    waterfall: './src/pages/articles/waterfall/waterfall.js',
+    article: './src/pages/articles/article/article.js',
     form: './src/pages/form/form.js',
+    case: './src/pages/cases/case/case.js',
+    interactive_start: './src/pages/interactives/interactive_start/interactive_start.js',
+    sticker: './src/partials/A_sticker/A_sticker.js',
 
-    header_about: './src/partials/header_about/header_about.js',
-    header_main: './src/partials/header_main/header_main.js'
+    header_white: './src/partials/header_white/header_white.js',
+    header_black: './src/partials/header_black/header_black.js'
   },
   output: {
     filename: '[name].[contenthash].js',

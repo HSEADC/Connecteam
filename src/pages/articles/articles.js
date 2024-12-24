@@ -1,38 +1,13 @@
 import '../../index.css'
+import { Sticker } from '../../partials/A_sticker/A_sticker';
 
-import * as THREE from 'three'
-const scene = new THREE.Scene();
+Sticker({ imageSrc: '../../images/stickers/sticker1body.svg', content: 'Утвердить main страницу', maxLength: 50 });
+Sticker({ imageSrc: '../../images/stickers/sticker2body.svg', content: 'Ревью Алексей кейс ноябрь', maxLength: 50 });
 
-const camera = new THREE.PerspectiveCamera(
-  75,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  1000
-);
-camera.position.z = 5;
+document.addEventListener("DOMContentLoaded", () => {
+    const case_yandex = document.getElementById('I_article_feedback')
 
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial({ color: 0xfff });
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
-
-function animate() {
-  requestAnimationFrame(animate);
-
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-
-  renderer.render(scene, camera);
-}
-
-animate();
-
-window.addEventListener('resize', () => {
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-});
+    case_yandex.addEventListener('click', () => {
+        window.location.href = '/articles/article';
+    });
+})

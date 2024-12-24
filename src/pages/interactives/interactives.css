@@ -1,0 +1,263 @@
+.W_interactives_materials_section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-85);
+
+    width: 100%;
+
+    padding: var(--spacing-85) 0;
+}
+
+.W_interactives_materials_line1{
+    display: flex;
+    gap: var(--spacing-30);
+}
+
+.W_interactives_card{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    width: 100%;
+
+    height: 36.8rem;
+
+    padding: var(--spacing-30);
+
+    border-radius: var(--corner-15);
+    overflow: hidden;
+}
+
+.W_interactives_materials_line1 .W_interactives_card:nth-child(1){
+    background: var(--color-white);
+}
+    
+.W_interactives_materials_line1 .W_interactives_card:nth-child(2){
+    color: var(--color-white);
+
+    background: var(--color-purple);
+}
+
+.A_interactives_testing_button a{
+    width: fit-content;
+
+    padding: var(--spacing-10) var(--spacing-18);
+
+    background: var(--color-blue);
+
+    border-radius: var(--corner-30);
+
+    font: var(--font-15-500);
+}
+
+.W_interactives_materials_line1 .W_interactives_card:nth-child(2) a{
+    color: var(--color-blue);
+
+    background: var(--color-white);
+}
+
+.W_interactives_generator{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    height: 36.8rem;
+
+    background: var(--color-white);
+
+    border-radius: var(--corner-15);
+
+    transition: .5s;
+    overflow: hidden;
+    rotate: -2deg;
+}
+
+.W_interactives_generator:hover{
+    rotate: 0deg;
+}
+
+#B_interactives_generator{
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: url('../../images/interactives/generator.svg') no-repeat center/100%;
+}
+
+.W_interactives_generator_content{
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-25);
+
+    max-width: 40.7rem;
+}
+
+.A_interactives_generator_description p{
+    color: var(--color-lighter-gray);
+    text-align: center;
+    font: var(--font-18-500);
+}
+
+.A_interactives_testing_button{
+    margin-top: var(--spacing-25);
+}
+
+.W_interactives_generator_content .A_interactives_testing_button{
+    margin-top: var(--spacing-20);
+}
+
+.A_interactives_generator_title h2, .A_interactives_stories_title h2{
+    font: var(--font-35-500i);
+}
+
+.A_interactives_card_title h3{
+    font: var(--font-25-600);
+}
+
+.A_interactives_card_description p{
+    font: var(--font-18-400);
+}
+
+.W_interactives_card_content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+
+    max-width: 36rem;
+}
+
+#B_interactives_card_mafia{
+    position: absolute;
+
+    right: 0;
+    bottom: var(--spacing-50);
+
+    width: 28rem;
+
+    height: 37.5rem;
+
+    background: url('../../images/interactives/mafia.svg') no-repeat center/100%;
+
+    rotate: -50deg;
+}
+
+#B_interactives_card_shelter1, #B_interactives_card_shelter2{
+    position: absolute;
+
+    width: 25rem;
+
+    height: 25rem;
+}
+
+#B_interactives_card_shelter1{
+    top: -10rem;
+
+    background: url('../../images/interactives/casino1.svg') no-repeat center/100%;
+}
+
+#B_interactives_card_shelter2{
+    top: 0;
+    right: -10rem;
+
+    background: url('../../images/interactives/casino2.svg') no-repeat center/100%;
+}
+
+.W_interactives_tests_cards{
+    display: grid;
+    gap: var(--spacing-30);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.W_interactives_test_card{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 39.6rem;
+
+    padding: var(--spacing-35);
+
+    border-radius: var(--corner-15);
+    overflow: hidden;
+}
+
+.W_interactives_tests_cards .W_interactives_test_card:nth-child(1),
+.W_interactives_tests_cards .W_interactives_test_card:nth-child(3){
+    background: var(--color-white);
+}
+
+.W_interactives_tests_cards .W_interactives_test_card:nth-child(2){
+    color: var(--color-white);
+
+    background: var(--color-purple);
+} 
+
+.W_interactives_tests_cards .W_interactives_test_card:nth-child(4){
+    color: var(--color-white);
+
+    background: var(--color-pink);
+} 
+
+.A_interactives_test_card_title h2{
+    font: var(--font-35-500i);
+}
+
+.A_interactives_test_card_description p{
+    font: var(--font-18-400);
+}
+
+#B_interactives_test_metodology{
+    position: absolute;
+    top:40%;
+
+    right: 0;
+
+    width: 34.6rem;
+
+    height: 5.2rem;
+
+    background: url('../../images/interactives/search.svg') no-repeat center/100%;
+}
+
+#B_interactives_test_power{
+    position: absolute;
+
+    left: calc(-1*var(--spacing-25));
+
+    width: 100%;
+
+    height: 90%;
+
+    background: url('../../images/interactives/test.svg') no-repeat center/90%;
+}
+
+.W_interactives_tests{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-25);
+}
+
+.W_interactives_tests_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-50); 
+}
+
+.W_interactives_tests_title h2{
+    font: var(--font-35-500i);
+}

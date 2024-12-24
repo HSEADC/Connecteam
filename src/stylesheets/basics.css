@@ -5,16 +5,30 @@
 html,
 body {
   width: 100%;
+
   height: 100%;
-  font-family: 'Inter', sans-serif;
+
+  font-family: Hauora, sans-serif;
   font-size: 10px;
   scrollbar-color: var(--color-dark-gray) var(--color-black);
   scrollbar-width: thin;
+  overflow-x: hidden;
 }
 
-body{
-  background: var(--color-black);
-  overflow-x: hidden;
+body {
+  margin: 0;
+
+  background-color: var(--color-light-gray);
+  background-image: 
+    linear-gradient(to right, var(--color-grid-gray) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-grid-gray) 1px, transparent 1px),
+    linear-gradient(to right, var(--color-grid-gray) 2px, transparent 2px),
+    linear-gradient(to bottom, var(--color-grid-gray) 2px, transparent 2px);
+  background-size: 
+    36px 36px,
+    36px 36px,
+    144px 144px,
+    144px 144px;
 }
 
 a{
@@ -30,15 +44,17 @@ h2{
 }
 
 h3{
-  font: var(--font-25)
+  font: var(--font-25-600)
 }
 
 .W_content{
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--spacing-25) var(--spacing-50) var(--spacing-50);
+
+  width: 100vw;
+
+  padding: var(--spacing-35) var(--spacing-50) var(--spacing-50);
 }
 
 @media (max-width: 1024px) {
@@ -57,6 +73,7 @@ h3{
   html{
     font-size: 7px;
   }
+
   .W_content{
     padding: var(--spacing-80) var(--spacing-30) var(--spacing-40)
   }
