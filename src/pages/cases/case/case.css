@@ -97,3 +97,17 @@
     list-style-position: inside;
     font: var(--font-18-400);
 }
+
+.C_purple{
+    color: var(--color-white);
+
+    background: var(--color-purple);
+
+    transition: .5s;
+    
+    rotate: -2deg;
+}
+
+.C_purple:hover{
+    rotate: 0deg;
+}
