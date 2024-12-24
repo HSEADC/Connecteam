@@ -71,7 +71,7 @@
     font: var(--font-15-500);
 }
 
-.A_hm_nav_button:hover {
+.A_hm_nav_button:hover, .A_hm_nav_button:active{
     background: var(--color-pink);
 
     transition: .25s;

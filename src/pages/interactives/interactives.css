@@ -1,0 +1,92 @@
+.W_interactives_materials_section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-85);
+
+    width: 100%;
+
+    padding: var(--spacing-85) 0;
+}
+
+.W_interactives_materials_line1{
+    display: flex;
+    gap: var(--spacing-30);
+}
+
+.W_interactives_card{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    width: 100%;
+
+    height: 36.8rem;
+
+    border-radius: var(--corner-15);
+    overflow: hidden;
+}
+
+.W_interactives_casino{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    height: 36.8rem;
+
+    border-radius: var(--corner-15);
+    overflow: hidden;
+}
+
+#B_interactives_casino{
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: url('../../images/preview/casino.svg') no-repeat center/100%;
+}
+
+.W_interactives_casino_content{
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-25);
+
+    max-width: 35.6rem;
+}
+
+.A_interactives_casino_description p{
+    color: var(--color-lighter-gray);
+    text-align: center;
+    font: var(--font-18-500);
+}
+
+.W_interactives_casino_content .A_interactives_testing_button{
+    margin-top: var(--spacing-20);
+}
+
+.A_interactives_casino_title h2, .A_interactives_stories_title h2{
+    font: var(--font-35-500i);
+}
+
+.A_interactives_testing_button a{
+    width: fit-content;
+
+    padding: var(--spacing-10) var(--spacing-18);
+
+    background: var(--color-blue);
+
+    border-radius: var(--corner-30);
+
+    font: var(--font-15-500);
+}
