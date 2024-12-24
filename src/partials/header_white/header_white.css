@@ -42,11 +42,11 @@
 }
 
 .Q_hw_find_icon{
-    width: 1.6rem;
+    width: 1.4rem;
 
-    height: 1.6rem;
+    height: 1.2rem;
 
-    background: url('../../images/search_icon.svg') no-repeat center/100%;
+    background: url('../../images/search_icon_white.svg') no-repeat center/100%;
 }
 
 .A_search_text_soon{

@@ -18,7 +18,6 @@ module.exports = {
     waterfall: './src/pages/articles/waterfall/waterfall.js',
     form: './src/pages/form/form.js',
 
-    header_about: './src/partials/header_about/header_about.js',
     header_white: './src/partials/header_white/header_white.js',
     header_black: './src/partials/header_black/header_black.js'
   },

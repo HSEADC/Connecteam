@@ -12,6 +12,7 @@ body {
   font-size: 10px;
   scrollbar-color: var(--color-dark-gray) var(--color-black);
   scrollbar-width: thin;
+  overflow-x: hidden;
 }
 
 body {

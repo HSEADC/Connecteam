@@ -15,7 +15,6 @@ function createPartialsPlugin(partialPath, location) {
 const htmlWebpackPartialsPlugins = [
   createPartialsPlugin('../src/partials/header_white/header_white.html', 'header_white'),
   createPartialsPlugin('../src/partials/header_black/header_black.html', 'header_black'),
-  createPartialsPlugin('../src/partials/header_about/header_about.html', 'header_about'),
   createPartialsPlugin('../src/partials/footer/footer.html', 'footer'),
   createPartialsPlugin('../src/partials/C_social_media/C_social_media.html', 'social_media'),
   createPartialsPlugin('../src/partials/header_main_mobile/header_main_mobile.html', 'header_main_mobile')
