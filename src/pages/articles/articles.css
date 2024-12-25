@@ -212,3 +212,28 @@
 #I_article_feedback:hover{
     cursor: pointer;
 }
+
+@media (max-width: 1440px) {
+    #B_articles_materials_leopold {
+        background: url('../../images/articles/leopold.webp') no-repeat center/cover;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .W_articles_materials_line3 .W_articles_materials_card:nth-child(1){
+        display: none;
+    }
+
+    .W_articles_materials_line1, .W_articles_materials_line2, .W_articles_materials_line3, .W_articles_materials_line4, .W_articles_materials_line5{
+        flex-direction: column;
+    }
+
+    .W_articles_materials_line4 .W_articles_materials_card:nth-child(1){
+        width: 100%;
+    }
+
+    .W_articles_materials_line4 .W_articles_materials_card:nth-child(2){
+        width: 100%;
+    }
+}
