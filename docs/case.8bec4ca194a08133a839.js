@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 362:
+/***/ 54:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
@@ -11,19 +11,13 @@
 
 (0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
   imageSrc: '../../images/stickers/sticker1body.svg',
-  content: 'Утвердить main страницу',
+  content: 'тз Софья reowes.com',
   maxLength: 50
 });
 (0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
   imageSrc: '../../images/stickers/sticker2body.svg',
-  content: 'Ревью Алексей кейс ноябрь',
+  content: 'Созвон с разработкой 13:00',
   maxLength: 50
-});
-document.addEventListener("DOMContentLoaded", function () {
-  var case_yandex = document.getElementById('I_article_feedback');
-  case_yandex.addEventListener('click', function () {
-    window.location.href = '/articles/article';
-  });
 });
 
 /***/ }),
@@ -382,7 +376,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1735107241947
+        // 1735107807907
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -481,12 +475,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("articles." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("case." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("72efee2d98a0f0177d1d")
+/******/ 		__webpack_require__.h = () => ("f2ac155c0de7b676689a")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1075,7 +1069,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			178: 0,
+/******/ 			123: 0,
 /******/ 			756: 0
 /******/ 		};
 /******/ 		
@@ -1585,7 +1579,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(362);
+/******/ 	var __webpack_exports__ = __webpack_require__(54);
 /******/ 	
 /******/ })()
 ;
