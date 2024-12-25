@@ -1,62 +1,38 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 546:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 106:
+/***/ (() => {
 
-/* unused harmony export Sticker */
-function Sticker(_ref) {
-  var imageSrc = _ref.imageSrc,
-    _ref$content = _ref.content,
-    content = _ref$content === void 0 ? '' : _ref$content,
-    _ref$maxLength = _ref.maxLength,
-    maxLength = _ref$maxLength === void 0 ? 100 : _ref$maxLength;
-  var sticker = document.createElement('div');
-  sticker.classList.add('W_sticker');
-  sticker.style.backgroundImage = "url(".concat(imageSrc, ")");
-  sticker.style.backgroundSize = 'cover';
-  sticker.style.backgroundPosition = 'center';
-  var textElement = document.createElement('p');
-  textElement.classList.add('A_sticker_text');
-  textElement.contentEditable = true;
-  textElement.innerText = content;
-  textElement.addEventListener('input', function () {
-    if (textElement.innerText.length > maxLength) {
-      textElement.innerText = textElement.innerText.slice(0, maxLength);
+document.addEventListener('DOMContentLoaded', function () {
+  var navButtons = document.querySelectorAll('.A_hm_nav_button');
+  var currentPath = window.location.pathname;
+  navButtons.forEach(function (button) {
+    if (button.getAttribute('href') === currentPath) {
+      button.style.background = 'var(--color-pink)';
     }
   });
-  textElement.addEventListener('focus', function () {
-    textElement.style.outline = 'none';
+  var burgerMenu = document.querySelector('.Q_hbm_burger_menu');
+  var mobileMenu = document.querySelector('.O_header_white_mobile');
+  var menuClose = document.querySelector('.Q_header_white_mobile_close');
+  function openMenu() {
+    mobileMenu.classList.add('active');
+    document.body.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenuFunc() {
+    mobileMenu.classList.remove('active');
+    document.body.style.height = '';
+    document.body.style.overflow = '';
+  }
+  burgerMenu.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenuFunc);
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+      closeMenuFunc();
+    }
   });
-  sticker.appendChild(textElement);
-  sticker.style.position = 'absolute';
-  sticker.style.top = "".concat(Math.random() * (window.innerHeight - 150), "px");
-  sticker.style.left = "".concat(Math.random() * (window.innerWidth - 150), "px");
-  enableDrag(sticker);
-  document.body.appendChild(sticker);
-}
-function enableDrag(element) {
-  var isDragging = false;
-  var offsetX, offsetY;
-  element.addEventListener('mousedown', function (e) {
-    isDragging = true;
-    offsetX = e.clientX - element.offsetLeft;
-    offsetY = e.clientY - element.offsetTop;
-    element.style.zIndex = 1000;
-  });
-  document.addEventListener('mousemove', function (e) {
-    if (!isDragging) return;
-    var x = e.clientX - offsetX;
-    var y = e.clientY - offsetY;
-    element.style.left = "".concat(Math.max(0, Math.min(window.innerWidth - element.offsetWidth, x)), "px");
-    element.style.top = "".concat(Math.max(0, Math.min(window.innerHeight - element.offsetHeight, y)), "px");
-  });
-  document.addEventListener('mouseup', function () {
-    isDragging = false;
-    element.style.zIndex = '';
-  });
-}
+});
 
 /***/ })
 
@@ -105,18 +81,6 @@ function enableDrag(element) {
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -137,12 +101,12 @@ function enableDrag(element) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("sticker." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("header_black." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("2ab464ba6fa70b88068d")
+/******/ 		__webpack_require__.h = () => ("a90618144bbe170a333d")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -731,7 +695,7 @@ function enableDrag(element) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			756: 0
+/******/ 			500: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1240,7 +1204,7 @@ function enableDrag(element) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(546);
+/******/ 	var __webpack_exports__ = __webpack_require__(106);
 /******/ 	
 /******/ })()
 ;

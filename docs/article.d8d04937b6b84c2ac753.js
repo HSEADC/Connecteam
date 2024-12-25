@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 632:
+/***/ 418:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
@@ -10,32 +10,15 @@
 
 
 (0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
-  imageSrc: '../../images/stickers/sticker1body.svg',
-  content: 'тз Софья reowes.com',
+  imageSrc: '../../../Connecteam/images/stickers/sticker1body.svg',
+  content: 'А/б тесты резы в 17',
   maxLength: 50
 });
-function generateIdea() {
-  var ideaBlock = document.getElementById('I_idea_block');
-  var ideaText = document.getElementById('I_idea_text');
-  var agileBlock = document.getElementById('I_agile_block');
-  ideaBlock.classList.remove('hidden');
-  var texts = ['Сходить на шашлыки...', 'Придумать новую задачу...', 'Игровой Agile-спринт'];
-  var index = 0;
-  var interval = setInterval(function () {
-    ideaText.textContent = texts[index];
-    ideaText.className = 'text_gray';
-    index++;
-    if (index === texts.length) {
-      clearInterval(interval);
-      ideaText.textContent = texts[texts.length - 1];
-      ideaText.className = 'text_black';
-      setTimeout(function () {
-        agileBlock.classList.remove('hidden');
-      }, 500);
-    }
-  }, 500);
-}
-window.generateIdea = generateIdea;
+(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
+  imageSrc: '../../../Connecteam/images/stickers/sticker4body.svg',
+  content: 'Спринт четверг 14:30',
+  maxLength: 50
+});
 
 /***/ }),
 
@@ -393,7 +376,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1735108886256
+        // 1735109180885
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -492,12 +475,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("interactive_start." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("article." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("2ab464ba6fa70b88068d")
+/******/ 		__webpack_require__.h = () => ("a90618144bbe170a333d")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1086,7 +1069,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			840: 0,
+/******/ 			275: 0,
 /******/ 			756: 0
 /******/ 		};
 /******/ 		
@@ -1596,7 +1579,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(632);
+/******/ 	var __webpack_exports__ = __webpack_require__(418);
 /******/ 	
 /******/ })()
 ;
