@@ -1,38 +1,400 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 282:
-/***/ (() => {
+/***/ 418:
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
-document.addEventListener('DOMContentLoaded', function () {
-  var navButtons = document.querySelectorAll('.A_hm_nav_button');
-  var currentPath = window.location.pathname;
-  navButtons.forEach(function (button) {
-    if (button.getAttribute('href') === currentPath) {
-      button.style.background = 'var(--color-pink)';
-    }
-  });
-  var burgerMenu = document.querySelector('.Q_hwm_burger_menu');
-  var mobileMenu = document.querySelector('.O_header_black_mobile');
-  var menuClose = document.querySelector('.Q_header_black_mobile_close');
-  function openMenu() {
-    mobileMenu.classList.add('active');
-    document.body.style.height = '100vh';
-    document.body.style.overflow = 'hidden';
-  }
-  function closeMenuFunc() {
-    mobileMenu.classList.remove('active');
-    document.body.style.height = '';
-    document.body.style.overflow = '';
-  }
-  burgerMenu.addEventListener('click', openMenu);
-  menuClose.addEventListener('click', closeMenuFunc);
-  window.addEventListener('resize', function () {
-    if (window.innerWidth > 768) {
-      closeMenuFunc();
-    }
-  });
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
+/* harmony import */ var _partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(546);
+
+
+(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
+  imageSrc: '../../Connecteam/images/stickers/sticker1body.svg',
+  content: 'А/б тесты резы в 17',
+  maxLength: 50
 });
+(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
+  imageSrc: '../../Connecteam/images/stickers/sticker4body.svg',
+  content: 'Спринт четверг 14:30',
+  maxLength: 50
+});
+
+/***/ }),
+
+/***/ 546:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   C: () => (/* binding */ Sticker)
+/* harmony export */ });
+function Sticker(_ref) {
+  var imageSrc = _ref.imageSrc,
+    _ref$content = _ref.content,
+    content = _ref$content === void 0 ? '' : _ref$content,
+    _ref$maxLength = _ref.maxLength,
+    maxLength = _ref$maxLength === void 0 ? 100 : _ref$maxLength;
+  var sticker = document.createElement('div');
+  sticker.classList.add('W_sticker');
+  sticker.style.backgroundImage = "url(".concat(imageSrc, ")");
+  sticker.style.backgroundSize = 'cover';
+  sticker.style.backgroundPosition = 'center';
+  var textElement = document.createElement('p');
+  textElement.classList.add('A_sticker_text');
+  textElement.contentEditable = true;
+  textElement.innerText = content;
+  textElement.addEventListener('input', function () {
+    if (textElement.innerText.length > maxLength) {
+      textElement.innerText = textElement.innerText.slice(0, maxLength);
+    }
+  });
+  textElement.addEventListener('focus', function () {
+    textElement.style.outline = 'none';
+  });
+  sticker.appendChild(textElement);
+  sticker.style.position = 'absolute';
+  sticker.style.top = "".concat(Math.random() * (window.innerHeight - 150), "px");
+  sticker.style.left = "".concat(Math.random() * (window.innerWidth - 150), "px");
+  enableDrag(sticker);
+  document.body.appendChild(sticker);
+}
+function enableDrag(element) {
+  var isDragging = false;
+  var offsetX, offsetY;
+  element.addEventListener('mousedown', function (e) {
+    isDragging = true;
+    offsetX = e.clientX - element.offsetLeft;
+    offsetY = e.clientY - element.offsetTop;
+    element.style.zIndex = 1000;
+  });
+  document.addEventListener('mousemove', function (e) {
+    if (!isDragging) return;
+    var x = e.clientX - offsetX;
+    var y = e.clientY - offsetY;
+    element.style.left = "".concat(Math.max(0, Math.min(window.innerWidth - element.offsetWidth, x)), "px");
+    element.style.top = "".concat(Math.max(0, Math.min(window.innerHeight - element.offsetHeight, y)), "px");
+  });
+  document.addEventListener('mouseup', function () {
+    isDragging = false;
+    element.style.zIndex = '';
+  });
+}
+
+/***/ }),
+
+/***/ 140:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+/* eslint-env browser */
+/*
+  eslint-disable
+  no-console,
+  func-names
+*/
+
+/** @typedef {any} TODO */
+
+var normalizeUrl = __webpack_require__(918);
+var srcByModuleId = Object.create(null);
+var noDocument = typeof document === "undefined";
+var forEach = Array.prototype.forEach;
+
+/**
+ * @param {function} fn
+ * @param {number} time
+ * @returns {(function(): void)|*}
+ */
+function debounce(fn, time) {
+  var timeout = 0;
+  return function () {
+    // @ts-ignore
+    var self = this;
+    // eslint-disable-next-line prefer-rest-params
+    var args = arguments;
+    var functionCall = function functionCall() {
+      return fn.apply(self, args);
+    };
+    clearTimeout(timeout);
+
+    // @ts-ignore
+    timeout = setTimeout(functionCall, time);
+  };
+}
+function noop() {}
+
+/**
+ * @param {TODO} moduleId
+ * @returns {TODO}
+ */
+function getCurrentScriptUrl(moduleId) {
+  var src = srcByModuleId[moduleId];
+  if (!src) {
+    if (document.currentScript) {
+      src = ( /** @type {HTMLScriptElement} */document.currentScript).src;
+    } else {
+      var scripts = document.getElementsByTagName("script");
+      var lastScriptTag = scripts[scripts.length - 1];
+      if (lastScriptTag) {
+        src = lastScriptTag.src;
+      }
+    }
+    srcByModuleId[moduleId] = src;
+  }
+
+  /**
+   * @param {string} fileMap
+   * @returns {null | string[]}
+   */
+  return function (fileMap) {
+    if (!src) {
+      return null;
+    }
+    var splitResult = src.split(/([^\\/]+)\.js$/);
+    var filename = splitResult && splitResult[1];
+    if (!filename) {
+      return [src.replace(".js", ".css")];
+    }
+    if (!fileMap) {
+      return [src.replace(".js", ".css")];
+    }
+    return fileMap.split(",").map(function (mapRule) {
+      var reg = new RegExp("".concat(filename, "\\.js$"), "g");
+      return normalizeUrl(src.replace(reg, "".concat(mapRule.replace(/{fileName}/g, filename), ".css")));
+    });
+  };
+}
+
+/**
+ * @param {TODO} el
+ * @param {string} [url]
+ */
+function updateCss(el, url) {
+  if (!url) {
+    if (!el.href) {
+      return;
+    }
+
+    // eslint-disable-next-line
+    url = el.href.split("?")[0];
+  }
+  if (!isUrlRequest( /** @type {string} */url)) {
+    return;
+  }
+  if (el.isLoaded === false) {
+    // We seem to be about to replace a css link that hasn't loaded yet.
+    // We're probably changing the same file more than once.
+    return;
+  }
+  if (!url || !(url.indexOf(".css") > -1)) {
+    return;
+  }
+
+  // eslint-disable-next-line no-param-reassign
+  el.visited = true;
+  var newEl = el.cloneNode();
+  newEl.isLoaded = false;
+  newEl.addEventListener("load", function () {
+    if (newEl.isLoaded) {
+      return;
+    }
+    newEl.isLoaded = true;
+    el.parentNode.removeChild(el);
+  });
+  newEl.addEventListener("error", function () {
+    if (newEl.isLoaded) {
+      return;
+    }
+    newEl.isLoaded = true;
+    el.parentNode.removeChild(el);
+  });
+  newEl.href = "".concat(url, "?").concat(Date.now());
+  if (el.nextSibling) {
+    el.parentNode.insertBefore(newEl, el.nextSibling);
+  } else {
+    el.parentNode.appendChild(newEl);
+  }
+}
+
+/**
+ * @param {string} href
+ * @param {TODO} src
+ * @returns {TODO}
+ */
+function getReloadUrl(href, src) {
+  var ret;
+
+  // eslint-disable-next-line no-param-reassign
+  href = normalizeUrl(href);
+  src.some(
+  /**
+   * @param {string} url
+   */
+  // eslint-disable-next-line array-callback-return
+  function (url) {
+    if (href.indexOf(src) > -1) {
+      ret = url;
+    }
+  });
+  return ret;
+}
+
+/**
+ * @param {string} [src]
+ * @returns {boolean}
+ */
+function reloadStyle(src) {
+  if (!src) {
+    return false;
+  }
+  var elements = document.querySelectorAll("link");
+  var loaded = false;
+  forEach.call(elements, function (el) {
+    if (!el.href) {
+      return;
+    }
+    var url = getReloadUrl(el.href, src);
+    if (!isUrlRequest(url)) {
+      return;
+    }
+    if (el.visited === true) {
+      return;
+    }
+    if (url) {
+      updateCss(el, url);
+      loaded = true;
+    }
+  });
+  return loaded;
+}
+function reloadAll() {
+  var elements = document.querySelectorAll("link");
+  forEach.call(elements, function (el) {
+    if (el.visited === true) {
+      return;
+    }
+    updateCss(el);
+  });
+}
+
+/**
+ * @param {string} url
+ * @returns {boolean}
+ */
+function isUrlRequest(url) {
+  // An URL is not an request if
+
+  // It is not http or https
+  if (!/^[a-zA-Z][a-zA-Z\d+\-.]*:/.test(url)) {
+    return false;
+  }
+  return true;
+}
+
+/**
+ * @param {TODO} moduleId
+ * @param {TODO} options
+ * @returns {TODO}
+ */
+module.exports = function (moduleId, options) {
+  if (noDocument) {
+    console.log("no window.document found, will not HMR CSS");
+    return noop;
+  }
+  var getScriptSrc = getCurrentScriptUrl(moduleId);
+  function update() {
+    var src = getScriptSrc(options.filename);
+    var reloaded = reloadStyle(src);
+    if (options.locals) {
+      console.log("[HMR] Detected local css modules. Reload all css");
+      reloadAll();
+      return;
+    }
+    if (reloaded) {
+      console.log("[HMR] css reload %s", src.join(" "));
+    } else {
+      console.log("[HMR] Reload all css");
+      reloadAll();
+    }
+  }
+  return debounce(update, 50);
+};
+
+/***/ }),
+
+/***/ 918:
+/***/ ((module) => {
+
+
+
+/* eslint-disable */
+
+/**
+ * @param {string[]} pathComponents
+ * @returns {string}
+ */
+function normalizeUrl(pathComponents) {
+  return pathComponents.reduce(function (accumulator, item) {
+    switch (item) {
+      case "..":
+        accumulator.pop();
+        break;
+      case ".":
+        break;
+      default:
+        accumulator.push(item);
+    }
+    return accumulator;
+  }, /** @type {string[]} */[]).join("/");
+}
+
+/**
+ * @param {string} urlString
+ * @returns {string}
+ */
+module.exports = function (urlString) {
+  urlString = urlString.trim();
+  if (/^data:/i.test(urlString)) {
+    return urlString;
+  }
+  var protocol = urlString.indexOf("//") !== -1 ? urlString.split("//")[0] + "//" : "";
+  var components = urlString.replace(new RegExp(protocol, "i"), "").split("/");
+  var host = components[0].toLowerCase().replace(/\.$/, "");
+  components[0] = "";
+  var path = normalizeUrl(components);
+  return protocol + host + path;
+};
+
+/***/ }),
+
+/***/ 689:
+/***/ ((module, __unused_webpack___webpack_exports__, __webpack_require__) => {
+
+// extracted by mini-css-extract-plugin
+
+    if(true) {
+      (function() {
+        var localsJsonString = undefined;
+        // 1735108331595
+        var cssReload = __webpack_require__(140)(module.id, {});
+        // only invalidate when locals change
+        if (
+          module.hot.data &&
+          module.hot.data.value &&
+          module.hot.data.value !== localsJsonString
+        ) {
+          module.hot.invalidate();
+        } else {
+          module.hot.accept();
+        }
+        module.hot.dispose(function(data) {
+          data.value = localsJsonString;
+          cssReload();
+        });
+      })();
+    }
+  
 
 /***/ })
 
@@ -51,7 +413,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -81,6 +443,18 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -101,12 +475,12 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("header_white." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("article." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("961459843008ec71b53f")
+/******/ 		__webpack_require__.h = () => ("e413fd167e6bf6ee1b7b")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -695,7 +1069,8 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			810: 0
+/******/ 			275: 0,
+/******/ 			756: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1204,7 +1579,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(282);
+/******/ 	var __webpack_exports__ = __webpack_require__(418);
 /******/ 	
 /******/ })()
 ;
