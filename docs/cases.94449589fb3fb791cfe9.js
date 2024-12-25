@@ -2,100 +2,17 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 632:
+/***/ 94:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
-/* harmony import */ var _partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(546);
 
-
-(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
-  imageSrc: '../../images/stickers/sticker1body.svg',
-  content: 'тз Софья reowes.com',
-  maxLength: 50
+document.addEventListener("DOMContentLoaded", function () {
+  var case_yandex = document.getElementById('I_case_yandex');
+  case_yandex.addEventListener('click', function () {
+    window.location.href = '/Connecteam/cases/case';
+  });
 });
-function generateIdea() {
-  var ideaBlock = document.getElementById('I_idea_block');
-  var ideaText = document.getElementById('I_idea_text');
-  var agileBlock = document.getElementById('I_agile_block');
-  ideaBlock.classList.remove('hidden');
-  var texts = ['Сходить на шашлыки...', 'Придумать новую задачу...', 'Игровой Agile-спринт'];
-  var index = 0;
-  var interval = setInterval(function () {
-    ideaText.textContent = texts[index];
-    ideaText.className = 'text_gray';
-    index++;
-    if (index === texts.length) {
-      clearInterval(interval);
-      ideaText.textContent = texts[texts.length - 1];
-      ideaText.className = 'text_black';
-      setTimeout(function () {
-        agileBlock.classList.remove('hidden');
-      }, 500);
-    }
-  }, 500);
-}
-window.generateIdea = generateIdea;
-
-/***/ }),
-
-/***/ 546:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   C: () => (/* binding */ Sticker)
-/* harmony export */ });
-function Sticker(_ref) {
-  var imageSrc = _ref.imageSrc,
-    _ref$content = _ref.content,
-    content = _ref$content === void 0 ? '' : _ref$content,
-    _ref$maxLength = _ref.maxLength,
-    maxLength = _ref$maxLength === void 0 ? 100 : _ref$maxLength;
-  var sticker = document.createElement('div');
-  sticker.classList.add('W_sticker');
-  sticker.style.backgroundImage = "url(".concat(imageSrc, ")");
-  sticker.style.backgroundSize = 'cover';
-  sticker.style.backgroundPosition = 'center';
-  var textElement = document.createElement('p');
-  textElement.classList.add('A_sticker_text');
-  textElement.contentEditable = true;
-  textElement.innerText = content;
-  textElement.addEventListener('input', function () {
-    if (textElement.innerText.length > maxLength) {
-      textElement.innerText = textElement.innerText.slice(0, maxLength);
-    }
-  });
-  textElement.addEventListener('focus', function () {
-    textElement.style.outline = 'none';
-  });
-  sticker.appendChild(textElement);
-  sticker.style.position = 'absolute';
-  sticker.style.top = "".concat(Math.random() * (window.innerHeight - 150), "px");
-  sticker.style.left = "".concat(Math.random() * (window.innerWidth - 150), "px");
-  enableDrag(sticker);
-  document.body.appendChild(sticker);
-}
-function enableDrag(element) {
-  var isDragging = false;
-  var offsetX, offsetY;
-  element.addEventListener('mousedown', function (e) {
-    isDragging = true;
-    offsetX = e.clientX - element.offsetLeft;
-    offsetY = e.clientY - element.offsetTop;
-    element.style.zIndex = 1000;
-  });
-  document.addEventListener('mousemove', function (e) {
-    if (!isDragging) return;
-    var x = e.clientX - offsetX;
-    var y = e.clientY - offsetY;
-    element.style.left = "".concat(Math.max(0, Math.min(window.innerWidth - element.offsetWidth, x)), "px");
-    element.style.top = "".concat(Math.max(0, Math.min(window.innerHeight - element.offsetHeight, y)), "px");
-  });
-  document.addEventListener('mouseup', function () {
-    isDragging = false;
-    element.style.zIndex = '';
-  });
-}
 
 /***/ }),
 
@@ -393,7 +310,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1735117724817
+        // 1735118101871
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -460,18 +377,6 @@ module.exports = function (urlString) {
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -492,12 +397,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("interactive_start." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("cases." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("4d665f12718654906646")
+/******/ 		__webpack_require__.h = () => ("4d75bfb7c6dc6106951b")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1086,8 +991,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			840: 0,
-/******/ 			756: 0
+/******/ 			794: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1596,7 +1500,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(632);
+/******/ 	var __webpack_exports__ = __webpack_require__(94);
 /******/ 	
 /******/ })()
 ;
