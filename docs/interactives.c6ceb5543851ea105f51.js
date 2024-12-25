@@ -2,17 +2,11 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 954:
+/***/ 930:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
 
-document.addEventListener("DOMContentLoaded", function () {
-  var case_yandex = document.getElementById('I_case_yandex');
-  case_yandex.addEventListener('click', function () {
-    window.location.href = '/Connecteam/cases/case';
-  });
-});
 
 /***/ }),
 
@@ -310,7 +304,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1735118101871
+        // 1735118709992
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -397,12 +391,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("index." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("interactives." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("4d75bfb7c6dc6106951b")
+/******/ 		__webpack_require__.h = () => ("fdd3a0a54a280241e95b")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -991,7 +985,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			57: 0
+/******/ 			56: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1500,7 +1494,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(954);
+/******/ 	var __webpack_exports__ = __webpack_require__(930);
 /******/ 	
 /******/ })()
 ;

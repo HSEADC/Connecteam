@@ -46,8 +46,8 @@
 
 .A_preview_card{
     position: absolute;
-    top: 20vw;
-    left: 17vw;
+    top: 38%;
+    left: 13%;
     z-index: 1;
 
     max-width: 35rem;
@@ -63,8 +63,8 @@
 
 .W_preview_card_block{
     position: absolute;
-    top: 28vw;
-    right: 30vw;
+    top: 52%;
+    right: 23%;
     z-index: 3;
 
     display: flex;
@@ -103,7 +103,7 @@
 
 .Q_preview_logo{
     position: absolute;
-    top: 22vw;
+    top: 42%;
     z-index: 2;
 
     width: 78rem;
@@ -115,8 +115,8 @@
 
 .M_preview_plate{
     position: absolute;
-    top: 20vw;
-    right: 23vw;
+    top: 40%;
+    right: 15%;
 
     display: flex;
     align-items: center;
@@ -725,5 +725,27 @@
 
     .W_preview_stories_content{
         flex-direction: column;
+    }
+
+    .Q_preview_logo{
+        width: 80%;
+    }
+
+    .A_preview_card, .W_preview_card_block, .M_preview_plate{
+        transform: scale(.9);
+    }
+
+    .A_preview_card{
+        top: 35%;
+        left: 5%;
+    }
+
+    .W_preview_card_block{
+        right: 18%;
+    }
+
+    .M_preview_plate{
+        right: 10%;
+        z-index: 5;
     }
 }
