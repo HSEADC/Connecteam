@@ -671,6 +671,14 @@
 }
 
 @media (max-width: 1440px) {
+    #W_preview_stories_case_sber{
+        background: url('../images/preview/sber.webp') no-repeat center/cover;
+    }
+
+    #W_preview_stories_case_yandex{
+        background: url('../images/preview/sber.webp') no-repeat center/cover;
+    }
+
     #B_preview_testing{
         right: -10vw;
         bottom: -5vw;

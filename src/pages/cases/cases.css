@@ -126,3 +126,9 @@
 .W_preview_stories_content .W_preview_stories_case:nth-child(1):hover{
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    .W_cases_materials_line1{
+        flex-direction: column;
+    }
+}
