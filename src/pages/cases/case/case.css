@@ -111,3 +111,17 @@
 .C_purple:hover{
     rotate: 0deg;
 }
+
+@media (max-width: 768px) {
+    .W_case_introduction, .W_case_main_content, .W_case_main_content_block, .W_case, .W_case_main_content_image{
+        width: 100%;
+    }
+
+    .W_case{
+        padding: var(--spacing-85) 0;
+    }
+
+    .W_case_introduction{
+        max-width: 100%;
+    }
+}
