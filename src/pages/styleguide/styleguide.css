@@ -14,6 +14,15 @@ header{
     border-radius: 0 0 var(--corner-15) var(--corner-15);
 }
 
+.S_white{
+    background: var(--color-white);
+}
+
+.W_styleguide_menu_ul a{
+    color: var(--color-black);
+    font: var(--font-21-500i);
+}
+
 .A_style_guide_logo{
     width: 18rem;
 
@@ -120,7 +129,6 @@ header{
     top: var(--spacing-100);
 
     height: fit-content;
-
 }
 
 .W_styleguide_menu_ul{
