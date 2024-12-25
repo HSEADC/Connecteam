@@ -85,3 +85,17 @@
     top: 23rem;
     right: var(--spacing-50);
 }
+
+@media (max-width: 768px) {
+    .W_article_main_content, .W_article_introduction, .W_article_main_content_block, .W_article, .W_article_main_content_image{
+        width: 100%;
+    }
+
+    .W_article{
+        padding: var(--spacing-85) 0;
+    }
+
+    .W_article_introduction{
+        max-width: 100%;
+    }
+}

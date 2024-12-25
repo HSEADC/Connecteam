@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const burgerMenu = document.querySelector('.Q_hm_burger_menu');
-    const mobileMenu = document.querySelector('.O_header_main_mobile');
-    const menuClose = document.querySelector('.Q_header_main_mobile_close')
+    const burgerMenu = document.querySelector('.Q_hbm_burger_menu');
+    const mobileMenu = document.querySelector('.O_header_white_mobile');
+    const menuClose = document.querySelector('.Q_header_white_mobile_close')
     
 
     function openMenu() {

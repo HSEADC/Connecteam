@@ -77,22 +77,22 @@
     transition: .25s;
 }
 
-.Q_hm_burger_menu{
+.Q_hbm_burger_menu{
     display: none;
 
     width: 2.8rem;
 
     height: 2.8rem;
 
-    background: url("../../images/burger_menu.svg") no-repeat center/100%;
+    background: url("../../images/burger_menu_black.svg") no-repeat center/100%;
 }
 
-.Q_hm_burger_menu:hover{
+.Q_hbm_burger_menu:hover{
     cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .Q_hm_burger_menu{
+    .Q_hbm_burger_menu{
         display: block;
     }
 

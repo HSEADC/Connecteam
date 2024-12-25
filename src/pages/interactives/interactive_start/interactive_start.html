@@ -4,13 +4,184 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Генератор идей</title>
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://i.imgur.com/Mc4Qn4P.jpeg" />
+    <meta property="og:description" content="Генератор идей для команды" />
+    <meta
+      property="og:url"
+      content="https://hseadc.github.io/Connecteam/interactives/interactive_start/"
+    />
+    <meta property="og:title" content="Генератор идей" />
+
+    <meta name="twitter:card" content="https://i.imgur.com/Mc4Qn4P.jpeg" />
+    <meta
+      name="twitter:url"
+      content="https://hseadc.github.io/Connecteam/interactives/interactive_start/"
+    />
+    <meta name="twitter:title" content="Генератор идей" />
+    <meta
+      name="twitter:description"
+      content="В декабре 2023 года «Яндекс Музыка» провела первый за девять лет
+      ребрендинг, обновив логотип, визуальный стиль и функциональность
+      сервиса."
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/Mc4Qn4P.jpeg" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="W_content">
+    <div class="W_content W_interactive_start">
       <header_black></header_black>
       <div class="A_case_back_button">
         <a href="/interactives">Вернуться назад</a>
       </div>
+      <div class="W_interactive_start_generate">
+        <div
+          class="A_interactive_start_generate_button"
+          onclick="generateIdea()"
+        >
+          <span>Сгенерировать</span>
+        </div>
+        <div id="I_idea_block" class="A_idea_block hidden">
+          <p id="I_idea_text">Сходить на шашлыки...</p>
+        </div>
+      </div>
+
+      <div class="W_case hidden" id="I_agile_block">
+        <div class="W_case_main_content">
+          <div class="W_case_main_content_block">
+            <div class="W_case_main_content_block_title">
+              <h3>Концепция</h3>
+            </div>
+            <div class="W_case_main_content_block_text">
+              <p>
+                Цель тимбилдинга — погрузить участников в игровой Agile-спринт,
+                где через веселые активности они изучат ключевые принципы Agile,
+                улучшат навыки общения и взаимодействия в команде, а также
+                почувствуют себя частью слаженного рабочего процесса.
+              </p>
+            </div>
+          </div>
+
+          <div class="W_case_main_content_block W_cases_main_content_plate">
+            <div class="W_case_main_content_block_title">
+              <h3>Формат</h3>
+            </div>
+            <div class="W_case_main_content_block_text">
+              <p>
+                Участники делятся на кросс-функциональные команды, каждая из
+                которых представляет мини-компанию, работающую над созданием
+                нового цифрового продукта (например, веб-приложения или
+                мобильной игры).
+              </p>
+            </div>
+          </div>
+
+          <div class="W_case_main_content_block">
+            <div class="W_case_main_content_block_title">
+              <h3>Рабочие результаты</h3>
+            </div>
+            <div class="W_case_main_content_block_text">
+              <p>
+                — Осознание важности гибкости, коммуникации и приоритизации<br />
+                — Укрепление связей между участниками через совместные задачи<br />
+                — Понимание Agile на практике, включая стендапы, ретроспективы и
+                планирование
+              </p>
+            </div>
+          </div>
+
+          <div class="W_interactive_start_content_block">
+            <div class="W_interactive_start_content_block_title">
+              <h3>Этапы тимбилдинга</h3>
+            </div>
+            <div class="W_case_main_content_block">
+              <div
+                class="W_case_main_content_block_title W_interactive_start_content"
+              >
+                <h3>Введение</h3>
+                <span>15 мин</span>
+              </div>
+              <div class="W_case_main_content_block_text">
+                <p>
+                  — Лeгкая разминка: участники делятся, какой продукт или сервис
+                  их вдохновляет<br />
+                  — Краткое объяснение Agile-методологии и целей спринта
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="W_case_main_content_block">
+            <div
+              class="W_case_main_content_block_title W_interactive_start_content"
+            >
+              <h3>Планирование</h3>
+              <span>30 мин</span>
+            </div>
+            <div class="W_case_main_content_block_text">
+              <p>
+                — Участники деляется по командам, в каждой из которых должны
+                быть по одному: дизайнер, разработчик, маркетолог и другие
+                роли<br />
+                — Каждая команда получает «бэклог» с задачами, которые им нужно
+                выполнить за спринт<br />
+                — Команды самостоятельно оценивают задачи с использованием
+                Poker<br />
+                — Формируется общий план, распределяются роли и приоритеты
+              </p>
+            </div>
+          </div>
+
+          <div class="W_case_main_content_block">
+            <div
+              class="W_case_main_content_block_title W_interactive_start_content"
+            >
+              <h3>Спринт</h3>
+              <span>1-1,5 часа</span>
+            </div>
+            <div class="W_case_main_content_block_text">
+              <p>
+                Команды работают над выполнением задач в ограниченный временной
+                промежуток
+              </p>
+            </div>
+          </div>
+
+          <div class="W_case_main_content_block">
+            <div
+              class="W_case_main_content_block_title W_interactive_start_content"
+            >
+              <h3>Демонстрация</h3>
+              <span>30 мин</span>
+            </div>
+            <div class="W_case_main_content_block_text">
+              <p>
+                Команды представляют свои результаты: прототипы интерфейсов или
+                продуктов, рекламные кампании, истории о преодолении трудностей
+                во время работы
+              </p>
+            </div>
+          </div>
+
+          <div class="W_case_main_content_block">
+            <div
+              class="W_case_main_content_block_title W_interactive_start_content"
+            >
+              <h3>Ретроспектива</h3>
+              <span>30 мин</span>
+            </div>
+            <div class="W_case_main_content_block_text">
+              <p>
+                — Участники делятся своими результатами, впечатлениями от
+                спринта<br />
+                — Каждая команда создает мемы или комиксы на тему «Жизнь в
+                Agile»
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- <footer></footer> -->
   </body>
 </html>

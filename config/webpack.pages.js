@@ -16,6 +16,7 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/cases/case/case.html', 'cases/case', ['case', 'header_black', 'sticker']),
   createPages('./src/pages/articles/article/article.html', 'articles/article', ['article', 'header_black', 'sticker']),
   createPages('./src/pages/interactives/interactive_start/interactive_start.html', 'interactives/interactive_start', ['interactive_start', 'header_black', 'sticker']),
+  createPages('./src/pages/styleguide/styleguide.html', 'styleguide', ['styleguide']),
   createPages('./src/pages/form/form.html', 'form', ['form'])
 ];
 

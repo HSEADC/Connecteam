@@ -63,7 +63,7 @@
 
 .W_preview_card_block{
     position: absolute;
-    top: 27vw;
+    top: 28vw;
     right: 30vw;
     z-index: 3;
 
@@ -129,6 +129,7 @@
 }
 
 .M_preview_plate span{
+    text-align: center;
     font: var(--font-20-500);
 }
 
@@ -382,6 +383,7 @@
 #B_preview_testing{
     position: absolute;
     right: 5vw;
+    bottom: 0;
     z-index: 0;
 
     width: 63rem;
@@ -422,6 +424,7 @@
 }
 
 .M_preview_mission_plate span{
+    text-align: center;
     font: var(--font-20-500);
 }
 
@@ -610,6 +613,7 @@
     padding: var(--spacing-15);
 
     border-radius: var(--corner-15) ;
+    overflow: hidden;
 }
 
 .W_preview_coming_soon_content{
@@ -664,4 +668,50 @@
     height: 7.5rem;
 
     background: url('../images/preview/senor.svg') no-repeat center/100%;
+}
+
+@media (max-width: 1440px) {
+    #W_preview_stories_case_sber{
+        background: url('../images/preview/sber.webp') no-repeat center/cover;
+    }
+
+    #W_preview_stories_case_yandex{
+        background: url('../images/preview/sber.webp') no-repeat center/cover;
+    }
+
+    #B_preview_testing{
+        right: -10vw;
+        bottom: -5vw;
+
+        width: 45vw;
+
+        rotate: -30deg;
+    }
+
+    #B_preview_casino{
+        background: url('../images/preview/casino.svg') no-repeat center/cover;
+    }
+
+    .W_preview_coming_soon_content .W_preview_coming_soon_case:nth-child(3){
+        background: url('../images/preview/code.webp') no-repeat center/cover;
+    }
+
+    .W_preview_coming_soon{
+        width: 100%;
+    }
+
+    .W_preview_coming_soon_content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .W_preview_materials_content{
+        flex-direction: column;
+    }
+
+    .W_preview_stories_content{
+        flex-direction: column;
+    }
 }
