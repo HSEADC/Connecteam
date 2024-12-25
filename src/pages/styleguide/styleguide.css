@@ -110,7 +110,17 @@ header{
     display: flex;
     justify-content: space-between;
 
+    height: fit-content;
+
     padding: var(--spacing-60);
+}
+
+.W_styleguide_menu{
+    position: sticky;
+    top: var(--spacing-100);
+
+    height: fit-content;
+
 }
 
 .W_styleguide_menu_ul{
