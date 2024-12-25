@@ -261,3 +261,27 @@
 .W_interactives_tests_title h2{
     font: var(--font-35-500i);
 }
+
+@media (max-width: 1440px) {
+    .W_interactives_tests_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #B_interactives_test_power{
+        background: url('../../images/interactives/test.svg') no-repeat center/70%;
+    }
+
+    #B_interactives_generator{
+        background: url('../../images/interactives/generator.svg') no-repeat center/cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .W_interactives_tests_cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .W_interactives_materials_line1{
+        flex-direction: column;
+    }
+}
