@@ -179,9 +179,9 @@ header{
     border-radius: var(--corner-15);
 }
 
-.A_styleguide_metafor_image{
-    background: url('../../images/styleguide/styleguide_metafor.svg') no-repeat center/100%;
-}
+    .A_styleguide_metafor_image{
+        background: url('../../images/styleguide/styleguide_metafor.svg') no-repeat center/100%;
+    }
 
 .W_styleguide_image{
     display: flex;
@@ -356,4 +356,47 @@ header{
 
 .A_styleguide_colors_palette_image{
     background: url('../../images/styleguide/styleguide_phone.svg') no-repeat center/100%;
+}
+
+@media (max-width: 1280px) {
+    .W_styleguide_menu{
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .A_styleguide_image, 
+    .W_styleguide_image, 
+    .W_styleguide_content, 
+    .W_styleguide_about_us, 
+    .W_style_guide_content, 
+    .W_styleguide_image_color_logo, 
+    .W_styleguide_image_color_logo_three, 
+    .W_styleguide_image_only_logo,
+    .W_styleguide_image_logo_two,
+    .W_styleguide_image_logo_one,
+    .W_styleguide_color_palette,
+    .W_styleguide_about_us_values_image,
+    .A_styleguide_sticker_image,
+    .W_styleguide_font_image,
+    .W_styleguide_font_image_big,
+    .A_styleguide_image_image {
+        width: 100%;
+    }
+
+    .A_styleguide_metafor_image{
+        background: url('../../images/styleguide/styleguide_metafor.svg') no-repeat center/cover;
+    }
+
+    .A_styleguide_logo_image{
+        background: url('../../images/styleguide/connecteam.svg') no-repeat center/cover;
+    }
+    
+    .A_styleguide_logo_three_image{
+        background: url('../../images/styleguide/styleguide_logo_three.svg') no-repeat center/cover;
+    }
+
+    .A_styleguide_colors_palette_image{
+        background: url('../../images/styleguide/styleguide_phone.svg') no-repeat center/cover;
+    }
 }
