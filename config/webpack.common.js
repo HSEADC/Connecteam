@@ -16,6 +16,7 @@ module.exports = {
     cases: './src/pages/cases/cases.js',
     interactives: './src/pages/interactives/interactives.js',
     article: './src/pages/articles/article/article.js',
+    short_article: './src/pages/articles/short_article/short_article.js',
     form: './src/pages/form/form.js',
     case: './src/pages/cases/case/case.js',
     interactive_start: './src/pages/interactives/interactive_start/interactive_start.js',
