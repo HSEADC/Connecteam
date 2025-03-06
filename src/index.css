@@ -15,16 +15,10 @@
 @import url('./pages/interactives/interactive_start/interactive_start.css');
 @import url('./pages/articles/short_article/short_article.css');
 
-/* Partials */
-@import url('./partials/header_white/header_white.css');
-@import url('./partials/header_black/header_black.css');
-@import url('./partials/C_social_media/C_social_media.css');
-@import url('./partials/header_black_mobile/header_black_mobile.css');
-@import url('./partials/header_white_mobile/header_white_mobile.css');
-@import url('./partials/A_sticker/A_sticker.css');
-
 /* Components */
 @import url('./stylesheets/components/atoms.css');
 @import url('./stylesheets/components/molecules.css');
 @import url('./stylesheets/components/organisms.css');
 @import url('./stylesheets/components/wrappers.css');
+@import url('./stylesheets/components/collections.css');
+@import url('./stylesheets/components/quarks.css')

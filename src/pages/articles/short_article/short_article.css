@@ -1,25 +1,3 @@
-.W_short_article_content_inner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-45);
-
-    width: 74rem;
-}
-
-.W_short_article_top{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-25);
-}
-
-.W_short_article_content_heading{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-15);
-}
-
 .A_short_article_content_title{
     text-align: center;
     font: var(--font-45-500i);
@@ -36,29 +14,10 @@
     gap: var(--spacing-15);
 }
 
-.A_tag{
-    padding: var(--spacing-10) var(--spacing-20);
-
-    color: var(--color-blue);
-
-    background: var(--color-white);
-    border-radius: var(--corner-20);
-    font: var(--font-15-500);
-}
-
 .W_short_article_situation{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-25);
-}
-
-.M_tip{
-    display: flex;
-    gap: var(--spacing-15);
-
-    height: fit-content;
-
-    margin: 0 8rem;
 }
 
 .Q_tip_line{
@@ -73,11 +32,6 @@
     align-self: stretch;
 }
 
-.A_tip_text{
-    width: 100%;
-    font: var(--font-18-400);
-}
-
 .W_short_article_what_to_do, .W_short_article_what_not_to_do{
     display: flex;
     flex-direction: column;
@@ -88,23 +42,4 @@
     display: grid;
     gap: var(--spacing-20);
     grid-template-columns: repeat(2, 1fr);
-}
-
-.M_advice{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-5);
-
-    padding: var(--spacing-30);
-
-    background: var(--color-white);
-    border-radius: var(--corner-15);
-}
-
-.A_advice_title{
-    font: var(--font-25-500i);
-}
-
-.A_advice_text{
-    font: var(--font-18-500);
 }

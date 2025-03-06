@@ -23,8 +23,7 @@ module.exports = {
     sticker: './src/partials/A_sticker/A_sticker.js',
     styleguide: './src/pages/styleguide/styleguide.js',
 
-    header_white: './src/partials/header_white/header_white.js',
-    header_black: './src/partials/header_black/header_black.js'
+    header: './src/partials/O_header/O_header.js',
   },
   output: {
     filename: '[name].[contenthash].js',

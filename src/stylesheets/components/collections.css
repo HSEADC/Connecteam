@@ -1,0 +1,12 @@
+/* C_social_media */
+.C_social_media{
+    display: flex;
+    align-items: flex-end;
+    gap: var(--spacing-10);
+}
+
+/* O_header */
+.C_header_nav{
+    display: flex;
+    gap: var(--spacing-15);
+}
