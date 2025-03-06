@@ -1,6 +1,6 @@
-.SO_footer{
+.O_footer{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: var(--spacing-5);
 
@@ -12,77 +12,27 @@
     border-radius: var(--corner-12) var(--corner-12) 0 0;
 }
 
-.W_footer_content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    width: 100%;
-}
-
-.M_footer_text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-5);
-
-    width: 100%;
-
-    color: var(--color-light-gray);
-}
-
-.A_footer_naming{
-    font: var(--font-footer)
-}
-
-.A_footer_naming span{
-    color: var(--color-black)
-}
-
-.A_footer_slogan{
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-25);
-
-    color: var(--color-white);
-    font: var(--font-18-500);
-    white-space: nowrap;
-}
-
-.O_footer_content{
-    display: grid;
-
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-}
-
-.A_footer_logo{
-    width: 42.4rem;
-
-    height: 7rem;
-
-    background: url("../../images/logo_text.svg") no-repeat center/100%;
-}
-
-.M_footer_team{
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-15);
-
-    color: var(--color-white);
-    text-align: right;
-    justify-self: flex-end;
-    font: var(--font-18-400);
-}
-
-.W_footer_social_media{
+.M_footer_info{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-20);
 }
 
-.W_footer_social_media p{
+.A_footer_logo{
+    width: 20.3rem;
+
+    height: 4.7rem;
+
+    background: url("../../images/Logo.svg") no-repeat center/100%;
+}
+
+.W_footer_social_media{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+}
+
+.W_footer_social_media p, .A_footer_team_member{
     color: var(--color-white);
     font: var(--font-18-400);
 }

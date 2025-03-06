@@ -11,7 +11,7 @@ function createPages(template, outputPath, chunks) {
 const htmlWebpackPlugins = [
   createPages('./src/index.html', '.', ['index', 'header_white', 'sticker']),
   createPages('./src/pages/articles/articles.html', 'articles', ['articles', 'header_black']),
-  createPages('./src/pages/articles/short_article/short_article.html', 'articles/short_article', ['short_article', 'header_white']),
+  createPages('./src/pages/articles/short_article/short_article.html', 'articles/short_article', ['short_article', 'header_white', 'M_advice']),
   createPages('./src/pages/cases/cases.html', 'cases', ['cases', 'header_black']),
   createPages('./src/pages/interactives/interactives.html', 'interactives', ['interactives', 'header_black']),
   createPages('./src/pages/cases/case/case.html', 'cases/case', ['case', 'header_black', 'sticker']),
