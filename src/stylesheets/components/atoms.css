@@ -1,0 +1,18 @@
+.A_footer_logo{
+    width: 20.3rem;
+
+    height: 4.7rem;
+
+    background: url("../../images/Logo.svg") no-repeat center/100%;
+}
+
+.A_footer_team_member{
+    color: var(--color-white);
+    font: var(--font-18-400);
+}
+
+@media (max-width: 768px) {
+    .A_footer_social_media_text{
+        display: none;
+    }
+}

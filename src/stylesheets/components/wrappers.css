@@ -1,0 +1,16 @@
+.W_footer_social_media{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+}
+
+.W_footer_social_media p{
+    color: var(--color-white);
+    font: var(--font-18-400);
+}
+
+@media (max-width: 768px) {
+    .W_footer_social_media{
+        align-items: center;
+    }
+}

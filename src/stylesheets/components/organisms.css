@@ -1,0 +1,19 @@
+.O_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-5);
+
+    width: 100%;
+
+    padding: var(--spacing-25) var(--spacing-50);
+
+    background: var(--color-blue);
+    border-radius: var(--corner-12) var(--corner-12) 0 0;
+}
+
+@media (max-width: 768px) {
+    .O_footer{
+        padding: var(--spacing-25);
+    }
+}
