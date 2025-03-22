@@ -48,6 +48,8 @@
 
 /* A_tag */
 .A_tag{
+    width: fit-content;
+
     padding: var(--spacing-10) var(--spacing-20);
 
     color: var(--color-blue);
