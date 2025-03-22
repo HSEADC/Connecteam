@@ -22,6 +22,7 @@ module.exports = {
     interactive_start: './src/pages/interactives/interactive_start/interactive_start.js',
     sticker: './src/partials/A_sticker/A_sticker.js',
     styleguide: './src/pages/styleguide/styleguide.js',
+    ba_article_01: './src/pages/articles/big_articles/ba_article_01/ba_article_01.js',
 
     header: './src/partials/O_header/O_header.js',
   },
