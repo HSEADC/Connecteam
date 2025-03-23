@@ -104,6 +104,8 @@
 .W_article_preview_content_wo_button{
     display: flex;
     gap: var(--spacing-60);
+
+    width: 100%;
 }
 
 .W_article_heading{
@@ -392,6 +394,10 @@
 
 .W_short_article_preview_content{
     align-items: center;
+
+    width: 100%;
+
+    max-width: 74rem;
 }
 
 .W_short_article_heading{
