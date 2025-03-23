@@ -39,14 +39,6 @@ input{
   color: var(--color-white);
 }
 
-h2{
-  font: var(--font-35);
-}
-
-h3{
-  font: var(--font-25-600)
-}
-
 .W_content{
   display: flex;
   flex-direction: column;
