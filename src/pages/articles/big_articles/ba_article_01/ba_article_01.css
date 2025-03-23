@@ -69,6 +69,37 @@
     width: 100%;
 }
 
+.W_share_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+}
+
+.C_share_buttons{
+    display: flex;
+    gap: var(--spacing-10);
+}
+
+.A_share_button{
+    width: 4.8rem;
+    min-width: 4.8rem;
+
+    height: 4.8rem;
+    cursor: pointer;
+}
+
+#A_copy_link_share_button{
+    background: url('../../../../images/articles/A_copy_link_share_button.svg') no-repeat center/100%;
+}
+
+#A_telegram_share_button{
+    background: url('../../../../images/articles/A_telegram_share_button.svg') no-repeat center/100%;
+}
+
+#A_vk_share_button{
+    background: url('../../../../images/articles/A_vk_share_button.svg') no-repeat center/100%;
+}
+
 .W_article_preview_content_wo_button{
     display: flex;
     gap: var(--spacing-60);
