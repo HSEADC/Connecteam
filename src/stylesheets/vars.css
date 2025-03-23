@@ -31,6 +31,7 @@
   /* Spacing */
   --spacing-5: .5rem;
   --spacing-6: .6rem;
+  --spacing-9: .9rem;
   --spacing-10: 1rem;
   --spacing-12: 1.2rem;
   --spacing-15: 1.5rem;
@@ -85,6 +86,7 @@
   --font-body-text: 500 1.8rem/1.2 'Hauora', sans-serif;
   --font-body-article-text: 500 1.8rem/1.2 'Hauora', sans-serif;
   --font-description-text: 400 1.4rem/1.2 'Hauora', sans-serif;
+  --font-button-text: 500 1.5rem/1 'Hauora', sans-serif;
 }
 
 h1{
@@ -113,4 +115,8 @@ h3, .text_headers_h3_article{
 
 .text_description_text{
   font: var(--font-description-text);
+}
+
+.text_button_text{
+  font: var(--font-button-text);
 }
