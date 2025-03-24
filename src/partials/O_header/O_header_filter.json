@@ -10,6 +10,36 @@
     "description": "«Сделай по-братски» или как работа может вас поссорить"
   },
   {
+    "title": "Технический жаргон:",
+    "url": "/Connecteam/articles/technicaljargon",
+    "description": "Извините за мой французский: как говорить с командой на понятном языке?"
+  },
+  {
+    "title": "Совместная работа разработчиков",
+    "url": "/Connecteam/articles/developerscoworking",
+    "description": "Как не допустить ситуацию: «круто, div “blabla”»"
+  },
+  {
+    "title": "Эффективная коммуникация между QA и разработчиками",
+    "url": "/Connecteam/articles/qadeveloperscommunication",
+    "description": "От багов к доверию"
+  },
+  {
+    "title": "Шаблон решения проблем для IT-команд",
+    "url": "/Connecteam/articles/problemtemplates",
+    "description": "Тебе, подгон) Рассказываем от первопричины до решения"
+  },
+  {
+    "title": "Холодная война между отделами",
+    "url": "/Connecteam/articles/departmentscoldwar",
+    "description": "Как не допустить и предотвратить начало баттла"
+  },
+  {
+    "title": "Профессия медиатора",
+    "url": "/Connecteam/articles/mediator",
+    "description": "Медиатор, для гитары который?"
+  },
+  {
     "title": "Общение с командой при горящих дедлайнах",
     "url": "/Connecteam/articles/deadlinecommunication",
     "description": "Джингл белс нервной системы"
