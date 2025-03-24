@@ -26,6 +26,13 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/articles/super_short_articles/ssa_article_03.html', 'articles/newcommandmembers', ['ssa_article', 'header', 'O_footer']),
   createPages('./src/pages/articles/super_short_articles/ssa_article_04.html', 'articles/whoareyou', ['ssa_article', 'header', 'O_footer']),
   createPages('./src/pages/articles/super_short_articles/ssa_article_05.html', 'articles/teamconflict', ['ssa_article', 'header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_06.html', 'articles/teammotivation', ['ssa_article', 'header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_07.html', 'articles/newteamworking', ['ssa_article', 'header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_08.html', 'articles/streamworking', ['ssa_article', 'header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_09.html', 'articles/collegueargue', ['ssa_article', 'header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_10.html', 'articles/designcodecommunication', ['ssa_article', 'header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_11.html', 'articles/burnout', ['ssa_article', 'header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_12.html', 'articles/endlessrallies', ['ssa_article', 'header', 'O_footer']),
 ];
 
 module.exports = htmlWebpackPlugins;

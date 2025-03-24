@@ -48,5 +48,25 @@
     "title": "Работа при потоке задач",
     "url": "/Connecteam/articles/streamworking",
     "description": "Как не потеряться, растеряться и работать эффективно"
+  },
+  {
+    "title": "Как спорить с коллегой",
+    "url": "/Connecteam/articles/collegueargue",
+    "description": "Что делать, если у вас разные взгляды на задачу"
+  },
+  {
+    "title": "Общение дизайнера с кодером",
+    "url": "/Connecteam/articles/designcodecommunication",
+    "description": "Как правильно давать комменты на работу друг друга"
+  },
+  {
+    "title": "Профессиональное выгорание",
+    "url": "/Connecteam/articles/burnout",
+    "description": "Не в ресурсе, не в потоке, на низких вибрациях, это конец?"
+  },
+  {
+    "title": "Бесконечные митинги",
+    "url": "/Connecteam/articles/endlessrallies",
+    "description": "Как избежать бесконечных митингов и работать продуктивно"
   }
 ]
