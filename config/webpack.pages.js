@@ -21,7 +21,10 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/form/form.html', 'form', ['form']),
   createPages('./src/pages/articles/big_articles/ba_article_01.html', 'articles/letsplay', ['ba_article', 'O_header', 'O_footer']),
   createPages('./src/pages/articles/short_articles/sa_article_01.html', 'articles/colleguefriendship', ['sa_article', 'O_header', 'O_footer']),
-  createPages('./src/pages/articles/super_short_articles/ssa_article_01.html', 'articles/deadlinecommunication', ['ssa_article', 'O_header', 'O_footer'])
+  createPages('./src/pages/articles/super_short_articles/ssa_article_01.html', 'articles/deadlinecommunication', ['ssa_article', 'O_header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_02.html', 'articles/jobfriendship', ['ssa_article', 'O_header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_03.html', 'articles/newcommandmembers', ['ssa_article', 'O_header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_04.html', 'articles/whoareyou', ['ssa_article', 'O_header', 'O_footer']),
 ];
 
 module.exports = htmlWebpackPlugins;
