@@ -392,6 +392,26 @@
     background: url('../../../../images/articles/short_articles/sa_article_01.webp') no-repeat center/100%;
 }
 
+.A_short_articles_02_image{
+    background: url('../../../../images/articles/short_articles/sa_article_02.webp') no-repeat center/100%;
+}
+
+.A_short_articles_03_image{
+    background: url('../../../../images/articles/short_articles/sa_article_03.webp') no-repeat center/100%;
+}
+
+.A_short_articles_04_image{
+    background: url('../../../../images/articles/short_articles/sa_article_04.webp') no-repeat center/100%;
+}
+
+.A_short_articles_05_image{
+    background: url('../../../../images/articles/short_articles/sa_article_04.webp') no-repeat center/100%;
+}
+
+.A_short_articles_06_image{
+    background: url('../../../../images/articles/short_articles/sa_article_06.webp') no-repeat center/100%;
+}
+
 .W_short_article_preview_content{
     align-items: center;
 
