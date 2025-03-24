@@ -452,3 +452,122 @@
 .C_short_article_tips h2{
     text-align: center;
 }
+
+
+/* Поиск блять */
+.M_header_search_bar {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    gap: var(--spacing-10);
+    overflow: visible;
+}
+
+.W_header_search_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+
+    height: 30px;
+
+    background: var(--color-blue);
+    border-radius: var(--corner-20);
+
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+  
+.Q_header_search_icon {
+    width: 12px;
+
+    height: 14px;
+
+    background: url('../../../../images/search_icon_white.svg') no-repeat center/100%;
+}
+  
+.A_header_search_input {
+    position: absolute;
+    right: 40px;
+
+    width: 0;
+    min-width: 0;
+
+    height: 30px;
+    max-height: 30px;
+
+    box-sizing: border-box;
+
+    padding: 0;
+
+    background: var(--color-blue);
+    border-radius: var(--corner-20);
+    opacity: 0;
+
+    transition: all 0.2s ease;
+    border: none;
+    font: var(--font-button-text);
+    outline: none;
+}
+
+.W_search_results_dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+
+    display: none;
+
+    width: 20.6rem;
+
+    max-height: 19rem;
+
+    background: var(--color-white);
+    border-radius: var(--corner-15);
+    opacity: 0;
+
+    transition: opacity 0.2s ease;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.W_search_results_dropdown::-webkit-scrollbar{
+    width: 0;
+}
+
+.M_search_result_item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+
+    width: 100%;
+
+    height: fit-content;
+
+    padding: var(--spacing-10) var(--spacing-20);
+
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.M_search_result_item:hover {
+    background: var(--color-light-blue);
+}
+
+.M_search_result_item h4 {
+    width: 100%;
+
+    color: var(--color-black);
+}
+
+.M_search_result_item p {
+    margin: 0;
+
+    color: var(--color-black);
+}

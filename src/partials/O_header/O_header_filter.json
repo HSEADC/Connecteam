@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Го сыграем?",
+    "url": "/Connecteam/articles/letsplay",
+    "description": "Геймификация как способ улучшить взаимодействие и мотивацию"
+  },
+  {
+    "title": "Дружба с коллегой",
+    "url": "/Connecteam/articles/colleguefriendship",
+    "description": "«Сделай по-братски» или как работа может вас поссорить"
+  },
+  {
+    "title": "Общение с командой при горящих дедлайнах",
+    "url": "/Connecteam/articles/deadlinecommunication",
+    "description": "Джингл белс нервной системы"
+  },
+  {
+    "title": "Опасности «чрезмерной дружбы» на работе",
+    "url": "/Connecteam/articles/jobfriendship",
+    "description": "Передружба-недоработа"
+  },
+  {
+    "title": "Знакомство новеньких с коллективом",
+    "url": "/Connecteam/articles/newcommandmembers",
+    "description": "Как предотвратить раскол между «старожилами» и «новичками»"
+  },
+  {
+    "title": "Кто ты такой? Сплочение нового коллектива",
+    "url": "/Connecteam/articles/whoareyou",
+    "description": "Лайфхаки и советы по дружной атмосфере в команде"
+  },
+  {
+    "title": "Конфликт в команде",
+    "url": "/Connecteam/articles/teamconflict",
+    "description": "Пути решения назойливой проблемы"
+  }
+]

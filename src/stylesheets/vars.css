@@ -17,6 +17,7 @@
   --color-blue: #4200FF;
   --color-grid-blue: #7140FF;
   --color-deep-blue: #0D00CA;
+  --color-light-blue: #B9C9FF;
   --color-gradient-dark-gray: linear-gradient(0deg, #282828 0%, #1F1F1F 100%);
   --color-gradient: linear-gradient(90deg, #0B00A5 0%,#4200FF 23%, #952AFF 49%, #FF3DA8 77%, #F64704 100%);
   --color-gradient-gray: linear-gradient(0deg, #D7D7D7 0%, #C8C8C8 100%);
@@ -86,7 +87,9 @@
   --font-body-text: 500 1.8rem/1.2 'Hauora', sans-serif;
   --font-body-article-text: 500 1.8rem/1.2 'Hauora', sans-serif;
   --font-description-text: 400 1.4rem/1.2 'Hauora', sans-serif;
-  --font-button-text: 500 1.5rem/1 'Hauora', sans-serif;
+  --font-medium-description-text: 600 1.5rem/1.2 'Hauora', sans-serif;
+  --font-small-description-text: 500 1.2rem/1.2 'Hauora', sans-serif;
+  --font-button-text: 500 1.5rem/1.2 'Hauora', sans-serif;
 }
 
 h1{
@@ -115,6 +118,14 @@ h3, .text_headers_h3_article{
 
 .text_description_text{
   font: var(--font-description-text);
+}
+
+.text_medium_description_text{
+  font: var(--font-medium-description-text);
+}
+
+.text_small_description_text{
+  font: var(--font-small-description-text);
 }
 
 .text_button_text{
