@@ -25,6 +25,26 @@
     "description": "Узнали все секреты Аарона Уолтера из InVision Studio"
   },
   {
+    "title": "А есть волшебная таблетка?",
+    "url": "/Connecteam/articles/magictablet",
+    "description": "Трактат о смыслах и законах командной работы"
+  },
+  {
+    "title": "Инструменты для диагностики вашей команды",
+    "url": "/Connecteam/articles/waltercommunication",
+    "description": "Рассказали про разные виды тестирования эффективности команды и почему тебе это нужно"
+  },
+  {
+    "title": "Сюжетно-ролевой тимбилдинг",
+    "url": "/Connecteam/articles/roleteambuilding",
+    "description": "Что это такое и зачем оно команде. Актёрское образование не требуется"
+  },
+  {
+    "title": "Виды созвонов",
+    "url": "/Connecteam/articles/meetingtypes",
+    "description": "«Опять созвон?!»: вводим в курс про абсолютно все типы созвонов"
+  },
+  {
     "title": "Дружба с коллегой",
     "url": "/Connecteam/articles/colleguefriendship",
     "description": "«Сделай по-братски» или как работа может вас поссорить"
