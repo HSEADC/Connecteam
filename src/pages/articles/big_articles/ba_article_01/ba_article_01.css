@@ -221,6 +221,70 @@
     background: url('../../../../images/articles/big_articles/ba_article_01/ba_article_01_02.webp') no-repeat center/100%;
 }
 
+.A_big_articles_02_image_01{
+    background: url('../../../../images/articles/big_articles/ba_article_02/ba_article_02_01.webp') no-repeat center/100%;
+}
+
+.A_big_articles_02_image_02{
+    background: url('../../../../images/articles/big_articles/ba_article_02/ba_article_02_02.webp') no-repeat center/100%;
+}
+
+.A_big_articles_03_image_01{
+    background: url('../../../../images/articles/big_articles/ba_article_03/ba_article_03_01.webp') no-repeat center/100%;
+}
+
+.A_big_articles_03_image_02{
+    background: url('../../../../images/articles/big_articles/ba_article_03/ba_article_03_02.webp') no-repeat center/100%;
+}
+
+.A_big_articles_04_image_01{
+    background: url('../../../../images/articles/big_articles/ba_article_04/ba_article_04_01.webp') no-repeat center/100%;
+}
+
+.A_big_articles_04_image_02{
+    background: url('../../../../images/articles/big_articles/ba_article_04/ba_article_04_02.webp') no-repeat center/100%;
+}
+
+.A_big_articles_05_image_01{
+    background: url('../../../../images/articles/big_articles/ba_article_05/ba_article_05_01.webp') no-repeat center/100%;
+}
+
+.A_big_articles_05_image_02{
+    background: url('../../../../images/articles/big_articles/ba_article_05/ba_article_05_02.webp') no-repeat center/100%;
+}
+
+.A_big_articles_06_image_01{
+    background: url('../../../../images/articles/big_articles/ba_article_06/ba_article_06_01.webp') no-repeat center/100%;
+}
+
+.A_big_articles_06_image_02{
+    background: url('../../../../images/articles/big_articles/ba_article_06/ba_article_06_02.webp') no-repeat center/100%;
+}
+
+.A_big_articles_07_image_01{
+    background: url('../../../../images/articles/big_articles/ba_article_07/ba_article_07_01.webp') no-repeat center/100%;
+}
+
+.A_big_articles_07_image_02{
+    background: url('../../../../images/articles/big_articles/ba_article_07/ba_article_07_02.webp') no-repeat center/100%;
+}
+
+.A_big_articles_08_image_01{
+    background: url('../../../../images/articles/big_articles/ba_article_08/ba_article_08_01.webp') no-repeat center/100%;
+}
+
+.A_big_articles_08_image_02{
+    background: url('../../../../images/articles/big_articles/ba_article_08/ba_article_08_02.webp') no-repeat center/100%;
+}
+
+.A_big_articles_09_image_01{
+    background: url('../../../../images/articles/big_articles/ba_article_09/ba_article_09_01.webp') no-repeat center/100%;
+}
+
+.A_big_articles_09_image_02{
+    background: url('../../../../images/articles/big_articles/ba_article_09/ba_article_09_02.webp') no-repeat center/100%;
+}
+
 .W_article_cubes{
     display: flex;
     flex-direction: column;
