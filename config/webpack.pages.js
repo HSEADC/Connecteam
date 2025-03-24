@@ -25,6 +25,7 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/articles/super_short_articles/ssa_article_02.html', 'articles/jobfriendship', ['ssa_article', 'O_header', 'O_footer']),
   createPages('./src/pages/articles/super_short_articles/ssa_article_03.html', 'articles/newcommandmembers', ['ssa_article', 'O_header', 'O_footer']),
   createPages('./src/pages/articles/super_short_articles/ssa_article_04.html', 'articles/whoareyou', ['ssa_article', 'O_header', 'O_footer']),
+  createPages('./src/pages/articles/super_short_articles/ssa_article_05.html', 'articles/teamconflict', ['ssa_article', 'O_header', 'O_footer']),
 ];
 
 module.exports = htmlWebpackPlugins;
