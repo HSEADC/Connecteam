@@ -33,5 +33,20 @@
     "title": "Конфликт в команде",
     "url": "/Connecteam/articles/teamconflict",
     "description": "Пути решения назойливой проблемы"
+  },
+  {
+    "title": "Как поднять мотивацию в команде",
+    "url": "/Connecteam/articles/teammotivation",
+    "description": "Что делать, если денег на мотивацию нет, но хочется, чтобы команда работала лучше"
+  },
+  {
+    "title": "Работа в новом коллективе",
+    "url": "/Connecteam/articles/newteamworking",
+    "description": "Как новичку быстро влиться в команду и не чувствовать себя чужим"
+  },
+  {
+    "title": "Работа при потоке задач",
+    "url": "/Connecteam/articles/streamworking",
+    "description": "Как не потеряться, растеряться и работать эффективно"
   }
 ]
