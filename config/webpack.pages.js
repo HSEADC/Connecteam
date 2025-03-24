@@ -19,7 +19,7 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/interactives/interactive_start/interactive_start.html', 'interactives/interactive_start', ['interactive_start', 'O_header', 'sticker']),
   createPages('./src/pages/styleguide/styleguide.html', 'styleguide', ['styleguide']),
   createPages('./src/pages/form/form.html', 'form', ['form']),
-  createPages('./src/pages/articles/big_articles/ba_article_01/ba_article_01.html', 'articles/letsplay', ['ba_article', 'O_header', 'O_footer']),
+  createPages('./src/pages/articles/big_articles/ba_article_01.html', 'articles/letsplay', ['ba_article', 'O_header', 'O_footer']),
   createPages('./src/pages/articles/short_articles/sa_article_01.html', 'articles/colleguefriendship', ['sa_article', 'O_header', 'O_footer']),
   createPages('./src/pages/articles/super_short_articles/ssa_article_01.html', 'articles/deadlinecommunication', ['ssa_article', 'O_header', 'O_footer'])
 ];
