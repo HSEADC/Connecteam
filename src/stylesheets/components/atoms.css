@@ -246,6 +246,10 @@
     background: var(--color-white);
 }
 
+.A_header_nav_button:visited{
+    color: var(--color-white);
+}
+
 @media (max-width: 768px) {
     /* O_footer */
     .A_footer_social_media_text{
