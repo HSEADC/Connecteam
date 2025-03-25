@@ -122,6 +122,28 @@
     max-width: 74rem;
 }
 
+.W_case_preview_content{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-25);
+
+    max-width: 90rem;
+}
+
+.A_looking_for_case_button{
+    position: absolute;
+    top: -5rem;
+    right: 0;
+}
+
+.W_case_left_column{
+    display: flex;
+    flex-direction: column;
+    gap: 110rem;
+}
+
 .W_article_main_content{
     display: flex;
     flex-direction: column;
@@ -131,6 +153,8 @@
 }
 
 .W_article_preview{
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,6 +344,21 @@
     border-radius: var(--corner-15);
 }
 
+.M_case_telegram_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 90rem;
+
+    padding: var(--spacing-30);
+
+    background: var(--color-white);
+    border-radius: var(--corner-15);
+}
+
+
 .W_article_telegram_button_info{
     display: flex;
     align-items: center;
@@ -387,6 +426,15 @@
     max-width: 74rem;
 }
 
+.C_case_tips{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-25);
+
+    width: 100%;
+    max-width: 90rem;
+}
+
 .M_article_tip{
     display: flex;
     align-items: center;
@@ -417,6 +465,15 @@
 
     width: 100%;
     max-width: 74rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.C_case_conclusions{
+    display: grid;
+    gap: var(--spacing-20);
+
+    width: 100%;
+    max-width: 90rem;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -451,6 +508,10 @@
     max-width: 74rem;
 }
 
+.A_case_text{
+    width: 100%;
+    max-width: 90rem;
+}
 
 .A_short_articles_01_image{
     background: url('../../../../images/articles/short_articles/sa_article_01.webp') no-repeat center/100%;
@@ -806,6 +867,45 @@
     left: 0;
 
     background: url('../../../../images/tests/A_test_result_image_02.svg') no-repeat center/100%;
+}
+
+.A_case_01_image{
+    background: url('../../../../images/cases/case/A_case_01_image.webp') no-repeat center/100%;
+}
+
+.W_case_main_content{
+    display: flex;
+    gap: var(--spacing-40);
+
+    width: 100%;
+}
+
+.W_case_main_part{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-45);
+
+    width: 100%;
+    max-width: 90rem
+}
+
+.M_case_text_block{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-15);
+}
+
+.M_case_quote{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+
+    width: 100%;
+    min-width: 26.5rem;
+
+    max-width: 26.5rem;
+
+    color: var(--color-purple);
 }
 
 @media (max-width: 440px) {
