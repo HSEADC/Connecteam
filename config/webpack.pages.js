@@ -15,6 +15,7 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/cases/cases.html', 'cases', ['cases', 'header']),
   createPages('./src/pages/interactives/interactives.html', 'interactives', ['interactives', 'header']),
   createPages('./src/pages/cases/case/case_01.html', 'cases/yandexrebranding', ['case', 'header', 'sticker']),
+  createPages('./src/pages/cases/case/case_02.html', 'cases/spotify', ['case', 'header', 'sticker']),
   createPages('./src/pages/articles/article/article.html', 'articles/article', ['article', 'header', 'sticker']),
   createPages('./src/pages/interactives/interactive_start/interactive_start.html', 'interactives/interactive_start', ['interactive_start', 'header', 'sticker']),
   createPages('./src/pages/styleguide/styleguide.html', 'styleguide', ['styleguide']),

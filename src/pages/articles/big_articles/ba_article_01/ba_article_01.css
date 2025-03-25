@@ -218,6 +218,19 @@
     border-radius: var(--corner-15);
 }
 
+.A_case_image{
+    width: 100%;
+    max-width: 90rem;
+
+    height: 45rem;
+
+    border-radius: var(--corner-15);
+}
+
+.A_case_02_image{
+    background: url('../../../../images/cases/case/A_case_02_image.webp') no-repeat center/100%;
+}
+
 .M_article_image_label{
     display: flex;
     flex-direction: column;
