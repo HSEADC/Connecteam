@@ -345,6 +345,17 @@
     background: url('../../images/preview/code.webp') no-repeat center/100%;
 }
 
+.W_header_pos_absolute{
+    position: relative;
+}
+
+.W_header_pos_absolute > .O_header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
 @media (max-width: 1440px) {
     #W_preview_stories_case_sber{
         background: url('../../images/preview/sber.webp') no-repeat center/cover;
