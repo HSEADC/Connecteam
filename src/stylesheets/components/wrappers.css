@@ -12,12 +12,14 @@
 
 /* A_sticker */
 .W_sticker {
+    z-index: 9999;
+
     display: flex;
     justify-content: center;
     align-items: center;
   
     width: 15rem;
-  
+
     height: 15rem;
   
     background-repeat: no-repeat;
@@ -238,7 +240,7 @@
 
     height: 100%;
 
-    background: url('../../images/preview/rebranding.webp') no-repeat center/100%;
+    background: url('../../images/cases/B_cases_rebranding_image.webp') no-repeat center/cover;
     translate: calc(-1*var(--spacing-30)) var(--spacing-30);
 }
 
@@ -250,7 +252,7 @@
     height: 100%;
 
 
-    background: url('../../images/preview/sber.webp') no-repeat center/100%;
+    background: url('../../images/cases/B_cases_sber_image.webp') no-repeat center/cover;
     translate: calc(-1*var(--spacing-30)) var(--spacing-30);
 }
 
@@ -276,9 +278,7 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    width: 100%;
-
-    height: 30rem;
+    height: 27.6rem;
 
     padding: var(--spacing-30);
 
@@ -357,14 +357,6 @@
 }
 
 @media (max-width: 1440px) {
-    #W_preview_stories_case_sber{
-        background: url('../../images/preview/sber.webp') no-repeat center/cover;
-    }
-
-    #W_preview_stories_case_yandex{
-        background: url('../../images/preview/rebranding.webp') no-repeat center/cover;
-    }
-
     .W_preview_coming_soon_content .W_preview_coming_soon_case:nth-child(3){
         background: url('../../images/preview/code.webp') no-repeat center/cover;
     }

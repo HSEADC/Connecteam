@@ -4,6 +4,7 @@ export function Sticker({ imageSrc, content = '', maxLength = 100 }) {
     sticker.style.backgroundImage = `url(${imageSrc})`;
     sticker.style.backgroundSize = 'cover';
     sticker.style.backgroundPosition = 'center';
+    sticker.style.zIndex = 9999;
   
     const textElement = document.createElement('p');
     textElement.classList.add('A_sticker_text');
@@ -39,7 +40,7 @@ export function Sticker({ imageSrc, content = '', maxLength = 100 }) {
       isDragging = true;
       offsetX = e.clientX - element.offsetLeft;
       offsetY = e.clientY - element.offsetTop;
-      element.style.zIndex = 1000;
+      element.style.zIndex = 9999;
     });
   
     document.addEventListener('mousemove', (e) => {
