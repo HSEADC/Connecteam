@@ -47,6 +47,7 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/articles/super_short_articles/ssa_article_10.html', 'articles/designcodecommunication', ['ssa_article', 'header', 'O_footer']),
   createPages('./src/pages/articles/super_short_articles/ssa_article_11.html', 'articles/burnout', ['ssa_article', 'header', 'O_footer']),
   createPages('./src/pages/articles/super_short_articles/ssa_article_12.html', 'articles/endlessrallies', ['ssa_article', 'header', 'O_footer']),
+  createPages('./src/pages/tests/test_01.html', 'tests/1', ['test_01', 'header', 'O_footer']),
 ];
 
 module.exports = htmlWebpackPlugins;

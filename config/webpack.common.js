@@ -25,7 +25,7 @@ module.exports = {
     ba_article: './src/pages/articles/big_articles/ba_article.js',
     sa_article: './src/pages/articles/short_articles/sa_article.js',
     ssa_article: './src/pages/articles/super_short_articles/ssa_article.js',
-
+    test_01: './src/pages/tests/test_01.js',
     header: './src/partials/O_header/O_header.js',
   },
   output: {
