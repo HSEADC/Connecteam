@@ -1,7 +1,13 @@
+.W_content_cup{
+    max-width: 134rem;
+
+    margin: 0 auto;
+}
+
 .W_interactives_materials_section{
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-85);
+    gap: var(--spacing-45);
 
     width: 100%;
 
@@ -45,6 +51,8 @@
 
     padding: var(--spacing-10) var(--spacing-18);
 
+    color: var(--color-white);
+
     background: var(--color-blue);
 
     border-radius: var(--corner-30);
@@ -73,13 +81,7 @@
 
     border-radius: var(--corner-15);
 
-    transition: .5s;
     overflow: hidden;
-    rotate: -2deg;
-}
-
-.W_interactives_generator:hover{
-    rotate: 0deg;
 }
 
 #B_interactives_generator{
@@ -89,7 +91,7 @@
 
     height: 100%;
 
-    background: url('../../images/interactives/generator.svg') no-repeat center/100%;
+    background: url('../../images/interactives/A_generator_image.svg') no-repeat center/100%;
 }
 
 .W_interactives_generator_content{
@@ -153,25 +155,33 @@
     rotate: -50deg;
 }
 
-#B_interactives_card_shelter1, #B_interactives_card_shelter2{
+#B_interactives_card_shelter1, #B_interactives_card_shelter2, #B_interactives_card_shelter3{
     position: absolute;
 
-    width: 25rem;
+    width: 15rem;
 
-    height: 25rem;
+    height: 15rem;
 }
 
 #B_interactives_card_shelter1{
-    top: -10rem;
+    top: -5rem;
+    right: 20rem;
 
-    background: url('../../images/interactives/casino1.svg') no-repeat center/100%;
+    background: url('../../images/interactives/A_bunker_image_01.svg') no-repeat center/100%;
 }
 
 #B_interactives_card_shelter2{
     top: 0;
-    right: -10rem;
+    right: -5rem;
 
-    background: url('../../images/interactives/casino2.svg') no-repeat center/100%;
+    background: url('../../images/interactives/A_bunker_image_02.svg') no-repeat center/100%;
+}
+
+#B_interactives_card_shelter3{
+    top: 10rem;
+    right: 10rem;
+
+    background: url('../../images/interactives/A_bunker_image_03.svg') no-repeat center/100%;
 }
 
 .W_interactives_tests_cards{
@@ -272,7 +282,7 @@
     }
 
     #B_interactives_generator{
-        background: url('../../images/interactives/generator.svg') no-repeat center/cover;
+        background: url('../../images/interactives/A_generator_image.svg') no-repeat center/cover;
     }
 }
 

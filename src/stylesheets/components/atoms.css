@@ -120,6 +120,8 @@
 
     padding: var(--spacing-10) var(--spacing-18);
 
+    color: var(--color-white);
+
     background: var(--color-orange);
 
     border-radius: var(--corner-30);
@@ -224,6 +226,8 @@
 
 .A_header_nav_button{
    padding: var(--spacing-5) var(--spacing-15);
+
+   color: var(--color-white);
 
    border-radius: var(--corner-20);
 
