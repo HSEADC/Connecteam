@@ -88,3 +88,9 @@
         display: none;
     }
 }
+
+@media (max-width: 440px) {
+    .M_footer_info{
+        align-items: center;
+    }
+}

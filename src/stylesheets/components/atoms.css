@@ -256,3 +256,9 @@
         display: none;
     }
 }
+
+@media (max-width: 440px) {
+    .A_footer_logo{
+        width: 100%
+    }
+}

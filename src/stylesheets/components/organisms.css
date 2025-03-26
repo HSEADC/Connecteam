@@ -34,3 +34,9 @@
         padding: var(--spacing-25);
     }
 }
+
+@media (max-width: 440px) {
+    .O_footer{
+        flex-direction: column;
+    }
+}
