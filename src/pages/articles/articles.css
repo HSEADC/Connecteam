@@ -18,11 +18,11 @@
 }
 
 .W_articles_33_card{
-    width: calc(33.33% - var(--spacing-30));
+    width: calc(33.33% - var(--spacing-20));
 }
 
 .W_articles_50_card{
-    width: calc(50% - var(--spacing-30));
+    width: calc(50% - var(--spacing-15));
 }
 
 .W_article_white_card{
