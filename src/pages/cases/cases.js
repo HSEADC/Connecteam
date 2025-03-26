@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const case_sber = document.getElementById('I_case_sber')
 
     case_yandex.addEventListener('click', () => {
-        window.location.href = 'Connecteam/cases/case';
+        window.location.href = 'Connecteam/cases/yandex';
     });
     case_sber.addEventListener('click', () => {
         window.location.href = 'Connecteam/cases/sber';
