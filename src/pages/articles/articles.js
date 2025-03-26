@@ -1,59 +1,99 @@
-import '../../index.css'
+import '../../index.css';
 
 document.addEventListener('DOMContentLoaded', function() {
     const tags = document.querySelectorAll('.A_filter_tag');
-    const cards = document.querySelectorAll('.W_articles_materials_card');
+    const cards = Array.from(document.querySelectorAll('.W_articles_materials_card'));
+    const loadMoreBtn = document.querySelector('.A_preview_materials_button');
+    
     const activeTags = new Set();
+    let visibleCardsCount = 5;
+    let currentFilteredCards = [...cards];
 
-    tags.forEach(tag => {
-      tag.addEventListener('click', function(e) {
-        const tagValue = this.getAttribute('data-tag');
-        
-        if (e.target.classList.contains('remove')) {
-          activeTags.delete(tagValue);
-          this.classList.remove('active');
-          updateCards();
-          return;
-        }
-
-        if (activeTags.has(tagValue)) {
-          activeTags.delete(tagValue);
-          this.classList.remove('active');
-        } else {
-          activeTags.add(tagValue);
-          this.classList.add('active');
-        }
-
-        updateCards();
-      });
-    });
-
-    function updateCards() {
-      cards.forEach(card => {
-        const cardTags = card.getAttribute('data-tags').split(' ');
-        
-        if (activeTags.size === 0) {
-          card.classList.remove('hidden');
-          return;
-        }
-
-        const hasMatchingTag = [...activeTags].some(tag => 
-          cardTags.includes(tag)
-        );
-
-        if (hasMatchingTag) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
+    function init() {
+        updateCardsVisibility();
+        updateLoadMoreButton();
     }
 
-    updateCards();
-  });
+    function updateCardsVisibility() {
+        cards.forEach(card => {
+            card.style.display = '';
+            card.classList.remove('hidden');
+        });
 
-  function Sticker({ imageSrc, content, maxLength }) {
+        currentFilteredCards = activeTags.size === 0 
+            ? [...cards] 
+            : cards.filter(card => {
+                const cardTags = card.getAttribute('data-tags').split(' ');
+                return [...activeTags].some(tag => cardTags.includes(tag));
+            });
+
+        cards.forEach(card => {
+            if (!currentFilteredCards.includes(card)) {
+                card.classList.add('hidden');
+            }
+        });
+
+        currentFilteredCards.forEach((card, index) => {
+            if (index >= visibleCardsCount) {
+                card.classList.add('hidden');
+            } else {
+                card.classList.remove('hidden');
+            }
+        });
+
+        updateLoadMoreButton();
+    }
+
+    function updateLoadMoreButton() {
+        if (currentFilteredCards.length <= visibleCardsCount) {
+            loadMoreBtn.style.display = 'none';
+        } else {
+            loadMoreBtn.style.display = 'block';
+        }
+    }
+
+    tags.forEach(tag => {
+        tag.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const tagValue = this.getAttribute('data-tag');
+            
+            if (e.target.classList.contains('remove')) {
+                activeTags.delete(tagValue);
+                this.classList.remove('active');
+            } else {
+                if (activeTags.has(tagValue)) {
+                    activeTags.delete(tagValue);
+                    this.classList.remove('active');
+                } else {
+                    activeTags.add(tagValue);
+                    this.classList.add('active');
+                }
+            }
+
+            visibleCardsCount = 5;
+            updateCardsVisibility();
+        });
+    });
+
+    loadMoreBtn.addEventListener('click', function() {
+        visibleCardsCount += 5;
+        updateCardsVisibility();
+    });
+
+    const feedbackCard = document.getElementById('I_article_feedback');
+    if (feedbackCard) {
+        feedbackCard.addEventListener('click', () => {
+            window.location.href = '/articles/feedback';
+        });
+    }
+
+    init();
+});
+
+function Sticker({ imageSrc, content, maxLength }) {
     const stickerContainer = document.getElementById('stickerContainer');
+    if (!stickerContainer) return;
+    
     const sticker = document.createElement('div');
     sticker.className = 'sticker';
     sticker.innerHTML = `
@@ -61,25 +101,18 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="sticker-content">${content.length > maxLength ? content.substring(0, maxLength) + '...' : content}</div>
     `;
     stickerContainer.appendChild(sticker);
-  }
+}
 
-  Sticker({ 
-    imageSrc: '../../images/stickers/sticker1body.svg', 
-    content: 'Утвердить main страницу', 
-    maxLength: 50 
-  });
+document.addEventListener("DOMContentLoaded", () => {
+    Sticker({ 
+        imageSrc: '../../images/stickers/sticker1body.svg', 
+        content: 'Утвердить main страницу', 
+        maxLength: 50 
+    });
 
-  Sticker({ 
-    imageSrc: '../../images/stickers/sticker2body.svg', 
-    content: 'Ревью Алексей кейс ноябрь', 
-    maxLength: 50 
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const case_yandex = document.getElementById('I_article_feedback');
-    if (case_yandex) {
-      case_yandex.addEventListener('click', () => {
-        window.location.href = '/articles/feedback';
-      });
-    }
-  });
+    Sticker({ 
+        imageSrc: '../../images/stickers/sticker2body.svg', 
+        content: 'Ревью Алексей кейс ноябрь', 
+        maxLength: 50 
+    });
+});
