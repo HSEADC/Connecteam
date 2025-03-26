@@ -231,6 +231,14 @@
     background: url('../../../../images/cases/case/A_case_02_image.webp') no-repeat center/100%;
 }
 
+.A_case_03_image{
+    background: url('../../../../images/cases/case/A_case_03_image.webp') no-repeat center/100%;
+}
+
+.A_case_04_image{
+    background: url('../../../../images/cases/case/A_case_04_image.webp') no-repeat center/100%;
+}
+
 .M_article_image_label{
     display: flex;
     flex-direction: column;
