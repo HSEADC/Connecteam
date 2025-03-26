@@ -151,6 +151,20 @@
     background: var(--color-purple-active);
 }
 
+.A_error_code{
+    width: 100%;
+    max-width: 40rem;
+
+    height: 14rem;
+}
+
+.A_error_message{
+    width: 100%;
+    max-width: 58.2rem;
+
+    height: 18.6rem;
+}
+
 .A_preview_materials_button a:hover{
     color: var(--color-white);
 

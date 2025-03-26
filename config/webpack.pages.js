@@ -51,6 +51,9 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/articles/super_short_articles/ssa_article_11.html', 'articles/burnout', ['ssa_article', 'header', 'O_footer']),
   createPages('./src/pages/articles/super_short_articles/ssa_article_12.html', 'articles/endlessrallies', ['ssa_article', 'header', 'O_footer']),
   createPages('./src/pages/tests/test_01.html', 'tests/1', ['test_01', 'header', 'O_footer']),
+  createPages('./src/pages/errors/404.html', '404', ['header', 'O_footer']),
+  createPages('./src/pages/errors/500.html', '500', ['header', 'O_footer']),
+  createPages('./src/pages/errors/505.html', '505', ['header', 'O_footer']),
 ];
 
 module.exports = htmlWebpackPlugins;

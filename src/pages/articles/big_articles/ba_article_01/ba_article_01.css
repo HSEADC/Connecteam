@@ -896,7 +896,7 @@
     background: var(--color-blue);
 }
 
-.A_test_answer_next_button{
+.A_test_answer_next_button, .A_test_answer_next_button:visited{
     width: fit-content;
 
     padding: var(--spacing-10) var(--spacing-20);
@@ -911,7 +911,7 @@
 }
 
 .A_test_answer_next_button:active{
-    background: var(--color-pink-click);
+    background: var(--color-pink-active);
 }
 
 .A_test_answer_next_button:disabled{

@@ -385,6 +385,45 @@
     max-width: 65.5rem;
 }
 
+.W_error{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.W_error_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-25);
+
+    padding: var(--spacing-50);
+}
+
+.B_404{
+    background: url('../../images/errors/B_404.svg') no-repeat center/100%;
+}
+
+.B_500{
+    background: url('../../images/errors/B_500.svg') no-repeat center/100%;
+}
+
+.B_505{
+    background: url('../../images/errors/B_505.svg') no-repeat center/100%;
+}
+
+.B_404_message{
+    background: url('../../images/errors/B_404_message.svg') no-repeat center/100%;
+}
+
+.B_500_message{
+    background: url('../../images/errors/B_500_message.svg') no-repeat center/100%;
+}
+
+.B_505_message{
+    background: url('../../images/errors/B_505_message.svg') no-repeat center/100%;
+}
+
 @media (max-width: 1440px) {
     .W_preview_coming_soon_content .W_preview_coming_soon_case:nth-child(3){
         background: url('../../images/preview/code.webp') no-repeat center/cover;
