@@ -89,6 +89,13 @@
     }
 }
 
+@media (max-width: 676px) {
+    .M_tip{
+        margin: 0;
+    }
+}
+
+
 @media (max-width: 440px) {
     .M_footer_info{
         align-items: center;

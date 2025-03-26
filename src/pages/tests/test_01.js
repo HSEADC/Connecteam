@@ -258,7 +258,7 @@ const testData = {
                 </div>
                 <div class="W_test_results_buttons">
                     <button class="A_test_answer_next_button text_button_text" id="restartButton">Поделиться результатом</button>
-                    <a class="A_looking_for_button text_button_text" href="Connecteam/interactives"
+                    <a class="A_looking_for_button text_button_text" href="/Connecteam/interactives"
                         >Вернуться к тестам</a
                     >
                 </div>
