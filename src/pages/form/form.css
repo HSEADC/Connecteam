@@ -48,14 +48,6 @@ header{
     width: 100%;
 }
 
-.A_header_logo{
-    width: 4.5rem;
-
-    height: 4.5rem;
-
-    background: url('../../images/logo_black.svg') no-repeat center/100%;
-}
-
 .A_header_logo_text{
     width: 18rem;
 

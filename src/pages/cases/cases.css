@@ -8,13 +8,25 @@
 
 .W_cases_materials_section{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: var(--spacing-30);
 
     width: 100%;
 
     padding: var(--spacing-45) 0 var(--spacing-85) 0;
+}
+
+@media (max-width: 767px) {
+    .W_cases_materials_section{
+        flex-direction: column;
+    }
+
+    .W_cases_materials_card, .W_articles_50_card, .W_articles_33_card, .W_articles_materials_card{
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
 }
 
 .W_cases_materials_line1, .W_cases_materials_line2, .W_cases_materials_line3, .W_cases_materials_line4, .W_cases_materials_line5{
@@ -32,13 +44,14 @@
     justify-content: flex-end;
     gap: var(--spacing-5);
 
-    width: 100%;
+    min-width: 27.6rem;
 
-    height: 26.5rem;
+    height: 27.6rem;
 
     padding: var(--spacing-30);
 
     border-radius: var(--corner-15);
+
     overflow: hidden;
 }
 
@@ -51,11 +64,16 @@
     font: var(--font-25-500);
 }
 
+.A_cases_materials_card_title{
+    position: relative;
+    z-index: 2;
+}
+
 .A_cases_materials_card_description p{
     font: var(--font-18-500);
 }
 
-#B_cases_materials_zhkh{
+#B_cases_materials_zhkh, #B_cases_materials_avito, #B_cases_materials_gosuslugi, #B_cases_materials_spotify, #B_cases_materials_netflix, #B_cases_materials_fitnessclub{
     position: absolute;
 
     right: 0;
@@ -64,28 +82,33 @@
     width: 100%;
 
     height: 100%;
-
-    background: url('../../images/cases/zhkh.webp') no-repeat center/100%;
     translate: 0 var(--spacing-30);
 
+}
+
+#B_cases_materials_avito{
+    background: url('../../images/cases/B_cases_avito_image.webp') no-repeat center/cover;
+}
+
+#B_cases_materials_zhkh{
+    background: url('../../images/cases/B_cases_zhkh_image.webp') no-repeat center/cover;
 }
 
 #B_cases_materials_gosuslugi{
-    position: absolute;
-    right: 0;
-    z-index: 0;
-
-
-    width: 100%;
-
-    height: 100%;
-
-    background: url('../../images/cases/gosuslugi.webp') no-repeat center/100%;
-    translate: 0 var(--spacing-30);
-
+    background: url('../../images/cases/B_cases_gosuslugi_image.webp') no-repeat center/cover;
 }
 
+#B_cases_materials_spotify{
+    background: url('../../images/cases/B_cases_spotify_image.webp') no-repeat center/cover;
+}
 
+#B_cases_materials_netflix{
+    background: url('../../images/cases/B_cases_netflix_image.webp') no-repeat center/cover;
+}
+
+#B_cases_materials_fitnessclub{
+    background: url('../../images/cases/B_cases_fitnessclub_image.webp') no-repeat center/cover;
+}
 
 .W_cases_materials_line1 .W_cases_materials_card:nth-child(1) div[class], .W_cases_materials_line1 .W_cases_materials_card:nth-child(3  ) div[class]{
     position: relative;
@@ -114,16 +137,17 @@
 
     width: fit-content;
 
-    padding: var(--spacing-10) var(--spacing-30);
+    padding: var(--spacing-9) var(--spacing-20);
 
-    color: var(--color-blue);
+    color: var(--color-white);
 
-    background: var(--color-white);
+    background: var(--color-purple);
     border-radius: var(--corner-30);
-    font: var(--font-18-500);
+    border: 1px solid var(--color-white);
+    font: var(--font-button-text);
 }
 
-.W_preview_stories_content .W_preview_stories_case:nth-child(1):hover{
+.W_preview_stories_content .W_preview_stories_case:hover{
     cursor: pointer;
 }
 

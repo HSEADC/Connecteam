@@ -1,0 +1,135 @@
+.Q_preview_plate_icon{
+    width: 1.4rem;
+
+    height: 3rem;
+
+    background: url('../../images/plate_icon.svg') no-repeat center/100%;
+}
+
+#Q_cursor_one{
+    position: absolute;
+    top: 14vw;
+    left: 35vw;
+    z-index: 4;
+
+    width: 7rem;
+
+    height: 5.3rem;
+
+    background: url('../../images/cursors/cursor1.svg') no-repeat center/100%;
+
+    animation: move 3s linear infinite;
+    transform-origin: 0 0;
+}
+
+#Q_cursor_two{
+    position: absolute;
+    top: 27vw;
+    right: 30vw;
+    z-index: 4;
+
+    width: 10.3rem;
+
+    height: 5.3rem;
+
+    background: url('../../images/cursors/cursor2.svg') no-repeat center/100%;
+
+    animation: move 5s linear infinite;
+    transform-origin: 0 0;
+}
+
+#Q_cursor_three{
+    position: absolute;
+    bottom: 15vw;
+    left: 30vw;
+    z-index: 4;
+
+    width: 7.8rem;
+
+    height: 5.3rem;
+
+    background: url('../../images/cursors/cursor3.svg') no-repeat center/100%;
+
+    animation: move 4s linear infinite;
+    transform-origin: 0 0;
+}
+
+#Q_cursor_four{
+    position: absolute;
+    right: 0;
+    bottom: 15vw;
+    z-index: 4;
+
+    width: 7.8rem;
+
+    height: 5.3rem;
+
+    background: url('../../images/cursors/cursor4.svg') no-repeat center/100%;
+
+    animation: move 5s linear infinite;
+    transform-origin: 0 0;
+}
+
+#Q_cursor_five{
+    position: absolute;
+    bottom: 9vw;
+    left: 0;
+    z-index: 4;
+
+    width: 7.8rem;
+
+    height: 5.3rem;
+
+    background: url('../../images/cursors/cursor5.svg') no-repeat center/100%;
+
+    animation: move 3s linear infinite;
+    transform-origin: 0 0;
+}
+
+.Q_preview_logo{
+    position: absolute;
+    top: 38%;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    color: var(--color-white);
+
+    transform: rotate(-1deg);
+}
+
+.Q_preview_logo > h1:nth-child(1){
+    padding-right: 10rem;
+}
+
+.Q_search_dropdown_backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background: var(--color-white);
+    border-radius: var(--corner-15);
+    pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .Q_preview_logo h1{
+        font-size: 10vw;
+    }
+}
+
+
+@keyframes move { 
+    0% { 
+        transform: rotate(0deg)  
+              translateY(100px) rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(360deg)  
+              translateY(100px) rotate(-360deg); 
+    } 
+}

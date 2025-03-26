@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Шаблон решения проблем для IT-команд | Connecteam</title>
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://i.imgur.com/Mc4Qn4P.jpeg" />
+    <meta
+      property="og:description"
+      content="Тебе, подгон) Рассказываем от первопричины до решения"
+    />
+    <meta
+      property="og:url"
+      content="https://hseadc.github.io/Connecteam/articles/problemtemplates"
+    />
+    <meta property="og:title" content="Шаблон решения проблем для IT-команд" />
+
+    <meta name="twitter:card" content="https://i.imgur.com/Mc4Qn4P.jpeg" />
+    <meta
+      name="twitter:url"
+      content="https://hseadc.github.io/Connecteam/articles/problemtemplates"
+    />
+    <meta name="twitter:title" content="Шаблон решения проблем для IT-команд" />
+    <meta
+      name="twitter:description"
+      content="Тебе, подгон) Рассказываем от первопричины до решения"
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/Mc4Qn4P.jpeg" />
+  </head>
+  <body>
+    <O_header></O_header>
+    <div class="W_article_content">
+      <div class="W_article_preview">
+        <div class="W_article_preview_content_info">
+          <div class="W_article_preview_content_wo_button">
+            <div class="W_article_preview_info">
+              <div class="W_author">
+                <span class="text_headers_h3_article">Статью подготовили</span>
+                <div class="M_person">
+                  <div class="A_photo"></div>
+                  <div class="W_name">
+                    <p class="text_body_text">Ника Косарева</p>
+                    <p class="text_body_article_text">Бывалый дизайнер</p>
+                  </div>
+                </div>
+              </div>
+              <div class="W_share_buttons">
+                <span class="text_headers_h3_article">Поделиться</span>
+                <div class="C_share_buttons">
+                  <button
+                    class="A_share_button"
+                    id="A_copy_link_share_button"
+                  ></button>
+                  <button
+                    class="A_share_button"
+                    id="A_telegram_share_button"
+                  ></button>
+                  <button
+                    class="A_share_button"
+                    id="A_vk_share_button"
+                  ></button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="W_article_preview_content W_short_article_preview_content"
+            >
+              <div class="W_article_heading W_short_article_heading">
+                <h1>Шаблон решения проблем для IT-команд</h1>
+                <h3>
+                  Тебе, подгон) Рассказываем от&nbsp;первопричины
+                  до&nbsp;решения
+                </h3>
+              </div>
+              <div class="C_article_tags">
+                <div class="A_tag">
+                  <span>Методика</span>
+                </div>
+                <div class="A_tag">
+                  <span>3 мин</span>
+                </div>
+              </div>
+              <div class="A_article_image A_short_articles_05_image"></div>
+            </div>
+          </div>
+          <a class="A_looking_for_button text_button_text" href="/articles"
+            >Вернуться назад</a
+          >
+        </div>
+        <div class="W_article_main_content W_short_article_main_content">
+          <div class="W_short_article_situation">
+            <div class="A_short_article_content_title">
+              <h2>Ситуация</h2>
+            </div>
+            <div class="M_tip">
+              <div class="Q_tip_line"></div>
+              <div class="A_tip_text">
+                <p>
+                  У&nbsp;команды Пети и&nbsp;Даши горит релиз. Всё шло
+                  по&nbsp;плану, но&nbsp;за&nbsp;сутки до&nbsp;выката сервер
+                  начал падать без видимых причин. Логи пустые, баг-репорты
+                  не&nbsp;помогают, дедлайн дышит в&nbsp;затылок. Начинаются
+                  паника, метание и&nbsp;бесконечные &laquo;может, это из-за
+                  вчерашнего фикса?&raquo;. Разработчики спорят с&nbsp;DevOps,
+                  а&nbsp;менеджер нервно обновляет Jira. Как не&nbsp;утонуть
+                  в&nbsp;хаосе и&nbsp;быстро найти решение?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="W_short_article_what_to_do">
+            <div class="A_short_article_content_title">
+              <h2>Что делать?</h2>
+            </div>
+            <div class="C_short_article_what_to_do_advices">
+              <div class="M_advice M_advice_white">
+                <div class="A_advice_title">
+                  <p>Разобраться в&nbsp;первопричине</p>
+                </div>
+                <div class="A_advice_text">
+                  <p>
+                    Проведите экспресс-анализ: что изменилось перед падением,
+                    какие сервисы затронуты, есть&nbsp;ли паттерн в&nbsp;ошибках
+                  </p>
+                </div>
+              </div>
+              <div class="M_advice M_advice_pink M_advice_rotate_left">
+                <div class="A_advice_title">
+                  <p>Логировать всё, что можно</p>
+                </div>
+                <div class="A_advice_text">
+                  <p>
+                    Если в&nbsp;логах пустота&nbsp;&mdash; добавьте больше
+                    информации. Включите трассировку, захватите больше
+                    параметров, чекните мониторинг
+                  </p>
+                </div>
+              </div>
+              <div class="M_advice M_advice_white">
+                <div class="A_advice_title">
+                  <p>Использовать бинарный поиск</p>
+                </div>
+                <div class="A_advice_text">
+                  <p>
+                    Откатите систему к&nbsp;предыдущему стабильному состоянию
+                    и&nbsp;шаг за&nbsp;шагом возвращайте изменения, пока
+                    не&nbsp;найдёте, что сломалось
+                  </p>
+                </div>
+              </div>
+              <div class="M_advice M_advice_white">
+                <div class="A_advice_title">
+                  <p>Чётко распределить роли</p>
+                </div>
+                <div class="A_advice_text">
+                  <p>
+                    Один копает логи, другой тестирует гипотезы, третий держит
+                    связь с&nbsp;менеджером. И&nbsp;теперь все заняты делом)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="C_article_tips C_short_article_tips">
+            <h2>Почему это супер?</h2>
+            <div class="M_article_tip">
+              <div class="Q_article_tip_line"></div>
+              <p class="text_body_article_text">
+                Нет бессмысленной суеты&nbsp;&mdash; команда фокусируется
+                на&nbsp;решении, а&nbsp;не&nbsp;на&nbsp;эмоциональных спорах
+              </p>
+            </div>
+            <div class="M_article_tip">
+              <div class="Q_article_tip_line"></div>
+              <p class="text_body_article_text">
+                Ошибки быстрее находятся&nbsp;&mdash; если есть порядок
+                действий, лишних попыток становится меньше
+              </p>
+            </div>
+            <div class="M_article_tip">
+              <div class="Q_article_tip_line"></div>
+              <p class="text_body_article_text">
+                Прокачивается скилл отладки&nbsp;&mdash; чем больше системного
+                подхода, тем быстрее ловятся баги в&nbsp;будущем
+              </p>
+            </div>
+          </div>
+          <div class="M_article_telegram_button">
+            <div class="W_article_telegram_button_info">
+              <div class="A_article_telegram_button_image"></div>
+              <h3>
+                Ещё больше полезной инфы и&nbsp;приколов в&nbsp;нашем
+                тг&nbsp;канале
+              </h3>
+            </div>
+            <a class="A_direction_button text_button_text"
+              >Перейти в&nbsp;канал</a
+            >
+          </div>
+          <div class="W_short_article_what_not_to_do">
+            <div class="A_short_article_content_title">
+              <h2>Что не надо делать?</h2>
+            </div>
+            <div class="C_short_article_what_not_to_do_advices">
+              <div class="M_advice M_advice_white M_advice_rotate_right">
+                <div class="A_advice_title">
+                  <p>Чинить всё подряд вслепую</p>
+                </div>
+                <div class="A_advice_text">
+                  <p>
+                    Бесконтрольные правки без понимания первопричины создают
+                    новые проблемы
+                  </p>
+                </div>
+              </div>
+              <div class="M_advice M_advice_white">
+                <div class="A_advice_title">
+                  <p>Игнорировать документацию</p>
+                </div>
+                <div class="A_advice_text">
+                  <p>
+                    Если сервис странно работает, ищем решение в&nbsp;баг-треках
+                    и&nbsp;официальных источниках
+                  </p>
+                </div>
+              </div>
+              <div class="M_advice M_advice_pink">
+                <div class="A_advice_title">
+                  <p>Забывать фиксировать решение</p>
+                </div>
+                <div class="A_advice_text">
+                  <p>
+                    Если не&nbsp;задокументировать причину бага, через месяц
+                    снова наступите на&nbsp;те&nbsp;же грабли
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="W_preview_materials W_short_article_preview_materials">
+        <div class="A_preview_materials_title">
+          <h2>Вам могут понравиться</h2>
+        </div>
+        <div class="W_preview_materials_block">
+          <div class="W_preview_materials_content">
+            <div class="W_preview_materials_card">
+              <div id="B_preview_materials_friend"></div>
+              <div class="A_preview_materials_card_title">
+                <h3>«Сделай по-братски»</h3>
+              </div>
+              <div class="A_preview_materials_card_description">
+                <p>
+                  Что делать, если ты<br />
+                  дружишь с коллегой
+                </p>
+              </div>
+            </div>
+            <div class="W_cases_materials_card C_purple">
+              <div id="B_cases_materials_ibm">
+                <span>Каминг суун</span>
+              </div>
+              <div class="A_cases_materials_card_title">
+                <h3>Как “IBM” остаются<br />техно-гигантом больше 80 лет</h3>
+              </div>
+              <div class="A_cases_materials_card_description">
+                <p>
+                  Узнали у команды секреты адаптации к изменениям в
+                  технологическом ландшафте
+                </p>
+              </div>
+            </div>
+            <div class="W_cases_materials_card">
+              <div id="B_cases_materials_gosuslugi"></div>
+              <div class="A_cases_materials_card_title">
+                <h3>Госуслуги: что пошло не так</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <O_footer></O_footer>
+  </body>
+</html>

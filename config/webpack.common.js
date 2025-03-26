@@ -16,14 +16,17 @@ module.exports = {
     cases: './src/pages/cases/cases.js',
     interactives: './src/pages/interactives/interactives.js',
     article: './src/pages/articles/article/article.js',
+    short_article: './src/pages/articles/short_article/short_article.js',
     form: './src/pages/form/form.js',
     case: './src/pages/cases/case/case.js',
     interactive_start: './src/pages/interactives/interactive_start/interactive_start.js',
     sticker: './src/partials/A_sticker/A_sticker.js',
     styleguide: './src/pages/styleguide/styleguide.js',
-
-    header_white: './src/partials/header_white/header_white.js',
-    header_black: './src/partials/header_black/header_black.js'
+    ba_article: './src/pages/articles/big_articles/ba_article.js',
+    sa_article: './src/pages/articles/short_articles/sa_article.js',
+    ssa_article: './src/pages/articles/super_short_articles/ssa_article.js',
+    test_01: './src/pages/tests/test_01.js',
+    header: './src/partials/O_header/O_header.js',
   },
   output: {
     filename: '[name].[contenthash].js',

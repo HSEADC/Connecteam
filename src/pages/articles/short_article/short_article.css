@@ -1,0 +1,45 @@
+.A_short_article_content_title{
+    text-align: center;
+    font: var(--font-45-500i);
+}
+
+.A_short_article_content_subtitle{
+    text-align: center;
+    font: var(--font-25-500i);
+}
+
+.C_short_article_tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-15);
+}
+
+.W_short_article_situation{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-25);
+}
+
+.Q_tip_line{
+    width: 3px;
+
+    padding: 0;
+
+    margin: 5px 0;
+
+    background: var(--color-purple);
+    border: none;
+    align-self: stretch;
+}
+
+.W_short_article_what_to_do, .W_short_article_what_not_to_do{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-25);
+}
+
+.C_short_article_what_to_do_advices, .C_short_article_what_not_to_do_advices{
+    display: grid;
+    gap: var(--spacing-20);
+    grid-template-columns: repeat(2, 1fr);
+}

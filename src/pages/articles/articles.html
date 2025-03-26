@@ -29,65 +29,93 @@
     <meta name="twitter:image" content="https://i.imgur.com/Mc4Qn4P.jpeg" />
 
     <title>Материалы</title>
+    <link rel="stylesheet" href="../../index.css" />
   </head>
-  <body>
-    <div class="W_content">
-      <header_white_mobile></header_white_mobile>
-      <header_black></header_black>
-      <div class="W_articles_materials_section">
-        <div class="W_articles_materials_line1">
-          <div class="W_articles_materials_card">
-            <div id="B_articles_materials_friend"></div>
-            <div class="A_articles_materials_card_title">
-              <h3>«Сделай по-братски»</h3>
+  <body class="W_footer_bottom">
+    <div>
+      <O_header></O_header>
+      <div class="W_content W_content_cup">
+        <div class="W_filter_tags">
+          <p class="text_body_text">Поиск по тегам</p>
+          <div class="C_filter_tags">
+            <div class="A_filter_tag" data-tag="conflict">
+              <p class="text_button_text">Личный конфликт</p>
+              <div class="remove"></div>
             </div>
-            <div class="A_articles_materials_card_description">
-              <p>
-                Что делать, если ты<br />
-                дружишь с коллегой
-              </p>
+            <div class="A_filter_tag" data-tag="communication">
+              <p class="text_button_text">Коммуникация</p>
+              <div class="remove"></div>
             </div>
-          </div>
-          <div class="W_articles_materials_card">
-            <div id="B_articles_materials_bells"></div>
-            <div class="A_articles_materials_card_title">
-              <h3>Джингл белс<br />нервной системы</h3>
+            <div class="A_filter_tag" data-tag="tools">
+              <p class="text_button_text">Инструменты</p>
+              <div class="remove"></div>
             </div>
-            <div class="A_articles_materials_card_description">
-              <p>
-                Как общаться с командой<br />
-                при горящих дедлайнах
-              </p>
-            </div>
-          </div>
-          <div class="W_articles_materials_card">
-            <div id="B_articles_materials_div"></div>
-            <div class="A_articles_materials_card_title">
-              <h3>Круто, div «blabla»</h3>
-            </div>
-            <div class="A_articles_materials_card_description">
-              <p>
-                Как разработчикам<br />
-                работать вместе
-              </p>
+            <div class="A_filter_tag" data-tag="organization">
+              <p class="text_button_text">Организация</p>
+              <div class="remove"></div>
             </div>
           </div>
         </div>
-
-        <div class="W_articles_materials_line2">
-          <div class="W_articles_materials_card">
-            <div id="B_articles_materials_bells_blue"></div>
+        <div class="W_articles_materials_section">
+          <div
+            class="W_articles_materials_card W_articles_33_card"
+            data-tags="communication"
+          >
+            <div id="B_articles_materials_friend"></div>
             <div class="A_articles_materials_card_title">
-              <h3>Го сыграем?</h3>
+              <h3>Дружба с&nbsp;коллегой</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>Что делать, если ты дружишь с&nbsp;коллегой</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_33_card W_article_pink_card M_advice_rotate_right"
+            data-tags="communication"
+          >
+            <div id="B_articles_materials_bells"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Общение с&nbsp;командой при горящих дедлайнах</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>Джингл белс нервной системы</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_33_card"
+            data-tags="communication"
+          >
+            <div id="B_articles_materials_div"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Совместная работа разработчиков</h3>
             </div>
             <div class="A_articles_materials_card_description">
               <p>
-                Геймификация как способ улучшить<br />
-                взаимодействие и мотивацию
+                Как не&nbsp;допустить ситуацию: &laquo;круто, div
+                &bdquo;blabla&ldquo;&raquo;
               </p>
             </div>
           </div>
-          <div class="W_articles_materials_card" id="I_article_feedback">
+          <div
+            class="W_articles_materials_card W_articles_50_card"
+            data-tags="tools"
+          >
+            <div id="B_articles_materials_letsplay"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Геймификация для улучшения командного взаимодействия</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>
+                Как поднять мотивацию и&nbsp;улучшить взаимодействие,
+                го&nbsp;сыграем?
+              </p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_50_card"
+            id="I_article_feedback"
+            data-tags="organization"
+          >
             <div id="B_articles_materials_feedback"></div>
             <div class="A_articles_materials_card_title">
               <h3>
@@ -102,89 +130,254 @@
               </p>
             </div>
           </div>
-        </div>
-
-        <div class="W_articles_materials_line3">
-          <div class="W_articles_materials_card"></div>
-          <div class="W_articles_materials_card">
-            <div id="B_articles_materials_leopold"></div>
+          <div
+            class="W_articles_materials_card W_articles_33_card"
+            data-tags="tools"
+          >
+            <div id="B_articles_materials_teampsychologymotivation"></div>
             <div class="A_articles_materials_card_title">
-              <h3>Кот Леопольд</h3>
+              <h3>Психология мотивации в&nbsp;команде</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>Когда &laquo;спасибо&raquo; спасает дедлайны</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_33_card"
+            data-tags="conflict"
+          >
+            <div id="B_articles_materials_jobfriendship"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Опасности &laquo;чрезмерной дружбы&raquo; на&nbsp;работе</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>Передружба-недоработа</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_article_purple_card W_articles_33_card M_advice_rotate_right"
+            data-tags="organization"
+          >
+            <div class="A_articles_materials_card_title">
+              <h3>Знакомство новеньких с&nbsp;коллективом</h3>
             </div>
             <div class="A_articles_materials_card_description">
               <p>
-                Как дружба в команде влияет<br />
-                на продуктивность и что с этим делать?
+                Как предотвратить раскол между &laquo;старожилами&raquo;
+                и&nbsp;&laquo;новичками&raquo;
               </p>
             </div>
           </div>
-          <div class="W_articles_materials_card">
+          <div
+            class="W_articles_materials_card W_article_purple_card W_articles_50_card"
+            data-tags="tools"
+          >
             <div class="A_articles_materials_card_title">
-              <h3>От багов к доверию</h3>
+              <h3>Шаблон решения проблем для IT-команд</h3>
             </div>
             <div class="A_articles_materials_card_description">
               <p>
-                Эффективная коммуникация<br />
-                между QA и разработчиками
+                Тебе, подгон) Рассказываем от&nbsp;первопричины до&nbsp;решения
               </p>
             </div>
           </div>
-        </div>
-
-        <div class="W_articles_materials_line4">
-          <div class="W_articles_materials_card">
-            <div id="B_articles_materials_deadline"></div>
+          <div
+            class="W_articles_materials_card W_articles_50_card"
+            data-tags="communication"
+          >
+            <div id="B_articles_materials_trustrole"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Роль доверия в&nbsp;построении IT-команд</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>
+                Что делать, когда говорят про команду: &laquo;у&nbsp;нас всё
+                прозрачно&raquo;
+              </p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_article_purple_card W_articles_33_card"
+            data-tags="organization"
+          >
+            <div class="A_articles_materials_card_title">
+              <h3>Как поднять мотивацию в&nbsp;команде</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>Что делать, чтобы команда работала лучше, если бюджета нет</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_33_card"
+            data-tags="tools"
+          >
+            <div id="B_articles_materials_magictablet"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>А есть волшебная таблетка?</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>Трактат о&nbsp;смыслах и&nbsp;законах командной работы</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_33_card M_advice_rotate_left"
+            data-tags="tools"
+          >
+            <div id="B_articles_materials_diagnostic"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Инструменты диагностики вашей команды</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>
+                Разные виды тестирования эффективности команды и&nbsp;зачем это
+                нужно
+              </p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_50_card"
+            data-tags="tools"
+          >
+            <div id="B_articles_materials_roleteambuilding"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Сюжетно-ролевой тимбилдинг</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>
+                Что это такое и&nbsp;зачем оно команде. Актёрское образование
+                не&nbsp;требуется
+              </p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_50_card W_article_purple_card"
+            data-tags="communication"
+          >
+            <div id="B_articles_materials_qaeffective"></div>
             <div class="A_articles_materials_card_title">
               <h3>
-                Когда «спасибо»<br />
-                спасает дедлайны
+                Эффективная коммуникация между&nbsp;QA и&nbsp;разработчиками
               </h3>
             </div>
             <div class="A_articles_materials_card_description">
-              <p>Психология мотивации в команде</p>
+              <p>От&nbsp;багов к&nbsp;доверию</p>
             </div>
           </div>
-          <div class="W_articles_materials_card">
-            <div id="B_articles_materials_french"></div>
+          <div
+            class="W_articles_materials_card W_articles_33_card"
+            data-tags="conflict"
+          >
+            <div id="B_articles_materials_coldwar"></div>
             <div class="A_articles_materials_card_title">
-              <h3>Извините за мой французский</h3>
+              <h3>Холодная война между отделами</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>Как не&nbsp;допустить и&nbsp;предотвратить начало баттла</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_33_card"
+            data-tags="tools"
+          >
+            <div id="B_articles_materials_meetingtypes"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Виды созвонов</h3>
             </div>
             <div class="A_articles_materials_card_description">
               <p>
-                Технический жаргон: как говорить<br />
-                с командой на понятном языке?
+                &laquo;Опять созвон?!&raquo;: вводим в&nbsp;курс про абсолютно
+                все типы созвонов
               </p>
             </div>
           </div>
-        </div>
-
-        <div class="W_articles_materials_line5">
-          <div class="W_articles_materials_card">
+          <div
+            class="W_articles_materials_card W_articles_33_card"
+            data-tags="conflict"
+          >
+            <div id="B_articles_materials_mediator"></div>
             <div class="A_articles_materials_card_title">
-              <h3>Тебе, подгон)</h3>
+              <h3>Профессия медиатора</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>Медиатор, для гитары который?</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_50_card M_advice_rotate_right"
+            data-tags="communication"
+          >
+            <div id="B_articles_materials_techicaljargon"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Технический жаргон:</h3>
             </div>
             <div class="A_articles_materials_card_description">
               <p>
-                Шаблон решения проблем для IT-команд:<br />
-                от первопричины до решения
+                Извините за&nbsp;мой французский: как говорить с&nbsp;командой
+                на&nbsp;понятном языке?
               </p>
             </div>
           </div>
-          <div class="W_articles_materials_card">
-            <div id="B_articles_materials_opacity"></div>
+          <div
+            class="W_articles_materials_card W_articles_50_card"
+            data-tags="tools"
+          >
+            <div id="B_articles_materials_aaron"></div>
             <div class="A_articles_materials_card_title">
-              <h3>У нас все прозрачно</h3>
+              <h3>
+                Лучшее взаимодействие дизайна-разработки от&nbsp;Аарона Уолтера
+              </h3>
             </div>
             <div class="A_articles_materials_card_description">
-              <p>Поговорим о роли доверия в построении IТ-команд</p>
+              <p>Узнали все секреты Аарона Уолтера из&nbsp;InVision Studio</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_33_card W_article_pink_card"
+            data-tags="conflict"
+          >
+            <div class="A_articles_materials_card_title">
+              <h3>Как спорить с&nbsp;коллегой</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>Что делать, если у&nbsp;вас разные взгляды на&nbsp;задачу</p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_33_card"
+            data-tags="organization"
+          >
+            <div id="B_articles_materials_bigcompany"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Работа в&nbsp;большой корпорации&nbsp;&mdash; это ...</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>
+                Особенности работы в&nbsp;большом коллективе, о&nbsp;которых
+                молчат
+              </p>
+            </div>
+          </div>
+          <div
+            class="W_articles_materials_card W_articles_33_card M_advice_rotate_right"
+            data-tags="tools"
+          >
+            <div id="B_articles_materials_burnout"></div>
+            <div class="A_articles_materials_card_title">
+              <h3>Профессиональное выгорание</h3>
+            </div>
+            <div class="A_articles_materials_card_description">
+              <p>
+                Не&nbsp;в&nbsp;ресурсе, не&nbsp;в&nbsp;потоке, на&nbsp;низких
+                вибрациях, это конец?
+              </p>
             </div>
           </div>
         </div>
         <div class="A_preview_materials_button">
-          <a href="/articles">Смотреть ещё</a>
+          <a>Смотреть ещё</a>
         </div>
       </div>
     </div>
-    <footer></footer>
+    <O_footer></O_footer>
   </body>
 </html>

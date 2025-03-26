@@ -8,8 +8,8 @@
 
 .W_articles_materials_section{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: var(--spacing-30);
 
     width: 100%;
@@ -17,11 +17,28 @@
     padding: var(--spacing-45) 0 var(--spacing-85) 0;
 }
 
-.W_articles_materials_line1, .W_articles_materials_line2, .W_articles_materials_line3, .W_articles_materials_line4, .W_articles_materials_line5{
-    display: flex;
-    gap: var(--spacing-30);
+.W_articles_33_card{
+    width: calc(33.33% - var(--spacing-20));
+}
 
-    width: 100%;
+.W_articles_50_card{
+    width: calc(50% - var(--spacing-15));
+}
+
+.W_article_white_card{
+    background: var(--color-white);
+}
+
+.W_article_pink_card{
+    color: var(--color-white);
+
+    background: var(--color-pink);
+}
+
+.W_article_purple_card{
+    color: var(--color-white);
+
+    background: var(--color-purple);
 }
 
 .W_articles_materials_card{
@@ -32,9 +49,9 @@
     justify-content: flex-end;
     gap: var(--spacing-5);
 
-    width: 100%;
+    min-width: 27.6rem;
 
-    height: 26.5rem;
+    height: 27.6rem;
 
     padding: var(--spacing-30);
 
@@ -47,6 +64,11 @@
     font: var(--font-35-500i);
 }
 
+.A_articles_materials_card_title, .A_articles_materials_card_description{
+    position: relative;
+    z-index: 2;
+}
+
 .A_articles_materials_card_title h3{
     font: var(--font-25-500);
 }
@@ -55,7 +77,10 @@
     font: var(--font-18-500);
 }
 
-#B_articles_materials_friend, #B_articles_materials_div, #B_articles_materials_leopold{
+#B_articles_materials_friend, #B_articles_materials_div, #B_articles_materials_jobfriendship, #B_articles_materials_letsplay, #B_articles_materials_feedback,
+#B_articles_materials_techicaljargon, #B_articles_materials_teampsychologymotivation, #B_articles_materials_trustrole, #B_articles_materials_magictablet,
+#B_articles_materials_diagnostic, #B_articles_materials_bigcompany, #B_articles_materials_burnout, #B_articles_materials_aaron, #B_articles_materials_roleteambuilding,
+#B_articles_materials_qaeffective, #B_articles_materials_coldwar, #B_articles_materials_meetingtypes, #B_articles_materials_mediator{
     position: absolute;
     z-index: 0;
 
@@ -66,111 +91,72 @@
     translate: calc(-1*var(--spacing-30)) var(--spacing-30);
 }
 
-#B_articles_materials_bells{
-    position: absolute;
-    top: var(--spacing-30);
-    right: var(--spacing-30);
+#B_articles_materials_magictablet{
+    background: url('../../images/articles/B_articles_materials_magictablet.webp') no-repeat center/cover;
+}
 
-    width: 4.5rem;
+#B_articles_materials_diagnostic{
+    background: url('../../images/articles/B_articles_materials_diagnostic.webp') no-repeat center/cover;
+}
 
-    height: 4.5rem;
+#B_articles_materials_roleteambuilding{
+    background: url('../../images/articles/B_articles_materials_roleteambuilding.webp') no-repeat center/cover;
+}
 
-    background: url('../../images/preview/zipimage.svg') no-repeat center/100%;
+#B_articles_materials_qaeffective{
+    background: url('../../images/articles/B_articles_materials_qaeffective.svg') no-repeat center/cover;
+}
+
+#B_articles_materials_coldwar{
+    background: url('../../images/articles/B_articles_materials_coldwar.webp') no-repeat center/cover;
+}
+
+#B_articles_materials_meetingtypes{
+    background: url('../../images/articles/B_articles_materials_meetingtypes.svg') no-repeat center/cover;
+}
+
+#B_articles_materials_mediator{
+    background: url('../../images/articles/B_articles_materials_mediator.svg') no-repeat center/cover;
+}
+
+#B_articles_materials_aaron{
+    background: url('../../images/articles/B_articles_materials_aaron.svg') no-repeat center/cover;
+}
+
+#B_articles_materials_bigcompany{
+    background: url('../../images/articles/B_articles_materials_bigteam.webp') no-repeat center/cover;
+}
+
+#B_articles_materials_burnout{
+    background: url('../../images/articles/B_articles_materials_burnout.svg') no-repeat center/cover;
+}
+
+#B_articles_materials_letsplay{
+    background: url('../../images/articles/B_articles_materials_letsplay.svg') no-repeat center/cover;
 }
 
 #B_articles_materials_friend{
-    background: url('../../images/preview/bratbody.svg') no-repeat 100%;
-}
-
-#B_articles_materials_div{
-    background: url('../../images/preview/divblabla.svg') no-repeat 100%;
-}
-
-.W_articles_materials_line1 .W_articles_materials_card:nth-child(1), 
-.W_articles_materials_line1 .W_articles_materials_card:nth-child(3), 
-.W_articles_materials_line2 .W_articles_materials_card:nth-child(1), 
-.W_articles_materials_line2 .W_articles_materials_card:nth-child(2),
-.W_articles_materials_line4 .W_articles_materials_card:nth-child(1),
-.W_articles_materials_line4 .W_articles_materials_card:nth-child(2),
-.W_articles_materials_line5 .W_articles_materials_card:nth-child(2){
-    background: var(--color-white);
-}
-
-#B_articles_materials_bells_blue{
-    position: absolute;
-    top: var(--spacing-30);
-    right: var(--spacing-30);
-
-    width: 4.5rem;
-
-    height: 4.5rem;
-
-    background: url('../../images/articles/zipimage_blue.svg') no-repeat center/100%;
-}
-
-.W_articles_materials_line2 .W_articles_materials_card:nth-child(1){
-    transition: .5s;
-    rotate: -2deg;
-}
-
-.W_articles_materials_line1 .W_articles_materials_card:nth-child(2){
-    color: var(--color-white);
-
-    background: var(--color-pink);
-
-    transition: .5s;
-}
-
-#B_articles_materials_leopold{
-    background: url('../../images/articles/leopold.webp') no-repeat center/100%;
-}
-
-.W_articles_materials_line3 .W_articles_materials_card:nth-child(3){
-    color: var(--color-white);
-
-    background: var(--color-purple);
-}
-
-.W_articles_materials_line4 .W_articles_materials_card:nth-child(1){
-    width: 33.3%;
-
-    transition: .5s;
-    rotate: 2deg;
-}
-
-.W_articles_materials_line4 .W_articles_materials_card:nth-child(2){
-    width: 50%;
-}
-
-.W_articles_materials_line5 .W_articles_materials_card:nth-child(1){
-    color: var(--color-white);
-
-    background: var(--color-purple);
-}
-
-.W_articles_materials_line2 .W_articles_materials_card:nth-child(1):hover, .W_articles_materials_line4 .W_articles_materials_card:nth-child(1):hover{
-    rotate: 0deg;
-}
-
-.W_articles_materials_line1 .W_articles_materials_card:nth-child(2):hover{
-    rotate: 2deg;
-}
-
-.W_articles_materials_line1 .W_articles_materials_card:nth-child(1) div[class], .W_articles_materials_line1 .W_articles_materials_card:nth-child(3) div[class], .W_articles_materials_line3 .W_articles_materials_card:nth-child(2) div[class]{
-    position: relative;
-    z-index: 1;
+    background: url('../../images/articles/B_articles_materials_friend.webp') no-repeat center/cover;
 }
 
 #B_articles_materials_feedback{
-    position: absolute;
-    top: -1.25rem;
-    right: var(--spacing-30);
+    background: url('../../images/articles/B_articles_materials_feedback.svg') no-repeat center/cover;
+}
 
-    width: 25.1rem;
+#B_articles_materials_div{
+    background: url('../../images/preview/divblabla.svg') no-repeat center/cover;
+}
 
-    height: 14rem;
+#B_articles_materials_teampsychologymotivation{
+    background: url('../../images/articles/B_articles_materials_teampsychologymotivation.svg') no-repeat center/cover;
+}
 
-    background: url('../../images/articles/feedback.svg') no-repeat center/100%;
+#B_articles_materials_jobfriendship{
+    background: url('../../images/articles/B_articles_materials_jobfriendship.webp') no-repeat center/cover;
+}
+
+#B_articles_materials_trustrole{
+    background: url('../../images/articles/B_articles_materials_trustrole.svg') no-repeat center/cover;
 }
 
 #B_articles_materials_deadline{
@@ -185,16 +171,8 @@
     background: url('../../images/articles/sms6.svg') no-repeat center/100%;
 }
 
-#B_articles_materials_french{
-    position: absolute;
-    top: -1.25rem;
-    right: -2.5rem;
-
-    width: 68rem;
-
-    height: 20rem;
-
-    background: url('../../images/articles/frenchimage.svg') no-repeat center/90%;
+#B_articles_materials_techicaljargon{
+    background: url('../../images/articles/B_articles_materials_technicaljargon.svg') no-repeat center/cover;
 }
 
 #B_articles_materials_opacity{
@@ -212,6 +190,67 @@
 #I_article_feedback:hover{
     cursor: pointer;
 }
+
+.C_filter_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-15);
+  }
+
+  .remove {
+    width: 1.2rem;
+
+    height: 1.2rem;
+
+    background: url('../../images/cross_icon.svg') no-repeat center/100%;
+  }
+
+  .A_filter_tag {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-10);
+
+    padding: var(--spacing-9) var(--spacing-20);
+
+    color: var(--color-purple);
+
+    background: var(--color-light-gray);
+    border-radius: var(--corner-20);
+
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid var(--color-purple);
+  }
+
+  .A_filter_tag .remove {
+    display: none;
+  }
+
+  .A_filter_tag.active .remove {
+    display: inline;
+    cursor: pointer;
+  }
+
+  .W_articles_materials_card.hidden {
+    height: 0;
+
+    padding: 0;
+
+    margin: 0;
+
+    opacity: 0;
+    overflow: hidden;
+  }
+
+
+
+  .W_filter_tags {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-15);
+
+    width: 100%;
+  }
 
 @media (max-width: 1440px) {
     #B_articles_materials_leopold {

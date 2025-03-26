@@ -1,0 +1,336 @@
+/* O_footer */
+.A_footer_logo{
+    width: 20.3rem;
+
+    height: 4.7rem;
+
+    background: url("../../images/Logo.svg") no-repeat center/100%;
+}
+
+.A_footer_team_member{
+    color: var(--color-white);
+    font: var(--font-18-400);
+}
+
+/* C_social_media */
+.A_media_icon{
+    width: 6.3rem;
+
+    height: 6.3rem;
+}
+
+.W_media:nth-child(1) > .A_media_icon{
+    background: url("../../images/telefram_icon.svg") no-repeat center/100%;
+}
+
+.W_media:nth-child(2) > .A_media_icon{
+    background: url("../../images/vk_icon.svg") no-repeat center/100%;
+}
+
+.W_media:nth-child(3) > .A_media_icon{
+    background: url("../../images/youtube_icon.svg") no-repeat center/100%;
+}
+
+/* A_sticker */
+.A_sticker_text {
+    max-width: 10rem;
+  
+    max-height: 10rem;
+  
+    margin: 0;
+  
+    text-align: center;
+  
+    font: var(--font-14-300);
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/* A_tag */
+.A_tag{
+    width: fit-content;
+
+    padding: var(--spacing-10) var(--spacing-20);
+
+    color: var(--color-blue);
+
+    background: var(--color-white);
+    border-radius: var(--corner-20);
+    font: var(--font-15-500);
+}
+
+/* M_advice */
+.A_advice_title{
+    font: var(--font-25-500i);
+}
+
+.A_advice_text{
+    font: var(--font-18-500);
+}
+
+/* M_tip */
+.A_tip_text{
+    width: 100%;
+    font: var(--font-18-400);
+}
+
+/* Page - Index */
+.A_preview_card{
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    z-index: 1;
+
+    max-width: 26rem;
+
+    color: var(--color-white);
+
+    background: var(--color-orange);
+}
+
+.A_preview_card h3, .W_preview_big_card h3{
+    font: var(--font-body-article-text);
+}
+
+.A_preview_tag{
+    width: fit-content;
+
+    padding: var(--spacing-6) var(--spacing-12);
+
+    background: var(--color-light-gray);
+    border-radius: var(--corner-20);
+    font: var(--font-11-500);
+}
+
+.A_preview_materials_title h2{
+    text-align: center;
+    font: var(--font-35-500i);
+}
+
+.A_preview_materials_card_title h3{
+    font: var(--font-25-500);
+}
+
+.A_preview_materials_card_description p{
+    font: var(--font-18-500);
+}
+
+.A_preview_materials_button a{
+    width: fit-content;
+
+    padding: var(--spacing-10) var(--spacing-18);
+
+    color: var(--color-orange);
+
+    background: var(--color-light-gray);
+
+    border-radius: var(--corner-30);
+
+    transition: all .2s;
+    border: 1.5px solid var(--color-orange);
+    font: var(--font-15-500);
+}
+
+.A_preview_testing_button a{
+    width: fit-content;
+
+    padding: var(--spacing-10) var(--spacing-18);
+
+    color: var(--color-white);
+
+    background: var(--color-blue);
+
+    border-radius: var(--corner-30);
+
+    transition: all .2s;
+
+    font: var(--font-15-500);
+}
+
+.A_preview_testing_button a:active{
+    background: var(--color-purple-active);
+}
+
+.A_preview_materials_button a:hover{
+    color: var(--color-white);
+
+    background: var(--color-orange);
+}
+
+.A_preview_materials_button a:active{
+    background: var(--color-orange-active);
+}
+
+.A_preview_testing_title h2{
+    font: var(--font-35-500i);
+}
+
+.A_preview_testing_description p{
+    color: var(--color-lighter-gray);
+    font: var(--font-18-500);
+}
+
+.A_preview_mission_title h2{
+    text-align: center;
+    font: var(--font-35-500i);
+}
+
+
+.A_preview_casino_description p{
+    color: var(--color-lighter-gray);
+    text-align: center;
+    font: var(--font-18-500);
+}
+
+.W_preview_casino_content .A_preview_testing_button{
+    margin-top: var(--spacing-20);
+}
+
+.A_preview_casino_title h2, .A_preview_stories_title h2{
+    font: var(--font-35-500i);
+}
+
+.A_preview_stories_title h2{
+    text-align: center;
+}
+
+.A_preview_stories_case_title h3{
+    font: var(--font-25-500);
+}
+
+.A_preview_stories_case_description p{
+    font: var(--font-18-500);
+}
+
+.A_preview_coming_soon_case_title h3{
+    font: var(--font-25-500i);
+}
+
+.A_preview_coming_soon_title h2{
+    font: var(--font-35-500i);
+}
+
+#A_preview_coming_soon_case_retro{
+    position: absolute;
+
+    
+    top: 4.6rem;
+
+    width: 20.7rem;
+
+    height: 4.2rem;
+
+    background: url('../../images/preview/sms.svg') no-repeat center/100%;
+}
+
+#A_preview_coming_soon_case_onboarding{
+    position: absolute;
+
+    top: 3.4rem;
+
+    width: 23.6rem;
+
+    height: 7.5rem;
+
+    background: url('../../images/preview/senor.svg') no-repeat center/100%;
+}
+
+/* O_header */
+.A_header_logo{
+    width: 17.7rem;
+
+    height: 2rem;
+
+    background: url('../../images/Logo.svg') no-repeat center/100%
+}
+
+.A_header_nav_button{
+   padding: var(--spacing-5) var(--spacing-15);
+
+   color: var(--color-white);
+
+   border-radius: var(--corner-20);
+
+   transition: all .2s;
+   font: var(--font-14-300); 
+   border: 1.5px solid var(--color-blue);
+}
+
+.A_header_nav_button:hover{
+    border-color: var(--color-white);
+}
+
+.A_header_nav_button:active{
+    color: var(--color-blue);
+
+    background: var(--color-white);
+}
+
+.A_header_nav_button:visited{
+    color: var(--color-white);
+}
+
+.A_header_burger_menu_button{
+    display: none;
+}
+
+.A_header_burger_menu_close{
+    width: 24px;
+
+    height: 24px;
+
+    background: url('../../images/A_menubar_mobile_close.svg') no-repeat center/100%;
+}
+
+.A_header_nav_button_mobile, .A_header_nav_button_mobile:visited{
+    padding: var(--spacing-5) var(--spacing-25) var(--spacing-5) 0;
+
+    color: var(--color-white);
+}
+
+.A_header_burger_menu_social_vk{
+    width: 64px;
+
+    height: 64px;
+
+    background: url('../../images/vk_icon.svg') no-repeat center/100%;
+}
+
+.A_header_burger_menu_social_tg{
+    width: 64px;
+
+    height: 64px;
+
+    background: url('../../images/telefram_icon.svg') no-repeat center/100%;
+}
+
+@media (max-width: 768px) {
+    /* O_footer */
+    .A_footer_social_media_text, .A_preview_card{
+        display: none;
+    }
+
+    .A_header_logo{
+        width: 32px;
+
+        height: 44px;
+
+        background: url('../../images/A_header_logo_adaptive.svg') no-repeat center/100%;
+    }
+
+    .A_header_burger_menu_button{
+        display: block;
+
+        width: 28px;
+
+        height: 23px;
+
+        background: url('../../images/A_menubar_mobile_default.svg') no-repeat center/100%;
+    }
+}
+
+@media (max-width: 440px) {
+    .A_footer_logo{
+        width: 100%
+    }
+}
