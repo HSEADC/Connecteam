@@ -371,6 +371,12 @@
     margin-top: var(--spacing-80);
 }
 
+.W_footer_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 @media (max-width: 1440px) {
     .W_preview_coming_soon_content .W_preview_coming_soon_case:nth-child(3){
         background: url('../../images/preview/code.webp') no-repeat center/cover;
