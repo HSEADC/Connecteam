@@ -78,7 +78,9 @@
 }
 
 #B_articles_materials_friend, #B_articles_materials_div, #B_articles_materials_jobfriendship, #B_articles_materials_letsplay, #B_articles_materials_feedback,
-#B_articles_materials_techicaljargon, #B_articles_materials_teampsychologymotivation, #B_articles_materials_trustrole{
+#B_articles_materials_techicaljargon, #B_articles_materials_teampsychologymotivation, #B_articles_materials_trustrole, #B_articles_materials_magictablet,
+#B_articles_materials_diagnostic, #B_articles_materials_bigcompany, #B_articles_materials_burnout, #B_articles_materials_aaron, #B_articles_materials_roleteambuilding,
+#B_articles_materials_qaeffective, #B_articles_materials_coldwar, #B_articles_materials_meetingtypes, #B_articles_materials_mediator{
     position: absolute;
     z-index: 0;
 
@@ -87,6 +89,46 @@
     height: 100%;
 
     translate: calc(-1*var(--spacing-30)) var(--spacing-30);
+}
+
+#B_articles_materials_magictablet{
+    background: url('../../images/articles/B_articles_materials_magictablet.webp') no-repeat center/cover;
+}
+
+#B_articles_materials_diagnostic{
+    background: url('../../images/articles/B_articles_materials_diagnostic.webp') no-repeat center/cover;
+}
+
+#B_articles_materials_roleteambuilding{
+    background: url('../../images/articles/B_articles_materials_roleteambuilding.webp') no-repeat center/cover;
+}
+
+#B_articles_materials_qaeffective{
+    background: url('../../images/articles/B_articles_materials_qaeffective.svg') no-repeat center/cover;
+}
+
+#B_articles_materials_coldwar{
+    background: url('../../images/articles/B_articles_materials_coldwar.webp') no-repeat center/cover;
+}
+
+#B_articles_materials_meetingtypes{
+    background: url('../../images/articles/B_articles_materials_meetingtypes.svg') no-repeat center/cover;
+}
+
+#B_articles_materials_mediator{
+    background: url('../../images/articles/B_articles_materials_mediator.svg') no-repeat center/cover;
+}
+
+#B_articles_materials_aaron{
+    background: url('../../images/articles/B_articles_materials_aaron.svg') no-repeat center/cover;
+}
+
+#B_articles_materials_bigcompany{
+    background: url('../../images/articles/B_articles_materials_bigteam.webp') no-repeat center/cover;
+}
+
+#B_articles_materials_burnout{
+    background: url('../../images/articles/B_articles_materials_burnout.svg') no-repeat center/cover;
 }
 
 #B_articles_materials_letsplay{
@@ -115,19 +157,6 @@
 
 #B_articles_materials_trustrole{
     background: url('../../images/articles/B_articles_materials_trustrole.svg') no-repeat center/cover;
-}
-
-.W_articles_materials_line2 .W_articles_materials_card:nth-child(1){
-    transition: .5s;
-    rotate: -2deg;
-}
-
-.W_articles_materials_line1 .W_articles_materials_card:nth-child(2){
-    color: var(--color-white);
-
-    background: var(--color-pink);
-
-    transition: .5s;
 }
 
 #B_articles_materials_deadline{
