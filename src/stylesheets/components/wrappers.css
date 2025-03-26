@@ -377,6 +377,13 @@
     justify-content: space-between;
 }
 
+.W_preview_input_dropdown{
+    position: relative;
+
+    width: 100%;
+    max-width: 65.5rem;
+}
+
 @media (max-width: 1440px) {
     .W_preview_coming_soon_content .W_preview_coming_soon_case:nth-child(3){
         background: url('../../images/preview/code.webp') no-repeat center/cover;

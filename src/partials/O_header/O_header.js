@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (results.length === 0) {
         searchResults.innerHTML = `
           <div class="M_search_result_item">
-            <p>Ничего не найдено</p>
+            <p class="text_medium_description_text">Ничего не найдено</p>
           </div>
         `;
       } else {

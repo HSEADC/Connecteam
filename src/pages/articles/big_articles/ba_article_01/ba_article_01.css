@@ -744,7 +744,29 @@
     -ms-overflow-style: none;
 }
 
-.W_search_results_dropdown::-webkit-scrollbar{
+.W_preview_results_dropdown{
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+
+    display: none;
+
+    width: 100%;
+    max-width: 65.5rem;
+
+    max-height: 19rem;
+
+    background: var(--color-white);
+    border-radius: 0 0 var(--corner-15) var(--corner-15);
+    opacity: 0;
+
+    transition: opacity 0.2s ease;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.W_search_results_dropdown::-webkit-scrollbar, .W_preview_results_dropdown::-webkit-scrollbar {
     width: 0;
 }
 

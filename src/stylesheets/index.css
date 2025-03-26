@@ -72,12 +72,15 @@
     align-items: center;
 
     width: 100%;
-    max-width: 65.5rem;
 
     height: 4.6rem;
     max-height: 46px;
 
+    box-sizing: border-box;
+
     padding: 0 var(--spacing-30);
+
+    color: var(--color-purple);
 
     background: var(--color-white);
     border-radius: 3.5rem;
@@ -105,13 +108,7 @@
     background: url('../images/search_icon.svg') no-repeat center/100%;
 }
 
-.A_preview_search_input input{
-    width: 100%;
-
-    color: var(--color-purple);
-}
-
-.A_preview_search_input input::placeholder{
+.A_preview_search_input::placeholder{
     color: var(--color-light-blue);
 }
 
