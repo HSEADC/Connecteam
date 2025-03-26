@@ -82,6 +82,7 @@
   --font-45-500i: 500 4.5rem/1.2 'Inter Tight', sans-serif;
   --font-60-500i: 500 6rem/1.2 'Inter Tight', sans-serif;
   --font-footer: 600 5.4rem/1 'Hauora', sans-serif;
+  --font-header-0: 500 9.4rem/.93 'Inter Tight', sans-serif;
   --font-header-1: 500 4.5rem/1.2 'Inter Tight', sans-serif;
   --font-header-2: 500 3.5rem/1.2 'Inter Tight', sans-serif;
   --font-header-3-articles: 500 2.5rem/1.2 'Inter Tight', sans-serif;
@@ -104,6 +105,10 @@ h2{
 
 h3, .text_headers_h3_article{
   font: var(--font-header-3-articles);
+}
+
+.text_header_0{
+  font: var(--font-header-0);
 }
 
 .text_headers_h3_cards{

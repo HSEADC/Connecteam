@@ -77,11 +77,11 @@
 /* Page - Index */
 .A_preview_card{
     position: absolute;
-    top: 20vw;
-    left: 17vw;
+    top: 30%;
+    left: 17%;
     z-index: 1;
 
-    max-width: 35rem;
+    max-width: 26rem;
 
     color: var(--color-white);
 
@@ -89,7 +89,7 @@
 }
 
 .A_preview_card h3, .W_preview_big_card h3{
-    font: var(--font-25-500);
+    font: var(--font-body-article-text);
 }
 
 .A_preview_tag{
@@ -252,7 +252,7 @@
 
 @media (max-width: 768px) {
     /* O_footer */
-    .A_footer_social_media_text{
+    .A_footer_social_media_text, .A_preview_card{
         display: none;
     }
 }

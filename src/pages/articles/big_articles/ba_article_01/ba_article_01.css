@@ -239,6 +239,10 @@
     background: url('../../../../images/cases/case/A_case_04_image.webp') no-repeat center/100%;
 }
 
+.A_preview_testing_button a{
+    color: var(--color-white);
+}
+
 .M_article_image_label{
     display: flex;
     flex-direction: column;

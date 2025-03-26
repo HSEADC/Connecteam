@@ -29,22 +29,26 @@
 /* Page - Index */
 .M_preview_plate{
     position: absolute;
-    top: 20vw;
-    right: 25vw;
+    top: 42%;
+    right: 10%;
 
     display: flex;
     align-items: center;
-    gap: var(--spacing-15);
 
-    padding: var(--spacing-6) var(--spacing-12);
+    max-width: 35.6rem;
 
-    background: var(--color-light-gray);
+    padding: var(--spacing-15) var(--spacing-25);
+
+    background: var(--color-pink);
     border-radius: var(--corner-5);
+
+    transform: rotate(4deg);
 }
 
 .M_preview_plate span{
+    color: var(--color-white);
     text-align: center;
-    font: var(--font-20-500);
+    font: var(--font-body-article-text);
 }
 
 .M_preview_testing_text{
@@ -70,4 +74,17 @@
 .M_preview_mission_plate span{
     text-align: center;
     font: var(--font-20-500);
+}
+
+@media (max-width: 1500px) {
+    .M_preview_plate{
+        top: 60%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .M_preview_plate{
+        display: none;
+    }
 }

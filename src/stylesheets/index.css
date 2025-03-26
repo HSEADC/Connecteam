@@ -54,6 +54,73 @@
     background: url('../images/preview/casino.svg') no-repeat center/100%;
 }
 
+.M_preview_search_bar{
+    position: absolute;
+    top: 65%;
+
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-15);
+
+    width: 100%;
+
+    padding: 0 var(--spacing-45);
+}
+
+.A_preview_search_input{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: 65.5rem;
+
+    height: 4.6rem;
+    max-height: 46px;
+
+    padding: 0 var(--spacing-30);
+
+    background: var(--color-white);
+    border-radius: 3.5rem;
+}
+
+.W_preview_search_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4.6rem;
+    min-width: 4.6rem;
+
+    height: 4.6rem;
+
+    background: var(--color-white);
+    border-radius: 100%;
+}
+
+.A_preview_search_icon{
+    width: 1.5rem;
+
+    height: 1.5rem;
+
+    background: url('../images/search_icon.svg') no-repeat center/100%;
+}
+
+.A_preview_search_input input{
+    width: 100%;
+
+    color: var(--color-purple);
+}
+
+.A_preview_search_input input::placeholder{
+    color: var(--color-light-blue);
+}
+
+@media (max-width:545px) {
+    .M_preview_search_bar{
+        top: 60%;
+    }
+}
+
 @media (max-width: 1440px) {
     #B_preview_testing{
         right: -10vw;
