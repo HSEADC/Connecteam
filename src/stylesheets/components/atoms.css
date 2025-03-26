@@ -120,13 +120,45 @@
 
     padding: var(--spacing-10) var(--spacing-18);
 
-    color: var(--color-white);
+    color: var(--color-orange);
 
-    background: var(--color-orange);
+    background: var(--color-light-gray);
 
     border-radius: var(--corner-30);
 
+    transition: all .2s;
+    border: 1.5px solid var(--color-orange);
     font: var(--font-15-500);
+}
+
+.A_preview_testing_button a{
+    width: fit-content;
+
+    padding: var(--spacing-10) var(--spacing-18);
+
+    color: var(--color-white);
+
+    background: var(--color-blue);
+
+    border-radius: var(--corner-30);
+
+    transition: all .2s;
+
+    font: var(--font-15-500);
+}
+
+.A_preview_testing_button a:active{
+    background: var(--color-purple-active);
+}
+
+.A_preview_materials_button a:hover{
+    color: var(--color-white);
+
+    background: var(--color-orange);
+}
+
+.A_preview_materials_button a:active{
+    background: var(--color-orange-active);
 }
 
 .A_preview_testing_title h2{
@@ -136,18 +168,6 @@
 .A_preview_testing_description p{
     color: var(--color-lighter-gray);
     font: var(--font-18-500);
-}
-
-.A_preview_testing_button a{
-    width: fit-content;
-
-    padding: var(--spacing-10) var(--spacing-18);
-
-    background: var(--color-blue);
-
-    border-radius: var(--corner-30);
-
-    font: var(--font-15-500);
 }
 
 .A_preview_mission_title h2{

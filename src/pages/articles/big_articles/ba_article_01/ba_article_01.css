@@ -21,7 +21,7 @@
     border-radius: 100%;
 }
 
-.A_looking_for_button{
+.A_looking_for_button, .A_looking_for_button:visited{
     height: fit-content;
 
     padding: var(--spacing-9) var(--spacing-20);
@@ -30,8 +30,20 @@
 
     background: transparent;
     border-radius: var(--corner-20);
+
+    transition: all .2s;
     border: 1.5px solid var(--color-orange);
     white-space: nowrap;
+}
+
+.A_looking_for_button:hover{
+    color: var(--color-white);
+
+    background: var(--color-orange);
+}
+
+.A_looking_for_button:active{
+    background: var(--color-orange-click);
 }
 
 .M_person{
@@ -239,10 +251,6 @@
     background: url('../../../../images/cases/case/A_case_04_image.webp') no-repeat center/100%;
 }
 
-.A_preview_testing_button a{
-    color: var(--color-white);
-}
-
 .M_article_image_label{
     display: flex;
     flex-direction: column;
@@ -406,7 +414,19 @@
 
     background: var(--color-purple);
     border-radius: var(--corner-20);
+
+    transition: all .2s;
     white-space: nowrap;
+}
+
+.A_direction_button:hover{
+    color: var(--color-white);
+}
+
+.A_direction_button:active{
+    color: var(--color-white);
+
+    background: var(--color-purple-active);
 }
 
 .M_article_case_button{
