@@ -52,9 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCards();
 
     const case_yandex = document.getElementById('I_case_yandex')
+    const case_sber = document.getElementById('I_case_sber')
 
     case_yandex.addEventListener('click', () => {
-        window.location.href = '/cases/case';
+        window.location.href = 'Connecteam/cases/case';
+    });
+    case_sber.addEventListener('click', () => {
+        window.location.href = 'Connecteam/cases/sber';
     });
 });
 
