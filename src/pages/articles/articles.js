@@ -1,4 +1,5 @@
 import '../../index.css';
+import { Sticker } from '../../partials/A_sticker/A_sticker';
 
 document.addEventListener('DOMContentLoaded', function() {
     const tags = document.querySelectorAll('.A_filter_tag');
@@ -90,29 +91,5 @@ document.addEventListener('DOMContentLoaded', function() {
     init();
 });
 
-function Sticker({ imageSrc, content, maxLength }) {
-    const stickerContainer = document.getElementById('stickerContainer');
-    if (!stickerContainer) return;
-    
-    const sticker = document.createElement('div');
-    sticker.className = 'sticker';
-    sticker.innerHTML = `
-      <img src="${imageSrc}" alt="Sticker">
-      <div class="sticker-content">${content.length > maxLength ? content.substring(0, maxLength) + '...' : content}</div>
-    `;
-    stickerContainer.appendChild(sticker);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    Sticker({ 
-        imageSrc: '../../images/stickers/sticker1body.svg', 
-        content: 'Утвердить main страницу', 
-        maxLength: 50 
-    });
-
-    Sticker({ 
-        imageSrc: '../../images/stickers/sticker2body.svg', 
-        content: 'Ревью Алексей кейс ноябрь', 
-        maxLength: 50 
-    });
-});
+Sticker({ imageSrc: '/Connecteam/images/stickers/sticker1body.svg', content: 'Утвердить main страницу', maxLength: 50 });
+Sticker({ imageSrc: '/Connecteam/images/stickers/sticker2body.svg', content: 'Ревью Алексей кейс ноябрь', maxLength: 50 });

@@ -90,13 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const case_yandex = document.getElementById('I_case_yandex');
     if (case_yandex) {
         case_yandex.addEventListener('click', () => {
-            window.location.href = '/cases/yandexrebranding';
+            window.location.href = '/Connecteam/cases/yandexrebranding';
         });
     }
     const case_sber = document.getElementById('I_case_sber');
     if (case_sber) {
         case_sber.addEventListener('click', () => {
-            window.location.href = '/cases/sber';
+            window.location.href = '/Connecteam/cases/sber';
         });
     }
 });
