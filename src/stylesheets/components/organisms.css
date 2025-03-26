@@ -29,6 +29,25 @@
     border-radius: 0 0 var(--corner-12) var(--corner-12);
 }
 
+.O_header_mobile{
+    position: relative;
+    z-index: 9999;
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+
+    min-width: 100vw;
+
+    min-height: 100vh;
+
+    background: var(--color-blue);
+}
+
+.O_header_mobile.active {
+    display: flex;
+}
+
 @media (max-width: 768px) {
     .O_footer{
         padding: var(--spacing-25);

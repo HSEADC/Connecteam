@@ -356,6 +356,21 @@
     z-index: 999;
 }
 
+.W_header_mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-80);
+
+    width: 100%;
+
+    height: 100%;
+
+    padding: var(--spacing-15) var(--spacing-25);
+
+    margin-top: var(--spacing-80);
+}
+
 @media (max-width: 1440px) {
     .W_preview_coming_soon_content .W_preview_coming_soon_case:nth-child(3){
         background: url('../../images/preview/code.webp') no-repeat center/cover;
@@ -390,5 +405,9 @@
 
     .W_preview_stories_content{
         flex-direction: column;
+    }
+
+    .W_header_interactive{
+        display: none;
     }
 }

@@ -1,4 +1,5 @@
 import articleData from './O_header_filter.json';
+import '../../index.css'
 
 document.addEventListener('DOMContentLoaded', () => {
     const navButtons = document.querySelectorAll('.A_header_nav_button');
@@ -107,4 +108,27 @@ document.addEventListener('DOMContentLoaded', () => {
         searchInput.style.right = '40px';
       }, 300);
     }
+
+    const burgerButton = document.querySelector('.A_header_burger_menu_button');
+    const closeButton = document.querySelector('.A_header_burger_menu_close');
+    const mobileMenu = document.querySelector('.O_header_mobile');
+    
+    function openMenu() {
+      mobileMenu.classList.add('active');
+      document.body.classList.add('no_scroll');
+    }
+    
+    function closeMenu() {
+      mobileMenu.classList.remove('active');
+      document.body.classList.remove('no_scroll');
+    }
+    
+    burgerButton.addEventListener('click', openMenu);
+    closeButton.addEventListener('click', closeMenu);
+    
+    mobileMenu.addEventListener('click', function(e) {
+      if (e.target === mobileMenu) {
+        closeMenu();
+      }
+    });
 });
