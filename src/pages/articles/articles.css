@@ -162,6 +162,67 @@
     cursor: pointer;
 }
 
+.C_filter_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-15);
+  }
+
+  .remove {
+    width: 1.2rem;
+
+    height: 1.2rem;
+
+    background: url('../../images/cross_icon.svg') no-repeat center/100%;
+  }
+
+  .A_filter_tag {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-10);
+
+    padding: var(--spacing-9) var(--spacing-20);
+
+    color: var(--color-purple);
+
+    background: var(--color-light-gray);
+    border-radius: var(--corner-20);
+
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid var(--color-purple);
+  }
+
+  .A_filter_tag .remove {
+    display: none;
+  }
+
+  .A_filter_tag.active .remove {
+    display: inline;
+    cursor: pointer;
+  }
+
+  .W_articles_materials_card.hidden {
+    height: 0;
+
+    padding: 0;
+
+    margin: 0;
+
+    opacity: 0;
+    overflow: hidden;
+  }
+
+
+
+  .W_filter_tags {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-15);
+
+    width: 100%;
+  }
+
 @media (max-width: 1440px) {
     #B_articles_materials_leopold {
         background: url('../../images/articles/leopold.webp') no-repeat center/cover;
