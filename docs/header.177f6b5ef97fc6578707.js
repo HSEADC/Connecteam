@@ -2,33 +2,55 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 514:
+/***/ 440:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 
-// EXTERNAL MODULE: ./src/index.css
-var src = __webpack_require__(689);
 ;// ./src/partials/O_header/O_header_filter.json
 const O_header_filter_namespaceObject = /*#__PURE__*/JSON.parse('[{"title":"Го сыграем?","url":"/Connecteam/articles/letsplay","description":"Геймификация как способ улучшить взаимодействие и мотивацию"},{"title":"Психология мотивации в команде","url":"/Connecteam/articles/teampsychologymotivation","description":"Когда «спасибо» спасает дедлайны"},{"title":"Обратная связь: культура конструктивных бесед","url":"/Connecteam/articles/feedback","description":"Как создавать поддерживающую атмосферу обратной связи"},{"title":"Роль доверия в построении IT-команд","url":"/Connecteam/articles/trustrole","description":"Что делать, когда говорят про команду: «у нас всё прозрачно»"},{"title":"Лучшее взаимодействие дизайна-разработки от Аарона Уолтера","url":"/Connecteam/articles/waltercommunication","description":"Узнали все секреты Аарона Уолтера из InVision Studio"},{"title":"А есть волшебная таблетка?","url":"/Connecteam/articles/magictablet","description":"Трактат о смыслах и законах командной работы"},{"title":"Инструменты для диагностики вашей команды","url":"/Connecteam/articles/diagnostictools","description":"Рассказали про разные виды тестирования эффективности команды и почему тебе это нужно"},{"title":"Сюжетно-ролевой тимбилдинг","url":"/Connecteam/articles/roleteambuilding","description":"Что это такое и зачем оно команде. Актёрское образование не требуется"},{"title":"Виды созвонов","url":"/Connecteam/articles/meetingtypes","description":"«Опять созвон?!»: вводим в курс про абсолютно все типы созвонов"},{"title":"Дружба с коллегой","url":"/Connecteam/articles/colleguefriendship","description":"«Сделай по-братски» или как работа может вас поссорить"},{"title":"Технический жаргон:","url":"/Connecteam/articles/technicaljargon","description":"Извините за мой французский: как говорить с командой на понятном языке?"},{"title":"Совместная работа разработчиков","url":"/Connecteam/articles/developerscoworking","description":"Как не допустить ситуацию: «круто, div “blabla”»"},{"title":"Эффективная коммуникация между QA и разработчиками","url":"/Connecteam/articles/qadeveloperscommunication","description":"От багов к доверию"},{"title":"Шаблон решения проблем для IT-команд","url":"/Connecteam/articles/problemtemplates","description":"Тебе, подгон) Рассказываем от первопричины до решения"},{"title":"Холодная война между отделами","url":"/Connecteam/articles/departmentscoldwar","description":"Как не допустить и предотвратить начало баттла"},{"title":"Профессия медиатора","url":"/Connecteam/articles/mediator","description":"Медиатор, для гитары который?"},{"title":"Общение с командой при горящих дедлайнах","url":"/Connecteam/articles/deadlinecommunication","description":"Джингл белс нервной системы"},{"title":"Опасности «чрезмерной дружбы» на работе","url":"/Connecteam/articles/jobfriendship","description":"Передружба-недоработа"},{"title":"Знакомство новеньких с коллективом","url":"/Connecteam/articles/newcommandmembers","description":"Как предотвратить раскол между «старожилами» и «новичками»"},{"title":"Кто ты такой? Сплочение нового коллектива","url":"/Connecteam/articles/whoareyou","description":"Лайфхаки и советы по дружной атмосфере в команде"},{"title":"Конфликт в команде","url":"/Connecteam/articles/teamconflict","description":"Пути решения назойливой проблемы"},{"title":"Как поднять мотивацию в команде","url":"/Connecteam/articles/teammotivation","description":"Что делать, если денег на мотивацию нет, но хочется, чтобы команда работала лучше"},{"title":"Работа в новом коллективе","url":"/Connecteam/articles/newteamworking","description":"Как новичку быстро влиться в команду и не чувствовать себя чужим"},{"title":"Работа при потоке задач","url":"/Connecteam/articles/streamworking","description":"Как не потеряться, растеряться и работать эффективно"},{"title":"Как спорить с коллегой","url":"/Connecteam/articles/collegueargue","description":"Что делать, если у вас разные взгляды на задачу"},{"title":"Общение дизайнера с кодером","url":"/Connecteam/articles/designcodecommunication","description":"Как правильно давать комменты на работу друг друга"},{"title":"Профессиональное выгорание","url":"/Connecteam/articles/burnout","description":"Не в ресурсе, не в потоке, на низких вибрациях, это конец?"},{"title":"Бесконечные митинги","url":"/Connecteam/articles/endlessrallies","description":"Как избежать бесконечных митингов и работать продуктивно"},{"title":"Ребрендинг «Яндекс Музыки»","url":"/Connecteam/cases/yandexrebranding","description":"В декабре 2023 года «Яндекс Музыка» провела первый за девять лет ребрендинг..."},{"title":"Как Spotify выигрывает гонку стриминговых сервисов — взгляд изнутри команды","url":"/Connecteam/cases/spotify","description":"Spotify произвел революцию в индустрии музыкальных стриминговых сервисов..."},{"title":"«Рука помощи» от Сбербанка: провал запуска ИИ-ассистента","url":"/Connecteam/cases/sber","description":"Когда Сбербанк решил внедрить собственного ИИ-ассистента «Рука помощи»..."},{"title":"Как “IBM” остаются техно-гигантом больше 80 лет","url":"/Connecteam/cases/ibm","description":"IBM — это не просто компания, а целая эпоха в мире технологий. С момента..."}]');
-;// ./src/index.js
+// EXTERNAL MODULE: ./src/index.css
+var src = __webpack_require__(689);
+;// ./src/partials/O_header/O_header.js
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  var previewSearchInput = document.querySelector('.A_preview_search_input');
-  var previewSearchResults = document.querySelector('.W_preview_results_dropdown');
+document.addEventListener('DOMContentLoaded', function () {
+  var navButtons = document.querySelectorAll('.A_header_nav_button');
+  var currentPath = window.location.pathname;
+  navButtons.forEach(function (button) {
+    if (button.getAttribute('href') === currentPath) {
+      button.style.background = 'var(--color-pink)';
+    }
+  });
+  var searchIcon = document.querySelector('.W_header_search_icon');
+  var searchInput = document.querySelector('.A_header_search_input');
+  var searchResults = document.querySelector('.W_search_results_dropdown');
   var isOpen = false;
-  previewSearchInput.addEventListener('input', function () {
-    var query = previewSearchInput.value.trim();
+  searchIcon.addEventListener('click', function (e) {
+    e.stopPropagation();
+    if (!isOpen) {
+      searchInput.style.width = '20.6rem';
+      searchInput.style.padding = 'var(--spacing-5) var(--spacing-20)';
+      searchInput.style.opacity = '1';
+      searchInput.style.border = '1px solid var(--color-white)';
+      searchInput.style.position = 'relative';
+      searchInput.style.right = '0';
+      searchInput.focus();
+      searchIcon.style.background = 'var(--color-purple)';
+      isOpen = true;
+    } else {
+      closeSearch();
+    }
+  });
+  searchInput.addEventListener('input', function () {
+    var query = searchInput.value.trim();
     if (query.length > 0) {
       var filteredResults = O_header_filter_namespaceObject.filter(function (article) {
         var lowerQuery = query.toLowerCase();
         return article.title.toLowerCase().includes(lowerQuery) || article.description.toLowerCase().includes(lowerQuery);
       });
       showResults(filteredResults);
-      previewSearchInput.style.borderRadius = '2.4rem 2.4rem 0 0';
     } else {
       hideResults();
-      previewSearchInput.style.borderRadius = '';
     }
   });
   document.addEventListener('keydown', function (e) {
@@ -37,79 +59,66 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   document.addEventListener('click', function (e) {
-    if (isOpen && !e.target.closest('.M_preview_search_bar')) {
+    if (isOpen && !e.target.closest('.M_header_search_bar')) {
       closeSearch();
     }
   });
   function showResults(results) {
-    previewSearchResults.innerHTML = '';
+    searchResults.innerHTML = '';
     if (results.length === 0) {
-      previewSearchResults.innerHTML = "\n          <div class=\"M_search_result_item\">\n            <p class=\"text_medium_description_text\">\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E</p>\n          </div>\n        ";
+      searchResults.innerHTML = "\n          <div class=\"M_search_result_item\">\n            <p class=\"text_medium_description_text\">\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E</p>\n          </div>\n        ";
     } else {
       results.slice(0, 5).forEach(function (item) {
         var result = document.createElement('a');
         result.className = 'M_search_result_item';
         result.href = item.url;
         result.innerHTML = "\n            <h4 class=\"text_medium_description_text\">".concat(item.title, "</h4>\n            <p class=\"text_small_description_text\">").concat(item.description, "</p>\n          ");
-        previewSearchResults.appendChild(result);
+        searchResults.appendChild(result);
       });
     }
-    previewSearchResults.style.display = 'block';
+    searchResults.style.display = 'block';
     setTimeout(function () {
-      return previewSearchResults.style.opacity = '1';
+      return searchResults.style.opacity = '1';
     }, 10);
   }
   function hideResults() {
-    previewSearchResults.style.opacity = '0';
+    searchResults.style.opacity = '0';
     setTimeout(function () {
-      previewSearchResults.style.display = 'none';
-      previewSearchInput.style.borderRadius = '';
+      return searchResults.style.display = 'none';
     }, 200);
   }
   function closeSearch() {
-    previewSearchInput.style.width = '0';
-    previewSearchInput.style.padding = '0';
-    previewSearchInput.style.opacity = '0';
-    previewSearchInput.style.border = 'none';
-    previewSearchInput.style.borderRadius = '';
-    previewSearchInput.value = '';
+    searchInput.style.width = '0';
+    searchInput.style.padding = '0';
+    searchInput.style.opacity = '0';
+    searchInput.style.border = 'none';
+    searchInput.value = '';
+    searchIcon.style.background = 'var(--color-blue)';
     hideResults();
     isOpen = false;
     setTimeout(function () {
-      previewSearchInput.style.position = 'absolute';
-      previewSearchInput.style.right = '40px';
+      searchInput.style.position = 'absolute';
+      searchInput.style.right = '40px';
     }, 300);
   }
-  var friendshipArticle = document.getElementById('I_preview_friendship');
-  if (friendshipArticle) {
-    friendshipArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/colleguefriendship';
-    });
+  var burgerButton = document.querySelector('.A_header_burger_menu_button');
+  var closeButton = document.querySelector('.A_header_burger_menu_close');
+  var mobileMenu = document.querySelector('.O_header_mobile');
+  function openMenu() {
+    mobileMenu.classList.add('active');
+    document.body.classList.add('no_scroll');
   }
-  var deadlineArticle = document.getElementById('I_deadline_friedship');
-  if (deadlineArticle) {
-    deadlineArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/deadlinecommunication';
-    });
+  function closeMenu() {
+    mobileMenu.classList.remove('active');
+    document.body.classList.remove('no_scroll');
   }
-  var coworkingArticle = document.getElementById('I_coworking_friedship');
-  if (coworkingArticle) {
-    coworkingArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/developerscoworking';
-    });
-  }
-  var case_yandex = document.getElementById('I_case_yandex');
-  if (case_yandex) {
-    case_yandex.addEventListener('click', function () {
-      window.location.href = '/Connecteam/cases/yandexrebranding';
-    });
-  }
-  var case_sber = document.getElementById('I_case_sber');
-  if (case_sber) {
-    case_sber.addEventListener('click', function () {
-      window.location.href = '/Connecteam/cases/sber';
-    });
-  }
+  burgerButton.addEventListener('click', openMenu);
+  closeButton.addEventListener('click', closeMenu);
+  mobileMenu.addEventListener('click', function (e) {
+    if (e.target === mobileMenu) {
+      closeMenu();
+    }
+  });
 });
 
 /***/ }),
@@ -408,7 +417,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1743068433189
+        // 1743069300220
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -495,12 +504,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("index." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("header." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("201f5f52e6d7065c2324")
+/******/ 		__webpack_require__.h = () => ("1d4f8315dba26341dd53")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1089,7 +1098,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			57: 0
+/******/ 			608: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1598,7 +1607,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(514);
+/******/ 	var __webpack_exports__ = __webpack_require__(440);
 /******/ 	
 /******/ })()
 ;

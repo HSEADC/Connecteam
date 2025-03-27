@@ -2,11 +2,84 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 930:
+/***/ 750:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
+/* harmony import */ var _partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(546);
 
+
+(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
+  imageSrc: '/Connecteam/images/stickers/sticker1body.svg',
+  content: 'Не забыть поесть иначе умру',
+  maxLength: 50
+});
+(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
+  imageSrc: '/Connecteam/images/stickers/sticker4body.svg',
+  content: 'Распределить задачи на неделю',
+  maxLength: 50
+});
+
+/***/ }),
+
+/***/ 546:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   C: () => (/* binding */ Sticker)
+/* harmony export */ });
+function Sticker(_ref) {
+  var imageSrc = _ref.imageSrc,
+    _ref$content = _ref.content,
+    content = _ref$content === void 0 ? '' : _ref$content,
+    _ref$maxLength = _ref.maxLength,
+    maxLength = _ref$maxLength === void 0 ? 100 : _ref$maxLength;
+  var sticker = document.createElement('div');
+  sticker.classList.add('W_sticker');
+  sticker.style.backgroundImage = "url(".concat(imageSrc, ")");
+  sticker.style.backgroundSize = 'cover';
+  sticker.style.backgroundPosition = 'center';
+  sticker.style.zIndex = 9999;
+  var textElement = document.createElement('p');
+  textElement.classList.add('A_sticker_text');
+  textElement.contentEditable = true;
+  textElement.innerText = content;
+  textElement.addEventListener('input', function () {
+    if (textElement.innerText.length > maxLength) {
+      textElement.innerText = textElement.innerText.slice(0, maxLength);
+    }
+  });
+  textElement.addEventListener('focus', function () {
+    textElement.style.outline = 'none';
+  });
+  sticker.appendChild(textElement);
+  sticker.style.position = 'absolute';
+  sticker.style.top = "".concat(Math.random() * (window.innerHeight - 150), "px");
+  sticker.style.left = "".concat(Math.random() * (window.innerWidth - 150), "px");
+  enableDrag(sticker);
+  document.body.appendChild(sticker);
+}
+function enableDrag(element) {
+  var isDragging = false;
+  var offsetX, offsetY;
+  element.addEventListener('mousedown', function (e) {
+    isDragging = true;
+    offsetX = e.clientX - element.offsetLeft;
+    offsetY = e.clientY - element.offsetTop;
+    element.style.zIndex = 9999;
+  });
+  document.addEventListener('mousemove', function (e) {
+    if (!isDragging) return;
+    var x = e.clientX - offsetX;
+    var y = e.clientY - offsetY;
+    element.style.left = "".concat(Math.max(0, Math.min(window.innerWidth - element.offsetWidth, x)), "px");
+    element.style.top = "".concat(Math.max(0, Math.min(window.innerHeight - element.offsetHeight, y)), "px");
+  });
+  document.addEventListener('mouseup', function () {
+    isDragging = false;
+    element.style.zIndex = '';
+  });
+}
 
 /***/ }),
 
@@ -304,7 +377,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1743068433189
+        // 1743069300220
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -371,6 +444,18 @@ module.exports = function (urlString) {
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -391,12 +476,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("interactives." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("ssa_article." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("201f5f52e6d7065c2324")
+/******/ 		__webpack_require__.h = () => ("1d4f8315dba26341dd53")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -985,7 +1070,8 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			56: 0
+/******/ 			193: 0,
+/******/ 			756: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1494,7 +1580,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(930);
+/******/ 	var __webpack_exports__ = __webpack_require__(750);
 /******/ 	
 /******/ })()
 ;

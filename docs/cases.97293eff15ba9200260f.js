@@ -2,21 +2,85 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 84:
+/***/ 94:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
 /* harmony import */ var _partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(546);
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  var tags = document.querySelectorAll('.A_filter_tag');
+  var cards = document.querySelectorAll('.W_cases_materials_card');
+  var activeTags = new Set();
+  tags.forEach(function (tag) {
+    tag.addEventListener('click', function (e) {
+      var tagValue = this.getAttribute('data-tag');
+      if (e.target.classList.contains('remove')) {
+        activeTags["delete"](tagValue);
+        this.classList.remove('active');
+        updateCards();
+        return;
+      }
+      if (activeTags.has(tagValue)) {
+        activeTags["delete"](tagValue);
+        this.classList.remove('active');
+      } else {
+        activeTags.add(tagValue);
+        this.classList.add('active');
+      }
+      updateCards();
+    });
+  });
+  function updateCards() {
+    cards.forEach(function (card) {
+      var cardTags = card.getAttribute('data-tags').split(' ');
+      if (activeTags.size === 0) {
+        card.classList.remove('hidden');
+        return;
+      }
+      var hasMatchingTag = _toConsumableArray(activeTags).some(function (tag) {
+        return cardTags.includes(tag);
+      });
+      if (hasMatchingTag) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+  updateCards();
+  var case_yandex = document.getElementById('I_case_yandex');
+  var case_sber = document.getElementById('I_case_sber');
+  var case_spotify = document.getElementById('I_case_spotify');
+  var case_ibm = document.getElementById('I_case_ibm');
+  case_yandex.addEventListener('click', function () {
+    window.location.href = '/Connecteam/cases/yandexrebranding';
+  });
+  case_sber.addEventListener('click', function () {
+    window.location.href = '/Connecteam/cases/sber';
+  });
+  case_spotify.addEventListener('click', function () {
+    window.location.href = '/Connecteam/cases/spotify';
+  });
+  case_ibm.addEventListener('click', function () {
+    window.location.href = '/Connecteam/cases/ibm';
+  });
+});
 (0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
   imageSrc: '/Connecteam/images/stickers/sticker2body.svg',
-  content: 'провести 3 интервью с ца',
+  content: 'Чекнуть библиотеки',
   maxLength: 50
 });
 (0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
-  imageSrc: '/Connecteam/images/stickers/sticker1body.svg',
-  content: 'Запросить данные у аналитиков',
+  imageSrc: '/Connecteam/images/stickers/sticker3body.svg',
+  content: 'Созвон с лидом 21:00',
   maxLength: 50
 });
 
@@ -377,7 +441,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1743068433189
+        // 1743069300220
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -476,12 +540,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("ba_article." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("cases." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("201f5f52e6d7065c2324")
+/******/ 		__webpack_require__.h = () => ("1d4f8315dba26341dd53")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1070,7 +1134,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			559: 0,
+/******/ 			794: 0,
 /******/ 			756: 0
 /******/ 		};
 /******/ 		
@@ -1580,7 +1644,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(84);
+/******/ 	var __webpack_exports__ = __webpack_require__(94);
 /******/ 	
 /******/ })()
 ;

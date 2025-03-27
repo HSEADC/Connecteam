@@ -2,145 +2,115 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 632:
+/***/ 514:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
-/* harmony import */ var _partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(546);
+
+// EXTERNAL MODULE: ./src/index.css
+var src = __webpack_require__(689);
+;// ./src/partials/O_header/O_header_filter.json
+const O_header_filter_namespaceObject = /*#__PURE__*/JSON.parse('[{"title":"Го сыграем?","url":"/Connecteam/articles/letsplay","description":"Геймификация как способ улучшить взаимодействие и мотивацию"},{"title":"Психология мотивации в команде","url":"/Connecteam/articles/teampsychologymotivation","description":"Когда «спасибо» спасает дедлайны"},{"title":"Обратная связь: культура конструктивных бесед","url":"/Connecteam/articles/feedback","description":"Как создавать поддерживающую атмосферу обратной связи"},{"title":"Роль доверия в построении IT-команд","url":"/Connecteam/articles/trustrole","description":"Что делать, когда говорят про команду: «у нас всё прозрачно»"},{"title":"Лучшее взаимодействие дизайна-разработки от Аарона Уолтера","url":"/Connecteam/articles/waltercommunication","description":"Узнали все секреты Аарона Уолтера из InVision Studio"},{"title":"А есть волшебная таблетка?","url":"/Connecteam/articles/magictablet","description":"Трактат о смыслах и законах командной работы"},{"title":"Инструменты для диагностики вашей команды","url":"/Connecteam/articles/diagnostictools","description":"Рассказали про разные виды тестирования эффективности команды и почему тебе это нужно"},{"title":"Сюжетно-ролевой тимбилдинг","url":"/Connecteam/articles/roleteambuilding","description":"Что это такое и зачем оно команде. Актёрское образование не требуется"},{"title":"Виды созвонов","url":"/Connecteam/articles/meetingtypes","description":"«Опять созвон?!»: вводим в курс про абсолютно все типы созвонов"},{"title":"Дружба с коллегой","url":"/Connecteam/articles/colleguefriendship","description":"«Сделай по-братски» или как работа может вас поссорить"},{"title":"Технический жаргон:","url":"/Connecteam/articles/technicaljargon","description":"Извините за мой французский: как говорить с командой на понятном языке?"},{"title":"Совместная работа разработчиков","url":"/Connecteam/articles/developerscoworking","description":"Как не допустить ситуацию: «круто, div “blabla”»"},{"title":"Эффективная коммуникация между QA и разработчиками","url":"/Connecteam/articles/qadeveloperscommunication","description":"От багов к доверию"},{"title":"Шаблон решения проблем для IT-команд","url":"/Connecteam/articles/problemtemplates","description":"Тебе, подгон) Рассказываем от первопричины до решения"},{"title":"Холодная война между отделами","url":"/Connecteam/articles/departmentscoldwar","description":"Как не допустить и предотвратить начало баттла"},{"title":"Профессия медиатора","url":"/Connecteam/articles/mediator","description":"Медиатор, для гитары который?"},{"title":"Общение с командой при горящих дедлайнах","url":"/Connecteam/articles/deadlinecommunication","description":"Джингл белс нервной системы"},{"title":"Опасности «чрезмерной дружбы» на работе","url":"/Connecteam/articles/jobfriendship","description":"Передружба-недоработа"},{"title":"Знакомство новеньких с коллективом","url":"/Connecteam/articles/newcommandmembers","description":"Как предотвратить раскол между «старожилами» и «новичками»"},{"title":"Кто ты такой? Сплочение нового коллектива","url":"/Connecteam/articles/whoareyou","description":"Лайфхаки и советы по дружной атмосфере в команде"},{"title":"Конфликт в команде","url":"/Connecteam/articles/teamconflict","description":"Пути решения назойливой проблемы"},{"title":"Как поднять мотивацию в команде","url":"/Connecteam/articles/teammotivation","description":"Что делать, если денег на мотивацию нет, но хочется, чтобы команда работала лучше"},{"title":"Работа в новом коллективе","url":"/Connecteam/articles/newteamworking","description":"Как новичку быстро влиться в команду и не чувствовать себя чужим"},{"title":"Работа при потоке задач","url":"/Connecteam/articles/streamworking","description":"Как не потеряться, растеряться и работать эффективно"},{"title":"Как спорить с коллегой","url":"/Connecteam/articles/collegueargue","description":"Что делать, если у вас разные взгляды на задачу"},{"title":"Общение дизайнера с кодером","url":"/Connecteam/articles/designcodecommunication","description":"Как правильно давать комменты на работу друг друга"},{"title":"Профессиональное выгорание","url":"/Connecteam/articles/burnout","description":"Не в ресурсе, не в потоке, на низких вибрациях, это конец?"},{"title":"Бесконечные митинги","url":"/Connecteam/articles/endlessrallies","description":"Как избежать бесконечных митингов и работать продуктивно"},{"title":"Ребрендинг «Яндекс Музыки»","url":"/Connecteam/cases/yandexrebranding","description":"В декабре 2023 года «Яндекс Музыка» провела первый за девять лет ребрендинг..."},{"title":"Как Spotify выигрывает гонку стриминговых сервисов — взгляд изнутри команды","url":"/Connecteam/cases/spotify","description":"Spotify произвел революцию в индустрии музыкальных стриминговых сервисов..."},{"title":"«Рука помощи» от Сбербанка: провал запуска ИИ-ассистента","url":"/Connecteam/cases/sber","description":"Когда Сбербанк решил внедрить собственного ИИ-ассистента «Рука помощи»..."},{"title":"Как “IBM” остаются техно-гигантом больше 80 лет","url":"/Connecteam/cases/ibm","description":"IBM — это не просто компания, а целая эпоха в мире технологий. С момента..."}]');
+;// ./src/index.js
 
 
-(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
-  imageSrc: '../../images/stickers/sticker1body.svg',
-  content: 'тз Софья reowes.com',
-  maxLength: 50
-});
-var selectedParams = {
-  participants: null,
-  purpose: null,
-  duration: null,
-  format: 'online'
-};
-function setupOptionButtons() {
-  var optionButtons = document.querySelectorAll('.A_option_button');
-  optionButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      var paramType = this.getAttribute('data-param');
-      var value = this.getAttribute('data-value');
-      document.querySelectorAll("[data-param=\"".concat(paramType, "\"]")).forEach(function (btn) {
-        btn.classList.remove('selected');
+document.addEventListener("DOMContentLoaded", function () {
+  var previewSearchInput = document.querySelector('.A_preview_search_input');
+  var previewSearchResults = document.querySelector('.W_preview_results_dropdown');
+  var isOpen = false;
+  previewSearchInput.addEventListener('input', function () {
+    var query = previewSearchInput.value.trim();
+    if (query.length > 0) {
+      var filteredResults = O_header_filter_namespaceObject.filter(function (article) {
+        var lowerQuery = query.toLowerCase();
+        return article.title.toLowerCase().includes(lowerQuery) || article.description.toLowerCase().includes(lowerQuery);
       });
-      this.classList.add('selected');
-      selectedParams[paramType] = value;
-    });
-  });
-}
-function setupPurposeSelect() {
-  var purposeSelect = document.getElementById('purposeSelect');
-  purposeSelect.addEventListener('change', function () {
-    selectedParams.purpose = this.value;
-  });
-  selectedParams.purpose = purposeSelect.value;
-}
-function setupRadioButtons() {
-  var radioInputs = document.querySelectorAll('.M_radio_input');
-  radioInputs.forEach(function (input) {
-    input.addEventListener('change', function () {
-      if (this.checked) {
-        selectedParams.format = this.value;
-      }
-    });
-    if (input.checked) {
-      selectedParams.format = input.value;
+      showResults(filteredResults);
+      previewSearchInput.style.borderRadius = '2.4rem 2.4rem 0 0';
+    } else {
+      hideResults();
+      previewSearchInput.style.borderRadius = '';
     }
   });
-}
-function generateIdea() {
-  if (!selectedParams.participants || !selectedParams.duration || !selectedParams.purpose) {
-    alert('Пожалуйста, выберите все параметры');
-    return;
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && isOpen) {
+      closeSearch();
+    }
+  });
+  document.addEventListener('click', function (e) {
+    if (isOpen && !e.target.closest('.M_preview_search_bar')) {
+      closeSearch();
+    }
+  });
+  function showResults(results) {
+    previewSearchResults.innerHTML = '';
+    if (results.length === 0) {
+      previewSearchResults.innerHTML = "\n          <div class=\"M_search_result_item\">\n            <p class=\"text_medium_description_text\">\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E</p>\n          </div>\n        ";
+    } else {
+      results.slice(0, 5).forEach(function (item) {
+        var result = document.createElement('a');
+        result.className = 'M_search_result_item';
+        result.href = item.url;
+        result.innerHTML = "\n            <h4 class=\"text_medium_description_text\">".concat(item.title, "</h4>\n            <p class=\"text_small_description_text\">").concat(item.description, "</p>\n          ");
+        previewSearchResults.appendChild(result);
+      });
+    }
+    previewSearchResults.style.display = 'block';
+    setTimeout(function () {
+      return previewSearchResults.style.opacity = '1';
+    }, 10);
   }
-  var selectionScreen = document.getElementById('selectionScreen');
-  var ideaBlock = document.getElementById('I_idea_block');
-  var agileBlock = document.getElementById('I_agile_block');
-  selectionScreen.classList.add('hidden');
-  ideaBlock.classList.remove('hidden');
-  setTimeout(function () {
-    ideaBlock.classList.add('hidden');
-    agileBlock.classList.remove('hidden');
-    console.log('Выбранные параметры:', selectedParams);
-    agileBlock.scrollIntoView({
-      behavior: 'smooth'
+  function hideResults() {
+    previewSearchResults.style.opacity = '0';
+    setTimeout(function () {
+      previewSearchResults.style.display = 'none';
+      previewSearchInput.style.borderRadius = '';
+    }, 200);
+  }
+  function closeSearch() {
+    previewSearchInput.style.width = '0';
+    previewSearchInput.style.padding = '0';
+    previewSearchInput.style.opacity = '0';
+    previewSearchInput.style.border = 'none';
+    previewSearchInput.style.borderRadius = '';
+    previewSearchInput.value = '';
+    hideResults();
+    isOpen = false;
+    setTimeout(function () {
+      previewSearchInput.style.position = 'absolute';
+      previewSearchInput.style.right = '40px';
+    }, 300);
+  }
+  var friendshipArticle = document.getElementById('I_preview_friendship');
+  if (friendshipArticle) {
+    friendshipArticle.addEventListener('click', function () {
+      window.location.href = '/Connecteam/articles/colleguefriendship';
     });
-    selectionScreen.classList.remove('hidden');
-  }, 3000);
-}
-document.addEventListener('DOMContentLoaded', function () {
-  setupOptionButtons();
-  setupPurposeSelect();
-  setupRadioButtons();
-  window.generateIdea = generateIdea;
+  }
+  var deadlineArticle = document.getElementById('I_deadline_friedship');
+  if (deadlineArticle) {
+    deadlineArticle.addEventListener('click', function () {
+      window.location.href = '/Connecteam/articles/deadlinecommunication';
+    });
+  }
+  var coworkingArticle = document.getElementById('I_coworking_friedship');
+  if (coworkingArticle) {
+    coworkingArticle.addEventListener('click', function () {
+      window.location.href = '/Connecteam/articles/developerscoworking';
+    });
+  }
+  var case_yandex = document.getElementById('I_case_yandex');
+  if (case_yandex) {
+    case_yandex.addEventListener('click', function () {
+      window.location.href = '/Connecteam/cases/yandexrebranding';
+    });
+  }
+  var case_sber = document.getElementById('I_case_sber');
+  if (case_sber) {
+    case_sber.addEventListener('click', function () {
+      window.location.href = '/Connecteam/cases/sber';
+    });
+  }
 });
-
-/***/ }),
-
-/***/ 546:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   C: () => (/* binding */ Sticker)
-/* harmony export */ });
-function Sticker(_ref) {
-  var imageSrc = _ref.imageSrc,
-    _ref$content = _ref.content,
-    content = _ref$content === void 0 ? '' : _ref$content,
-    _ref$maxLength = _ref.maxLength,
-    maxLength = _ref$maxLength === void 0 ? 100 : _ref$maxLength;
-  var sticker = document.createElement('div');
-  sticker.classList.add('W_sticker');
-  sticker.style.backgroundImage = "url(".concat(imageSrc, ")");
-  sticker.style.backgroundSize = 'cover';
-  sticker.style.backgroundPosition = 'center';
-  sticker.style.zIndex = 9999;
-  var textElement = document.createElement('p');
-  textElement.classList.add('A_sticker_text');
-  textElement.contentEditable = true;
-  textElement.innerText = content;
-  textElement.addEventListener('input', function () {
-    if (textElement.innerText.length > maxLength) {
-      textElement.innerText = textElement.innerText.slice(0, maxLength);
-    }
-  });
-  textElement.addEventListener('focus', function () {
-    textElement.style.outline = 'none';
-  });
-  sticker.appendChild(textElement);
-  sticker.style.position = 'absolute';
-  sticker.style.top = "".concat(Math.random() * (window.innerHeight - 150), "px");
-  sticker.style.left = "".concat(Math.random() * (window.innerWidth - 150), "px");
-  enableDrag(sticker);
-  document.body.appendChild(sticker);
-}
-function enableDrag(element) {
-  var isDragging = false;
-  var offsetX, offsetY;
-  element.addEventListener('mousedown', function (e) {
-    isDragging = true;
-    offsetX = e.clientX - element.offsetLeft;
-    offsetY = e.clientY - element.offsetTop;
-    element.style.zIndex = 9999;
-  });
-  document.addEventListener('mousemove', function (e) {
-    if (!isDragging) return;
-    var x = e.clientX - offsetX;
-    var y = e.clientY - offsetY;
-    element.style.left = "".concat(Math.max(0, Math.min(window.innerWidth - element.offsetWidth, x)), "px");
-    element.style.top = "".concat(Math.max(0, Math.min(window.innerHeight - element.offsetHeight, y)), "px");
-  });
-  document.addEventListener('mouseup', function () {
-    isDragging = false;
-    element.style.zIndex = '';
-  });
-}
 
 /***/ }),
 
@@ -438,7 +408,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1743068433189
+        // 1743069300220
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -505,18 +475,6 @@ module.exports = function (urlString) {
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -537,12 +495,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("interactive_start." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("index." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("201f5f52e6d7065c2324")
+/******/ 		__webpack_require__.h = () => ("1d4f8315dba26341dd53")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1131,8 +1089,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			840: 0,
-/******/ 			756: 0
+/******/ 			57: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1641,7 +1598,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(632);
+/******/ 	var __webpack_exports__ = __webpack_require__(514);
 /******/ 	
 /******/ })()
 ;

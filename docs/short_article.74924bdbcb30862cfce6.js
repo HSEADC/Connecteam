@@ -2,291 +2,11 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 362:
+/***/ 202:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
-/* harmony import */ var _partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(546);
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  var tags = document.querySelectorAll('.A_filter_tag');
-  var cards = Array.from(document.querySelectorAll('.W_articles_materials_card'));
-  var loadMoreBtn = document.querySelector('.A_preview_materials_button');
-  var activeTags = new Set();
-  var visibleCardsCount = 5;
-  var currentFilteredCards = [].concat(cards);
-  function init() {
-    updateCardsVisibility();
-    updateLoadMoreButton();
-  }
-  function updateCardsVisibility() {
-    cards.forEach(function (card) {
-      card.style.display = '';
-      card.classList.remove('hidden');
-    });
-    currentFilteredCards = activeTags.size === 0 ? [].concat(cards) : cards.filter(function (card) {
-      var cardTags = card.getAttribute('data-tags').split(' ');
-      return _toConsumableArray(activeTags).some(function (tag) {
-        return cardTags.includes(tag);
-      });
-    });
-    cards.forEach(function (card) {
-      if (!currentFilteredCards.includes(card)) {
-        card.classList.add('hidden');
-      }
-    });
-    currentFilteredCards.forEach(function (card, index) {
-      if (index >= visibleCardsCount) {
-        card.classList.add('hidden');
-      } else {
-        card.classList.remove('hidden');
-      }
-    });
-    updateLoadMoreButton();
-  }
-  function updateLoadMoreButton() {
-    if (currentFilteredCards.length <= visibleCardsCount) {
-      loadMoreBtn.style.display = 'none';
-    } else {
-      loadMoreBtn.style.display = 'block';
-    }
-  }
-  tags.forEach(function (tag) {
-    tag.addEventListener('click', function (e) {
-      e.stopPropagation();
-      var tagValue = this.getAttribute('data-tag');
-      if (e.target.classList.contains('remove')) {
-        activeTags["delete"](tagValue);
-        this.classList.remove('active');
-      } else {
-        if (activeTags.has(tagValue)) {
-          activeTags["delete"](tagValue);
-          this.classList.remove('active');
-        } else {
-          activeTags.add(tagValue);
-          this.classList.add('active');
-        }
-      }
-      visibleCardsCount = 5;
-      updateCardsVisibility();
-    });
-  });
-  loadMoreBtn.addEventListener('click', function () {
-    visibleCardsCount += 5;
-    updateCardsVisibility();
-  });
-  var feedbackArticle = document.getElementById('I_article_feedback');
-  var friendshipArticle = document.getElementById('I_article_friendship');
-  var deadlineCommunicationArticle = document.getElementById('I_article_deadlinecommunication');
-  var developersCoworkingArticle = document.getElementById('I_article_developerscoworking');
-  var letsPlayArticle = document.getElementById('I_article_letsplay');
-  var teamPsychologyMotivationArticle = document.getElementById('I_article_teampsychologymotivation');
-  var jobFriendshipArticle = document.getElementById('I_article_jobfriendship');
-  var newCommandMembersArticle = document.getElementById('I_article_newcommandmembers');
-  var problemTemplatesArticle = document.getElementById('I_article_problemtemplates');
-  var trustRoleArticle = document.getElementById('I_article_trustrole');
-  var teamMotivationArticle = document.getElementById('I_article_teammotivation');
-  var magicTabletArticle = document.getElementById('I_article_magictablet');
-  var diagnosticToolsArticle = document.getElementById('I_article_diagnostictools');
-  var roleTeamBuildingArticle = document.getElementById('I_article_roleteambuilding');
-  var qadeveloperscommunicationArticle = document.getElementById('I_article_qadeveloperscommunication');
-  var departmentscoldwarArticle = document.getElementById('I_article_departmentscoldwar');
-  var meetingtypesArticle = document.getElementById('I_article_meetingtypes');
-  var mediatorArticle = document.getElementById('I_article_mediator');
-  var techicaljargonArticle = document.getElementById('I_article_techicaljargon');
-  var waltercommunicationArticle = document.getElementById('I_article_waltercommunication');
-  var collegueargueArticle = document.getElementById('I_article_collegueargue');
-  var streamworkingArticle = document.getElementById('I_article_streamworking');
-  if (streamworkingArticle) {
-    streamworkingArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/streamworking';
-    });
-  }
-  if (collegueargueArticle) {
-    collegueargueArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/collegueargue';
-    });
-  }
-  if (waltercommunicationArticle) {
-    waltercommunicationArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/waltercommunication';
-    });
-  }
-  if (techicaljargonArticle) {
-    techicaljargonArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/techicaljargon';
-    });
-  }
-  if (mediatorArticle) {
-    mediatorArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/mediator';
-    });
-  }
-  if (meetingtypesArticle) {
-    meetingtypesArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/meetingtypes';
-    });
-  }
-  if (departmentscoldwarArticle) {
-    departmentscoldwarArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/departmentscoldwar';
-    });
-  }
-  if (qadeveloperscommunicationArticle) {
-    qadeveloperscommunicationArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/qadeveloperscommunication';
-    });
-  }
-  if (roleTeamBuildingArticle) {
-    roleTeamBuildingArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/roleteambuilding';
-    });
-  }
-  if (diagnosticToolsArticle) {
-    diagnosticToolsArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/diagnostictools';
-    });
-  }
-  if (magicTabletArticle) {
-    magicTabletArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/magictablet';
-    });
-  }
-  if (teamMotivationArticle) {
-    teamMotivationArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/teammotivation';
-    });
-  }
-  if (trustRoleArticle) {
-    trustRoleArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/trustrole';
-    });
-  }
-  if (problemTemplatesArticle) {
-    problemTemplatesArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/problemtemplates';
-    });
-  }
-  if (newCommandMembersArticle) {
-    newCommandMembersArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/newcommandmembers';
-    });
-  }
-  if (jobFriendshipArticle) {
-    jobFriendshipArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/jobfriendship';
-    });
-  }
-  if (teamPsychologyMotivationArticle) {
-    teamPsychologyMotivationArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/teampsychologymotivation';
-    });
-  }
-  if (letsPlayArticle) {
-    letsPlayArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/letsplay';
-    });
-  }
-  if (developersCoworkingArticle) {
-    developersCoworkingArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/developerscoworking';
-    });
-  }
-  if (deadlineCommunicationArticle) {
-    deadlineCommunicationArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/deadlinecommunication';
-    });
-  }
-  if (friendshipArticle) {
-    friendshipArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/colleguefriendship';
-    });
-  }
-  if (feedbackArticle) {
-    feedbackArticle.addEventListener('click', function () {
-      window.location.href = '/Connecteam/articles/feedback';
-    });
-  }
-  init();
-});
-(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
-  imageSrc: '/Connecteam/images/stickers/sticker1body.svg',
-  content: 'Утвердить main страницу',
-  maxLength: 50
-});
-(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
-  imageSrc: '/Connecteam/images/stickers/sticker2body.svg',
-  content: 'Ревью Алексей кейс ноябрь',
-  maxLength: 50
-});
-
-/***/ }),
-
-/***/ 546:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   C: () => (/* binding */ Sticker)
-/* harmony export */ });
-function Sticker(_ref) {
-  var imageSrc = _ref.imageSrc,
-    _ref$content = _ref.content,
-    content = _ref$content === void 0 ? '' : _ref$content,
-    _ref$maxLength = _ref.maxLength,
-    maxLength = _ref$maxLength === void 0 ? 100 : _ref$maxLength;
-  var sticker = document.createElement('div');
-  sticker.classList.add('W_sticker');
-  sticker.style.backgroundImage = "url(".concat(imageSrc, ")");
-  sticker.style.backgroundSize = 'cover';
-  sticker.style.backgroundPosition = 'center';
-  sticker.style.zIndex = 9999;
-  var textElement = document.createElement('p');
-  textElement.classList.add('A_sticker_text');
-  textElement.contentEditable = true;
-  textElement.innerText = content;
-  textElement.addEventListener('input', function () {
-    if (textElement.innerText.length > maxLength) {
-      textElement.innerText = textElement.innerText.slice(0, maxLength);
-    }
-  });
-  textElement.addEventListener('focus', function () {
-    textElement.style.outline = 'none';
-  });
-  sticker.appendChild(textElement);
-  sticker.style.position = 'absolute';
-  sticker.style.top = "".concat(Math.random() * (window.innerHeight - 150), "px");
-  sticker.style.left = "".concat(Math.random() * (window.innerWidth - 150), "px");
-  enableDrag(sticker);
-  document.body.appendChild(sticker);
-}
-function enableDrag(element) {
-  var isDragging = false;
-  var offsetX, offsetY;
-  element.addEventListener('mousedown', function (e) {
-    isDragging = true;
-    offsetX = e.clientX - element.offsetLeft;
-    offsetY = e.clientY - element.offsetTop;
-    element.style.zIndex = 9999;
-  });
-  document.addEventListener('mousemove', function (e) {
-    if (!isDragging) return;
-    var x = e.clientX - offsetX;
-    var y = e.clientY - offsetY;
-    element.style.left = "".concat(Math.max(0, Math.min(window.innerWidth - element.offsetWidth, x)), "px");
-    element.style.top = "".concat(Math.max(0, Math.min(window.innerHeight - element.offsetHeight, y)), "px");
-  });
-  document.addEventListener('mouseup', function () {
-    isDragging = false;
-    element.style.zIndex = '';
-  });
-}
 
 /***/ }),
 
@@ -584,7 +304,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1743068433189
+        // 1743069300220
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -651,18 +371,6 @@ module.exports = function (urlString) {
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -683,12 +391,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("articles." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("short_article." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("201f5f52e6d7065c2324")
+/******/ 		__webpack_require__.h = () => ("1d4f8315dba26341dd53")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1277,8 +985,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			178: 0,
-/******/ 			756: 0
+/******/ 			132: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1787,7 +1494,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(362);
+/******/ 	var __webpack_exports__ = __webpack_require__(202);
 /******/ 	
 /******/ })()
 ;

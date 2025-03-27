@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 54:
+/***/ 84:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
@@ -10,13 +10,13 @@
 
 
 (0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
-  imageSrc: '../../../Connecteam/images/stickers/sticker1body.svg',
-  content: 'тз Софья reowes.com',
+  imageSrc: '/Connecteam/images/stickers/sticker2body.svg',
+  content: 'провести 3 интервью с ца',
   maxLength: 50
 });
 (0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
-  imageSrc: '../../../Connecteam/images/stickers/sticker2body.svg',
-  content: 'Созвон с разработкой 13:00',
+  imageSrc: '/Connecteam/images/stickers/sticker1body.svg',
+  content: 'Запросить данные у аналитиков',
   maxLength: 50
 });
 
@@ -377,7 +377,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1743068433189
+        // 1743069300220
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -476,12 +476,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("case." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("ba_article." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("201f5f52e6d7065c2324")
+/******/ 		__webpack_require__.h = () => ("1d4f8315dba26341dd53")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1070,7 +1070,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			123: 0,
+/******/ 			559: 0,
 /******/ 			756: 0
 /******/ 		};
 /******/ 		
@@ -1580,7 +1580,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(54);
+/******/ 	var __webpack_exports__ = __webpack_require__(84);
 /******/ 	
 /******/ })()
 ;

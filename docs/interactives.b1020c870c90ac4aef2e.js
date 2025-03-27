@@ -2,174 +2,84 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 293:
+/***/ 930:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
+/* harmony import */ var _partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(546);
 
-var testData = {
-  title: 'Я что, плохо руковожу?',
-  questions: [{
-    id: 1,
-    text: 'Ключевой сотрудник неожиданно увольняется перед важным дедлайном. Твои действия:',
-    answers: [{
-      text: 'Придерживаешься первоначального плана и требуешь от команды соблюдения сроков',
-      isCorrect: false
-    }, {
-      text: 'Корректируете нагрузку, пересматриваешь дедлайн, пока ищешь замену',
-      isCorrect: true
-    }, {
-      text: 'Используешь ситуацию, пересматриваешь роли и внедрить новые подходы',
-      isCorrect: false
-    }, {
-      text: 'Делегируешь больше задач другим сотрудникам и ищешь временное решение',
-      isCorrect: false
-    }]
-  }, {
-    id: 2,
-    text: 'Компания внедряет новый инструмент для работы, который нарушает привычные процессы. Ты:',
-    answers: [{
-      text: 'Сопротивляешься изменениям, продолжаешь работать по-старому',
-      isCorrect: false
-    }, {
-      text: 'Осваиваешь базовые функции, постепенно переводишь команду на новый инструмент',
-      isCorrect: true
-    }, {
-      text: 'Полностью принимаешь нововведение, тестируешь его и обучаешь команду',
-      isCorrect: false
-    }, {
-      text: 'Назначаешь ответственного за изучение инструмента перед глобальным внедрением',
-      isCorrect: false
-    }]
-  }, {
-    id: 3,
-    text: 'Клиент запрашивает срочное изменение, которое требует значительных усилий. Ты:',
-    answers: [{
-      text: 'Отказываешь, так как это нарушает план проекта',
-      isCorrect: true
-    }, {
-      text: 'Принимаешь вызов, находишь креативный способ внести изменения эффективно',
-      isCorrect: false
-    }, {
-      text: 'Анализируешь последствия, а затем решаешь, возможно ли внесение изменений',
-      isCorrect: true
-    }, {
-      text: 'Обсуждаешь с клиентом альтернативные варианты, требующие меньших затрат',
-      isCorrect: false
-    }]
-  }, {
-    id: 4,
-    text: 'Твоя команда предлагает нестандартный подход к решению проблемы. Ты:',
-    answers: [{
-      text: 'Остаёшься при проверенном методе, который уже работал в прошлом',
-      isCorrect: true
-    }, {
-      text: 'Поощряешь эксперименты и предлагаешь протестировать новый подход',
-      isCorrect: true
-    }, {
-      text: 'Рассматриваешь идею, но относишься к ней осторожно',
-      isCorrect: false
-    }, {
-      text: 'Просишь детальный план и потенциальные риски перед тем, как принять решение',
-      isCorrect: false
-    }]
-  }, {
-    id: 5,
-    text: 'Ты получаешь негативный отзыв от команды о вашем стиле управления. Ты:',
-    answers: [{
-      text: 'Защищаете свою точку зрения и объясняешь, почему поступаешь так, а не иначе',
-      isCorrect: false
-    }, {
-      text: 'Воспринимаешь это как возможность для роста и активно ищешь пути улучшения',
-      isCorrect: true
-    }, {
-      text: 'Внимательно слушаешь и вносишь небольшие корректировки',
-      isCorrect: false
-    }, {
-      text: 'Собираетесь командой, вместе находишь компромисс и улучшаешь взаимодействие',
-      isCorrect: false
-    }]
-  }],
-  results: [{
-    minScore: 0,
-    maxScore: 2,
-    title: 'Есть куда расти',
-    description: 'Ваши управленческие навыки нуждаются в развитии.'
-  }, {
-    minScore: 3,
-    maxScore: 4,
-    title: 'Стабильность и структура — твоя формула успеха!',
-    description: 'Однако тебе может быть сложно адаптироваться к изменениям, твоя зона роста — выход из зоны комфорта и привычных сценариев, смотри шире!'
-  }, {
-    minScore: 5,
-    maxScore: 7,
-    title: 'Хороший руководитель',
-    description: 'Вы демонстрируете хорошие управленческие навыки.'
-  }, {
-    minScore: 8,
-    maxScore: 10,
-    title: 'Отличный лидер!',
-    description: 'Вы прекрасный руководитель с развитыми гибкими навыками.'
-  }]
-};
-var currentQuestionIndex = 0;
-var userAnswers = [];
-var selectedAnswerIndex = null;
-function renderQuestion() {
-  var question = testData.questions[currentQuestionIndex];
-  selectedAnswerIndex = null;
-  document.getElementById('W_test_container').innerHTML = "\n            <div class=\"W_test_content_heading\">\n                <div class=\"W_test_question\">\n                    <div class=\"M_test_question\">\n                        <p class=\"text_button_text\">\u0412\u043E\u043F\u0440\u043E\u0441 <span>".concat(currentQuestionIndex + 1, "</span> \u0438\u0437 ").concat(testData.questions.length, "</p>\n                    </div>\n                    <h2 class=\"A_test_title\">").concat(question.text, "</h2>\n                </div>\n                <button class=\"A_looking_for_button text_button_text\" id=\"backButton\">\n                    \u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u043D\u0430\u0437\u0430\u0434\n                </button>\n            </div>\n            <div class=\"W_test_content_body\">\n                <div class=\"C_test_answer_variants\">\n                    ").concat(question.answers.map(function (answer, index) {
-    return "\n                        <div class=\"M_test_answer_variant\" data-index=\"".concat(index, "\">\n                            <p class=\"text_body_text\">").concat(answer.text, "</p>\n                        </div>\n                    ");
-  }).join(''), "\n                </div>\n                <button class=\"A_test_answer_next_button text_button_text\" id=\"nextButton\" disabled>\n                    ").concat(currentQuestionIndex < testData.questions.length - 1 ? 'Следующий вопрос' : 'Узнать результат', "\n                </button>\n            </div>\n        ");
-  document.querySelectorAll('.M_test_answer_variant').forEach(function (variant) {
-    variant.addEventListener('click', function () {
-      document.querySelectorAll('.M_test_answer_variant').forEach(function (v) {
-        v.classList.remove('selected');
-      });
-      this.classList.add('selected');
-      selectedAnswerIndex = parseInt(this.getAttribute('data-index'));
-      document.getElementById('nextButton').disabled = false;
-    });
-  });
-  document.getElementById('nextButton').addEventListener('click', goToNextQuestion);
-  document.getElementById('backButton').addEventListener('click', goToPreviousQuestion);
-}
-function goToNextQuestion() {
-  if (selectedAnswerIndex !== null) {
-    var question = testData.questions[currentQuestionIndex];
-    userAnswers.push({
-      questionId: question.id,
-      answerIndex: selectedAnswerIndex,
-      isCorrect: question.answers[selectedAnswerIndex].isCorrect
-    });
-    if (currentQuestionIndex < testData.questions.length - 1) {
-      currentQuestionIndex++;
-      renderQuestion();
-    } else {
-      showResults();
+
+(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
+  imageSrc: '/Connecteam/images/stickers/sticker3body.svg',
+  content: 'Чекнуть библиотеки',
+  maxLength: 50
+});
+(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
+  imageSrc: '/Connecteam/images/stickers/sticker4body.svg',
+  content: 'Выжить в этой команде чудом',
+  maxLength: 50
+});
+
+/***/ }),
+
+/***/ 546:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   C: () => (/* binding */ Sticker)
+/* harmony export */ });
+function Sticker(_ref) {
+  var imageSrc = _ref.imageSrc,
+    _ref$content = _ref.content,
+    content = _ref$content === void 0 ? '' : _ref$content,
+    _ref$maxLength = _ref.maxLength,
+    maxLength = _ref$maxLength === void 0 ? 100 : _ref$maxLength;
+  var sticker = document.createElement('div');
+  sticker.classList.add('W_sticker');
+  sticker.style.backgroundImage = "url(".concat(imageSrc, ")");
+  sticker.style.backgroundSize = 'cover';
+  sticker.style.backgroundPosition = 'center';
+  sticker.style.zIndex = 9999;
+  var textElement = document.createElement('p');
+  textElement.classList.add('A_sticker_text');
+  textElement.contentEditable = true;
+  textElement.innerText = content;
+  textElement.addEventListener('input', function () {
+    if (textElement.innerText.length > maxLength) {
+      textElement.innerText = textElement.innerText.slice(0, maxLength);
     }
-  }
-}
-function goToPreviousQuestion() {
-  if (currentQuestionIndex > 0) {
-    if (userAnswers.length > currentQuestionIndex - 1) {
-      userAnswers.pop();
-    }
-    currentQuestionIndex--;
-    renderQuestion();
-  }
-}
-function showResults() {
-  var correctAnswers = userAnswers.filter(function (answer) {
-    return answer.isCorrect;
-  }).length;
-  var score = correctAnswers * 2;
-  var result = testData.results.find(function (r) {
-    return score >= r.minScore && score <= r.maxScore;
   });
-  document.getElementById('W_test_container').innerHTML = "\n            <div class=\"A_test_result_image A_test_result_image_01\"></div>\n            <div class=\"A_test_result_image A_test_result_image_02\"></div>\n            <div class=\"W_result_content\">\n                <div class=\"M_test_question\">\n                    <p class=\"text_button_text\">\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442</p>\n                </div>\n                <div class=\"W_test_results_text\">\n                    <h1>".concat(result.title, "</h1>\n                    <p class=\"text_body_text\">").concat(result.description, "</p>\n                </div>\n                <div class=\"W_test_results_buttons\">\n                    <button class=\"A_test_answer_next_button text_button_text\" id=\"restartButton\">\u041F\u043E\u0434\u0435\u043B\u0438\u0442\u044C\u0441\u044F \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u043E\u043C</button>\n                    <a class=\"A_looking_for_button text_button_text\" href=\"/Connecteam/interactives\"\n                        >\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u043A \u0442\u0435\u0441\u0442\u0430\u043C</a\n                    >\n                </div>\n            </div>\n        ");
+  textElement.addEventListener('focus', function () {
+    textElement.style.outline = 'none';
+  });
+  sticker.appendChild(textElement);
+  sticker.style.position = 'absolute';
+  sticker.style.top = "".concat(Math.random() * (window.innerHeight - 150), "px");
+  sticker.style.left = "".concat(Math.random() * (window.innerWidth - 150), "px");
+  enableDrag(sticker);
+  document.body.appendChild(sticker);
 }
-document.addEventListener('DOMContentLoaded', renderQuestion);
+function enableDrag(element) {
+  var isDragging = false;
+  var offsetX, offsetY;
+  element.addEventListener('mousedown', function (e) {
+    isDragging = true;
+    offsetX = e.clientX - element.offsetLeft;
+    offsetY = e.clientY - element.offsetTop;
+    element.style.zIndex = 9999;
+  });
+  document.addEventListener('mousemove', function (e) {
+    if (!isDragging) return;
+    var x = e.clientX - offsetX;
+    var y = e.clientY - offsetY;
+    element.style.left = "".concat(Math.max(0, Math.min(window.innerWidth - element.offsetWidth, x)), "px");
+    element.style.top = "".concat(Math.max(0, Math.min(window.innerHeight - element.offsetHeight, y)), "px");
+  });
+  document.addEventListener('mouseup', function () {
+    isDragging = false;
+    element.style.zIndex = '';
+  });
+}
 
 /***/ }),
 
@@ -467,7 +377,7 @@ module.exports = function (urlString) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1743068433189
+        // 1743069300220
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -534,6 +444,18 @@ module.exports = function (urlString) {
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -554,12 +476,12 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("test_01." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("interactives." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("201f5f52e6d7065c2324")
+/******/ 		__webpack_require__.h = () => ("1d4f8315dba26341dd53")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1148,7 +1070,8 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			499: 0
+/******/ 			56: 0,
+/******/ 			756: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1657,7 +1580,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(293);
+/******/ 	var __webpack_exports__ = __webpack_require__(930);
 /******/ 	
 /******/ })()
 ;

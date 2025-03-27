@@ -2,10 +2,93 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 632:
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
+
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(689);
+/* harmony import */ var _partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(546);
+
+
+(0,_partials_A_sticker_A_sticker__WEBPACK_IMPORTED_MODULE_1__/* .Sticker */ .C)({
+  imageSrc: '../../images/stickers/sticker1body.svg',
+  content: 'тз Софья reowes.com',
+  maxLength: 50
+});
+var selectedParams = {
+  participants: null,
+  purpose: null,
+  duration: null,
+  format: 'online'
+};
+function setupOptionButtons() {
+  var optionButtons = document.querySelectorAll('.A_option_button');
+  optionButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var paramType = this.getAttribute('data-param');
+      var value = this.getAttribute('data-value');
+      document.querySelectorAll("[data-param=\"".concat(paramType, "\"]")).forEach(function (btn) {
+        btn.classList.remove('selected');
+      });
+      this.classList.add('selected');
+      selectedParams[paramType] = value;
+    });
+  });
+}
+function setupPurposeSelect() {
+  var purposeSelect = document.getElementById('purposeSelect');
+  purposeSelect.addEventListener('change', function () {
+    selectedParams.purpose = this.value;
+  });
+  selectedParams.purpose = purposeSelect.value;
+}
+function setupRadioButtons() {
+  var radioInputs = document.querySelectorAll('.M_radio_input');
+  radioInputs.forEach(function (input) {
+    input.addEventListener('change', function () {
+      if (this.checked) {
+        selectedParams.format = this.value;
+      }
+    });
+    if (input.checked) {
+      selectedParams.format = input.value;
+    }
+  });
+}
+function generateIdea() {
+  if (!selectedParams.participants || !selectedParams.duration || !selectedParams.purpose) {
+    alert('Пожалуйста, выберите все параметры');
+    return;
+  }
+  var selectionScreen = document.getElementById('selectionScreen');
+  var ideaBlock = document.getElementById('I_idea_block');
+  var agileBlock = document.getElementById('I_agile_block');
+  selectionScreen.classList.add('hidden');
+  ideaBlock.classList.remove('hidden');
+  setTimeout(function () {
+    ideaBlock.classList.add('hidden');
+    agileBlock.classList.remove('hidden');
+    console.log('Выбранные параметры:', selectedParams);
+    agileBlock.scrollIntoView({
+      behavior: 'smooth'
+    });
+    selectionScreen.classList.remove('hidden');
+  }, 3000);
+}
+document.addEventListener('DOMContentLoaded', function () {
+  setupOptionButtons();
+  setupPurposeSelect();
+  setupRadioButtons();
+  window.generateIdea = generateIdea;
+});
+
+/***/ }),
+
 /***/ 546:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* unused harmony export Sticker */
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   C: () => (/* binding */ Sticker)
+/* harmony export */ });
 function Sticker(_ref) {
   var imageSrc = _ref.imageSrc,
     _ref$content = _ref.content,
@@ -59,6 +142,322 @@ function enableDrag(element) {
   });
 }
 
+/***/ }),
+
+/***/ 140:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+/* eslint-env browser */
+/*
+  eslint-disable
+  no-console,
+  func-names
+*/
+
+/** @typedef {any} TODO */
+
+var normalizeUrl = __webpack_require__(918);
+var srcByModuleId = Object.create(null);
+var noDocument = typeof document === "undefined";
+var forEach = Array.prototype.forEach;
+
+/**
+ * @param {function} fn
+ * @param {number} time
+ * @returns {(function(): void)|*}
+ */
+function debounce(fn, time) {
+  var timeout = 0;
+  return function () {
+    // @ts-ignore
+    var self = this;
+    // eslint-disable-next-line prefer-rest-params
+    var args = arguments;
+    var functionCall = function functionCall() {
+      return fn.apply(self, args);
+    };
+    clearTimeout(timeout);
+
+    // @ts-ignore
+    timeout = setTimeout(functionCall, time);
+  };
+}
+function noop() {}
+
+/**
+ * @param {TODO} moduleId
+ * @returns {TODO}
+ */
+function getCurrentScriptUrl(moduleId) {
+  var src = srcByModuleId[moduleId];
+  if (!src) {
+    if (document.currentScript) {
+      src = ( /** @type {HTMLScriptElement} */document.currentScript).src;
+    } else {
+      var scripts = document.getElementsByTagName("script");
+      var lastScriptTag = scripts[scripts.length - 1];
+      if (lastScriptTag) {
+        src = lastScriptTag.src;
+      }
+    }
+    srcByModuleId[moduleId] = src;
+  }
+
+  /**
+   * @param {string} fileMap
+   * @returns {null | string[]}
+   */
+  return function (fileMap) {
+    if (!src) {
+      return null;
+    }
+    var splitResult = src.split(/([^\\/]+)\.js$/);
+    var filename = splitResult && splitResult[1];
+    if (!filename) {
+      return [src.replace(".js", ".css")];
+    }
+    if (!fileMap) {
+      return [src.replace(".js", ".css")];
+    }
+    return fileMap.split(",").map(function (mapRule) {
+      var reg = new RegExp("".concat(filename, "\\.js$"), "g");
+      return normalizeUrl(src.replace(reg, "".concat(mapRule.replace(/{fileName}/g, filename), ".css")));
+    });
+  };
+}
+
+/**
+ * @param {TODO} el
+ * @param {string} [url]
+ */
+function updateCss(el, url) {
+  if (!url) {
+    if (!el.href) {
+      return;
+    }
+
+    // eslint-disable-next-line
+    url = el.href.split("?")[0];
+  }
+  if (!isUrlRequest( /** @type {string} */url)) {
+    return;
+  }
+  if (el.isLoaded === false) {
+    // We seem to be about to replace a css link that hasn't loaded yet.
+    // We're probably changing the same file more than once.
+    return;
+  }
+  if (!url || !(url.indexOf(".css") > -1)) {
+    return;
+  }
+
+  // eslint-disable-next-line no-param-reassign
+  el.visited = true;
+  var newEl = el.cloneNode();
+  newEl.isLoaded = false;
+  newEl.addEventListener("load", function () {
+    if (newEl.isLoaded) {
+      return;
+    }
+    newEl.isLoaded = true;
+    el.parentNode.removeChild(el);
+  });
+  newEl.addEventListener("error", function () {
+    if (newEl.isLoaded) {
+      return;
+    }
+    newEl.isLoaded = true;
+    el.parentNode.removeChild(el);
+  });
+  newEl.href = "".concat(url, "?").concat(Date.now());
+  if (el.nextSibling) {
+    el.parentNode.insertBefore(newEl, el.nextSibling);
+  } else {
+    el.parentNode.appendChild(newEl);
+  }
+}
+
+/**
+ * @param {string} href
+ * @param {TODO} src
+ * @returns {TODO}
+ */
+function getReloadUrl(href, src) {
+  var ret;
+
+  // eslint-disable-next-line no-param-reassign
+  href = normalizeUrl(href);
+  src.some(
+  /**
+   * @param {string} url
+   */
+  // eslint-disable-next-line array-callback-return
+  function (url) {
+    if (href.indexOf(src) > -1) {
+      ret = url;
+    }
+  });
+  return ret;
+}
+
+/**
+ * @param {string} [src]
+ * @returns {boolean}
+ */
+function reloadStyle(src) {
+  if (!src) {
+    return false;
+  }
+  var elements = document.querySelectorAll("link");
+  var loaded = false;
+  forEach.call(elements, function (el) {
+    if (!el.href) {
+      return;
+    }
+    var url = getReloadUrl(el.href, src);
+    if (!isUrlRequest(url)) {
+      return;
+    }
+    if (el.visited === true) {
+      return;
+    }
+    if (url) {
+      updateCss(el, url);
+      loaded = true;
+    }
+  });
+  return loaded;
+}
+function reloadAll() {
+  var elements = document.querySelectorAll("link");
+  forEach.call(elements, function (el) {
+    if (el.visited === true) {
+      return;
+    }
+    updateCss(el);
+  });
+}
+
+/**
+ * @param {string} url
+ * @returns {boolean}
+ */
+function isUrlRequest(url) {
+  // An URL is not an request if
+
+  // It is not http or https
+  if (!/^[a-zA-Z][a-zA-Z\d+\-.]*:/.test(url)) {
+    return false;
+  }
+  return true;
+}
+
+/**
+ * @param {TODO} moduleId
+ * @param {TODO} options
+ * @returns {TODO}
+ */
+module.exports = function (moduleId, options) {
+  if (noDocument) {
+    console.log("no window.document found, will not HMR CSS");
+    return noop;
+  }
+  var getScriptSrc = getCurrentScriptUrl(moduleId);
+  function update() {
+    var src = getScriptSrc(options.filename);
+    var reloaded = reloadStyle(src);
+    if (options.locals) {
+      console.log("[HMR] Detected local css modules. Reload all css");
+      reloadAll();
+      return;
+    }
+    if (reloaded) {
+      console.log("[HMR] css reload %s", src.join(" "));
+    } else {
+      console.log("[HMR] Reload all css");
+      reloadAll();
+    }
+  }
+  return debounce(update, 50);
+};
+
+/***/ }),
+
+/***/ 918:
+/***/ ((module) => {
+
+
+
+/* eslint-disable */
+
+/**
+ * @param {string[]} pathComponents
+ * @returns {string}
+ */
+function normalizeUrl(pathComponents) {
+  return pathComponents.reduce(function (accumulator, item) {
+    switch (item) {
+      case "..":
+        accumulator.pop();
+        break;
+      case ".":
+        break;
+      default:
+        accumulator.push(item);
+    }
+    return accumulator;
+  }, /** @type {string[]} */[]).join("/");
+}
+
+/**
+ * @param {string} urlString
+ * @returns {string}
+ */
+module.exports = function (urlString) {
+  urlString = urlString.trim();
+  if (/^data:/i.test(urlString)) {
+    return urlString;
+  }
+  var protocol = urlString.indexOf("//") !== -1 ? urlString.split("//")[0] + "//" : "";
+  var components = urlString.replace(new RegExp(protocol, "i"), "").split("/");
+  var host = components[0].toLowerCase().replace(/\.$/, "");
+  components[0] = "";
+  var path = normalizeUrl(components);
+  return protocol + host + path;
+};
+
+/***/ }),
+
+/***/ 689:
+/***/ ((module, __unused_webpack___webpack_exports__, __webpack_require__) => {
+
+// extracted by mini-css-extract-plugin
+
+    if(true) {
+      (function() {
+        var localsJsonString = undefined;
+        // 1743069300220
+        var cssReload = __webpack_require__(140)(module.id, {});
+        // only invalidate when locals change
+        if (
+          module.hot.data &&
+          module.hot.data.value &&
+          module.hot.data.value !== localsJsonString
+        ) {
+          module.hot.invalidate();
+        } else {
+          module.hot.accept();
+        }
+        module.hot.dispose(function(data) {
+          data.value = localsJsonString;
+          cssReload();
+        });
+      })();
+    }
+  
+
 /***/ })
 
 /******/ 	});
@@ -76,7 +475,7 @@ function enableDrag(element) {
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -138,12 +537,12 @@ function enableDrag(element) {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("sticker." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("interactive_start." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("201f5f52e6d7065c2324")
+/******/ 		__webpack_require__.h = () => ("1d4f8315dba26341dd53")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -732,6 +1131,7 @@ function enableDrag(element) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
+/******/ 			840: 0,
 /******/ 			756: 0
 /******/ 		};
 /******/ 		
@@ -1241,7 +1641,7 @@ function enableDrag(element) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(546);
+/******/ 	var __webpack_exports__ = __webpack_require__(632);
 /******/ 	
 /******/ })()
 ;
