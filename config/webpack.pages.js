@@ -54,6 +54,7 @@ const htmlWebpackPlugins = [
   createPages('./src/pages/errors/404.html', '404', ['header', 'O_footer']),
   createPages('./src/pages/errors/500.html', '500', ['header', 'O_footer']),
   createPages('./src/pages/errors/505.html', '505', ['header', 'O_footer']),
+  createPages('./src/pages/about/about.html', 'about', ['header', 'O_footer']),
 ];
 
 module.exports = htmlWebpackPlugins;

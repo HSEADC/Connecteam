@@ -51,6 +51,30 @@
     font: var(--font-body-article-text);
 }
 
+.M_preview_about_plate{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+
+    display: flex;
+    align-items: center;
+
+    max-width: 35.6rem;
+
+    padding: var(--spacing-15) var(--spacing-25);
+
+    background: var(--color-pink);
+    border-radius: var(--corner-5);
+
+    transform: rotate(4deg);
+}
+
+.M_preview_about_plate span{
+    color: var(--color-white);
+    text-align: center;
+    font: var(--font-body-article-text);
+}
+
 .M_preview_testing_text{
     display: flex;
     flex-direction: column;
@@ -72,6 +96,28 @@
 }
 
 .M_preview_mission_plate span{
+    text-align: center;
+    font: var(--font-20-500);
+}
+
+.M_about_mission_plate{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-15);
+
+    height: fit-content;
+
+    padding: var(--spacing-12) var(--spacing-25);
+
+    background: var(--color-pink);
+    border-radius: var(--corner-5);
+    rotate: 2deg;
+}
+
+.M_about_mission_plate p{
+    max-width: 40rem;
+
+    color: var(--color-white);
     text-align: center;
     font: var(--font-20-500);
 }
@@ -120,10 +166,19 @@
         top: 60%;
         right: 5%;
     }
+
+    .M_preview_about_plate{
+        top: 50%;
+        right: 5%;
+    }
 }
 
 @media (max-width: 767px) {
     .M_preview_plate{
+        display: none;
+    }
+
+    .M_preview_about_plate{
         display: none;
     }
 }
