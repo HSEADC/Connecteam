@@ -29,31 +29,142 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <O_header></O_header>
     <div class="W_content W_interactive_start">
-      <header_black></header_black>
-      <div class="A_case_back_button">
-        <a href="/Connecteam/interactives">Вернуться назад</a>
-      </div>
-      <div class="W_interactive_start_generate">
-        <div
-          class="A_interactive_start_generate_button"
-          onclick="generateIdea()"
-        >
-          <span>Сгенерировать</span>
+      <div class="container">
+        <div class="A_looking_for_button text_button_text">
+          <a href="/Connecteam/interactives">Вернуться назад</a>
         </div>
-        <div id="I_idea_block" class="A_idea_block hidden">
-          <p id="I_idea_text">Сходить на шашлыки...</p>
-        </div>
-      </div>
 
-      <div class="W_case hidden" id="I_agile_block">
-        <div class="W_case_main_content">
+        <div class="W_generator" id="selectionScreen">
+          <h1>Генератор тимбилдингов</h1>
+
+          <div class="W_form_group">
+            <div class="M_form_group">
+              <p class="text_body_text">Кол-во человек</p>
+              <div class="C_option_group" id="participantsGroup">
+                <div
+                  class="A_option_button text_body_text"
+                  data-param="participants"
+                  data-value="3"
+                >
+                  3+
+                </div>
+                <div
+                  class="A_option_button text_body_text"
+                  data-param="participants"
+                  data-value="6"
+                >
+                  6+
+                </div>
+                <div
+                  class="A_option_button text_body_text"
+                  data-param="participants"
+                  data-value="10"
+                >
+                  10+
+                </div>
+                <div
+                  class="A_option_button text_body_text"
+                  data-param="participants"
+                  data-value="20"
+                >
+                  20+
+                </div>
+              </div>
+            </div>
+            <div class="M_form_group">
+              <p class="text_body_text">Цель тимбилдинга</p>
+              <select id="purposeSelect" class="A_dropdown text_body_text">
+                <option value="think">Креативное мышление</option>
+                <option value="improvization">Импровизация и гибкость</option>
+                <option value="communication">Развитие коммуникации</option>
+                <option value="skills">Развитие лидерских качеств</option>
+                <option value="feedback">Работа с обратной связью</option>
+              </select>
+            </div>
+            <div class="M_form_group">
+              <p class="text_body_text">Длительность</p>
+              <div class="C_option_group" id="durationGroup">
+                <div
+                  class="A_option_button text_body_text"
+                  data-param="duration"
+                  data-value="1"
+                >
+                  10-15 мин
+                </div>
+                <div
+                  class="A_option_button text_body_text"
+                  data-param="duration"
+                  data-value="2"
+                >
+                  20-45 мин
+                </div>
+                <div
+                  class="A_option_button text_body_text"
+                  data-param="duration"
+                  data-value="4"
+                >
+                  1-1,5 ч
+                </div>
+                <div
+                  class="A_option_button text_body_text"
+                  data-param="duration"
+                  data-value="8"
+                >
+                  2-3 ч
+                </div>
+              </div>
+            </div>
+            <div class="M_form_group">
+              <p class="text_body_text">Режим тимбилдинга</p>
+              <div class="C_radio_group">
+                <div class="M_radio_option">
+                  <input
+                    type="radio"
+                    name="format"
+                    value="online"
+                    checked
+                    class="M_radio_input"
+                  />
+                  <span class="A_radio_checkmark"></span>
+                  <span class="text_body_text">Онлайн</span>
+                </div>
+                <div class="M_radio_option">
+                  <input
+                    type="radio"
+                    name="format"
+                    value="offline"
+                    class="M_radio_input"
+                  />
+                  <span class="A_radio_checkmark"></span>
+                  <span class="text_body_text">Офлайн</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="A_interactive_start_generate_button"
+            onclick="generateIdea()"
+          >
+            Сгенерировать
+          </button>
+        </div>
+
+        <div id="I_idea_block" class="M_idea_block hidden">
+          <div class="A_loading_image"></div>
+          <h2>Генерируем идеи как вас законнектить...</h2>
+        </div>
+
+        <div class="W_case hidden" id="I_agile_block">
           <div class="W_case_main_content_block">
+            <h2 style="text-align: center">Игровой Agile-спринт</h2>
             <div class="W_case_main_content_block_title">
               <h3>Концепция</h3>
             </div>
             <div class="W_case_main_content_block_text">
-              <p>
+              <p class="text_body_article_text">
                 Цель тимбилдинга — погрузить участников в игровой Agile-спринт,
                 где через веселые активности они изучат ключевые принципы Agile,
                 улучшат навыки общения и взаимодействия в команде, а также
@@ -67,7 +178,7 @@
               <h3>Формат</h3>
             </div>
             <div class="W_case_main_content_block_text">
-              <p>
+              <p class="text_body_article_text">
                 Участники делятся на кросс-функциональные команды, каждая из
                 которых представляет мини-компанию, работающую над созданием
                 нового цифрового продукта (например, веб-приложения или
@@ -81,7 +192,7 @@
               <h3>Рабочие результаты</h3>
             </div>
             <div class="W_case_main_content_block_text">
-              <p>
+              <p class="text_body_article_text">
                 — Осознание важности гибкости, коммуникации и приоритизации<br />
                 — Укрепление связей между участниками через совместные задачи<br />
                 — Понимание Agile на практике, включая стендапы, ретроспективы и
@@ -99,10 +210,9 @@
                 class="W_case_main_content_block_title W_interactive_start_content"
               >
                 <h3>Введение</h3>
-                <span>15 мин</span>
               </div>
               <div class="W_case_main_content_block_text">
-                <p>
+                <p class="text_body_article_text">
                   — Лeгкая разминка: участники делятся, какой продукт или сервис
                   их вдохновляет<br />
                   — Краткое объяснение Agile-методологии и целей спринта
@@ -116,10 +226,9 @@
               class="W_case_main_content_block_title W_interactive_start_content"
             >
               <h3>Планирование</h3>
-              <span>30 мин</span>
             </div>
             <div class="W_case_main_content_block_text">
-              <p>
+              <p class="text_body_article_text">
                 — Участники деляется по командам, в каждой из которых должны
                 быть по одному: дизайнер, разработчик, маркетолог и другие
                 роли<br />
@@ -137,12 +246,49 @@
               class="W_case_main_content_block_title W_interactive_start_content"
             >
               <h3>Спринт</h3>
-              <span>1-1,5 часа</span>
             </div>
             <div class="W_case_main_content_block_text">
-              <p>
+              <p class="text_body_article_text">
                 Команды работают над выполнением задач в ограниченный временной
                 промежуток
+              </p>
+            </div>
+          </div>
+
+          <div class="C_case_conclusions">
+            <div
+              class="M_article_conclusion M_article_conclusion_pink M_advice_rotate_right"
+            >
+              <h3 class="text_headers_h3_card">Дизайнеры</h3>
+              <p class="text_body_text">
+                Создать прототип интерфейса или бренд для продукта
+              </p>
+            </div>
+            <div class="M_article_conclusion M_article_conclusion_gray">
+              <h3 class="text_headers_h3_card">Разработчики</h3>
+              <p class="text_body_text">
+                Решить логические головоломки, симулируя написание кода через
+                LEGO
+              </p>
+            </div>
+            <div class="M_article_conclusion M_article_conclusion_gray">
+              <h3 class="text_headers_h3_card">Маркетологи</h3>
+              <p class="text_body_text">
+                Подготовить 30-секундный питч и&nbsp;план продвижения продукта
+              </p>
+            </div>
+            <div class="M_article_conclusion M_article_conclusion_gray">
+              <h3 class="text_headers_h3_card">DevOps</h3>
+              <p class="text_body_text">
+                Настроить условную инфраструктуру через сбор виртуальных
+                элементов
+              </p>
+            </div>
+            <div class="M_article_conclusion M_article_conclusion_purple">
+              <h3 class="text_headers_h3_card">Scrum Master</h3>
+              <p class="text_body_text">
+                Руководить процессами, проводить &laquo;стендапы&raquo; каждые
+                20&nbsp;минут
               </p>
             </div>
           </div>
@@ -152,10 +298,9 @@
               class="W_case_main_content_block_title W_interactive_start_content"
             >
               <h3>Демонстрация</h3>
-              <span>30 мин</span>
             </div>
             <div class="W_case_main_content_block_text">
-              <p>
+              <p class="text_body_article_text">
                 Команды представляют свои результаты: прототипы интерфейсов или
                 продуктов, рекламные кампании, истории о преодолении трудностей
                 во время работы
@@ -168,10 +313,9 @@
               class="W_case_main_content_block_title W_interactive_start_content"
             >
               <h3>Ретроспектива</h3>
-              <span>30 мин</span>
             </div>
             <div class="W_case_main_content_block_text">
-              <p>
+              <p class="text_body_article_text">
                 — Участники делятся своими результатами, впечатлениями от
                 спринта<br />
                 — Каждая команда создает мемы или комиксы на тему «Жизнь в

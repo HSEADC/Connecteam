@@ -88,6 +88,23 @@
     background: var(--color-orange);
 }
 
+.A_preview_about_card{
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    z-index: 1;
+
+    max-width: 26rem;
+
+    color: var(--color-white);
+
+    background: var(--color-orange);
+}
+
+.A_preview_about_card h3{
+    font: var(--font-body-article-text);
+}
+
 .A_preview_card h3, .W_preview_big_card h3{
     font: var(--font-body-article-text);
 }
@@ -151,6 +168,20 @@
     background: var(--color-purple-active);
 }
 
+.A_error_code{
+    width: 100%;
+    max-width: 40rem;
+
+    height: 14rem;
+}
+
+.A_error_message{
+    width: 100%;
+    max-width: 58.2rem;
+
+    height: 18.6rem;
+}
+
 .A_preview_materials_button a:hover{
     color: var(--color-white);
 
@@ -175,6 +206,21 @@
     font: var(--font-35-500i);
 }
 
+.A_about_mission_title{
+    max-width: 64rem;
+
+    text-align: center;
+}
+
+.A_short_article_content_title{
+    text-align: center;
+    font: var(--font-45-500i);
+}
+
+.A_short_article_content_subtitle{
+    text-align: center;
+    font: var(--font-25-500i);
+}
 
 .A_preview_casino_description p{
     color: var(--color-lighter-gray);
@@ -191,6 +237,12 @@
 }
 
 .A_preview_stories_title h2{
+    text-align: center;
+}
+
+.A_preview_about_title{
+    max-width: 60rem;
+
     text-align: center;
 }
 
@@ -244,7 +296,7 @@
     background: url('../../images/Logo.svg') no-repeat center/100%
 }
 
-.A_header_nav_button{
+.A_header_nav_button, .A_header_nav_button:link{
    padding: var(--spacing-5) var(--spacing-15);
 
    color: var(--color-white);
@@ -304,6 +356,125 @@
     background: url('../../images/telefram_icon.svg') no-repeat center/100%;
 }
 
+.A_option_button {
+    padding: var(--spacing-10) var(--spacing-15);
+
+    background: var(--color-light-gray);
+    border-radius: var(--corner-20);
+
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .A_option_button:hover {
+    background: var(--color-light-blue);
+  }
+
+  .A_option_button.selected {
+    color: white;
+
+    background-color: var(--color-blue);
+  }
+
+  .A_dropdown {
+    padding: var(--spacing-10) var(--spacing-15);
+
+    background: var(--color-light-gray);
+    border-radius: var(--corner-20);
+
+    transition: all 0.2s;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+  }
+
+.A_loading_image{
+    width: 9rem;
+
+    height: 9rem;
+
+    background: url('../../images/A_loading_image.svg') no-repeat center/100%;
+}
+
+.A_interactive_start_generate_button {
+    padding: var(--spacing-10) var(--spacing-20);
+
+    color: var(--color-white);
+
+    background: var(--color-pink);
+    border-radius: var(--corner-20);
+    font: var(--font-button-text);
+    cursor: pointer;
+}
+
+.A_idea_block{
+    padding: var(--spacing-20) var(--spacing-30);
+
+    color: var(--color-grid-gray);
+
+    text-align: center;
+
+    background: var(--color-white);
+    border-radius: 10px;
+
+    transition: opacity 0.3s ease;
+
+    font: var(--font-35-500i);
+}
+
+
+.A_radio_checkmark {
+    position: relative;
+
+    width: 44px;
+
+    height: 44px;
+
+    margin-right: 10px;
+
+    background: var(--color-light-gray);
+    border-radius: 50%;
+
+    transition: all 0.3s;
+  }
+  
+  .A_radio_checkmark::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+
+    width: 21px;
+
+    height: 21px;
+
+    background: var(--color-blue);
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+    content: "";
+  }
+  
+  .M_radio_option input:checked ~ .A_radio_checkmark::after {
+    display: block;
+  }
+
+  .A_about_preview_image{
+    position: absolute;
+    top: 50%;
+
+    width: 100%;
+
+    max-width: 51.4rem;
+
+    height: 29rem;
+
+    padding: 0 var(--spacing-45);
+
+    background: url('../../images/A_about_preview_image.svg') no-repeat center/100%;
+}
+
 @media (max-width: 768px) {
     /* O_footer */
     .A_footer_social_media_text, .A_preview_card{
@@ -326,6 +497,10 @@
         height: 23px;
 
         background: url('../../images/A_menubar_mobile_default.svg') no-repeat center/100%;
+    }
+
+    .A_preview_about_card{
+        display: none;
     }
 }
 

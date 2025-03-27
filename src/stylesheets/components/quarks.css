@@ -22,6 +22,93 @@
     transform-origin: 0 0;
 }
 
+#Q_about_cursor_one{
+    position: absolute;
+    top: 14vw;
+    left: 40vw;
+    z-index: 4;
+
+    width: 7rem;
+
+    height: 5.3rem;
+
+    background: url('../../images/Q_cursor_vlad.svg') no-repeat center/100%;
+
+    animation: move 2s linear infinite;
+    transform-origin: 0 0;
+}
+
+#Q_about_cursor_two{
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
+    z-index: 4;
+
+    width: 9.6rem;
+
+    height: 5.3rem;
+
+    background: url('../../images/Q_cursor_nika.svg') no-repeat center/100%;
+
+    animation: move 3s linear infinite;
+    transform-origin: 0 0;
+}
+
+#Q_about_cursor_three{
+    position: absolute;
+    top: 4.5vw;
+    right: 37vw;
+    z-index: 4;
+
+    width: 9.6rem;
+
+    height: 5.3rem;
+
+    background: url('../../images/Q_cursor_vasilisa.svg') no-repeat center/100%;
+
+    animation: move 4s linear infinite;
+    transform-origin: 0 0;
+}
+
+#Q_about_photo_one{
+    position: absolute;
+    top: 14vw;
+    left: 40vw;
+    z-index: 4;
+
+    width: 6rem;
+
+    height: 6rem;
+
+    background: url('../../images/Q_about_vlad.png') no-repeat center/100%;
+}
+
+#Q_about_photo_two{
+    position: absolute;
+    bottom: 0;
+    left: 4.5vw;
+    z-index: 4;
+
+    width: 6rem;
+
+    height: 6rem;
+
+    background: url('../../images/Q_about_nika.png') no-repeat center/100%;
+}
+
+#Q_about_photo_three{
+    position: absolute;
+    top: 5vw;
+    right: 37vw;
+    z-index: 4;
+
+    width: 6rem;
+
+    height: 6rem;
+
+    background: url('../../images/Q_about_vasilisa.png') no-repeat center/100%;
+}
+
 #Q_cursor_two{
     position: absolute;
     top: 27vw;
@@ -104,6 +191,41 @@
     padding-right: 10rem;
 }
 
+.Q_preview_about_logo{
+    position: absolute;
+    top: 24%;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    color: var(--color-white);
+
+    transform: rotate(-1deg);
+}
+
+.Q_preview_about_logo > h1:nth-child(1){
+    padding-right: 10rem;
+}
+
+.Q_decor{
+    position: fixed;
+    bottom: 5rem;
+    left: calc(50% - 10.25rem);
+    z-index: 100;
+
+    width: 20.5rem;
+
+    height: 3.4rem;
+
+    background: url('../../images/Q_decor.svg') no-repeat center/100%;    
+}
+
+#I_case_ibm, #I_case_spotify, #I_case_yandex, #I_case_sber{
+    cursor: pointer;
+}
+
 .Q_search_dropdown_backdrop{
     position: absolute;
     top: 0;
@@ -115,8 +237,30 @@
     pointer-events: none;
 }
 
+.Q_tip_line{
+    width: 3px;
+
+    padding: 0;
+
+    margin: 5px 0;
+
+    background: var(--color-purple);
+    border: none;
+    align-self: stretch;
+}
+
+@media (max-width: 967px) {
+    #Q_about_cursor_one, #Q_about_cursor_two, #Q_about_cursor_three, #Q_about_photo_one, #Q_about_photo_two ,#Q_about_photo_three{
+        display: none;
+    }
+}
+
 @media (max-width: 767px) {
     .Q_preview_logo h1{
+        font-size: 10vw;
+    }
+
+    .Q_preview_about_logo h1{
         font-size: 10vw;
     }
 }

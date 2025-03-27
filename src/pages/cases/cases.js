@@ -53,12 +53,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const case_yandex = document.getElementById('I_case_yandex')
     const case_sber = document.getElementById('I_case_sber')
+    const case_spotify = document.getElementById('I_case_spotify')
+    const case_ibm = document.getElementById('I_case_ibm')
 
     case_yandex.addEventListener('click', () => {
-        window.location.href = 'Connecteam/cases/yandex';
+        window.location.href = '/Connecteam/cases/yandexrebranding';
     });
     case_sber.addEventListener('click', () => {
-        window.location.href = 'Connecteam/cases/sber';
+        window.location.href = '/Connecteam/cases/sber';
+    });
+    case_spotify.addEventListener('click', () => {
+      window.location.href = '/Connecteam/cases/spotify';
+    });
+    case_ibm.addEventListener('click', () => {
+      window.location.href = '/Connecteam/cases/ibm';
     });
 });
 

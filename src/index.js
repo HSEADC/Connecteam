@@ -87,16 +87,37 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 300);
     }
 
+    const friendshipArticle = document.getElementById('I_preview_friendship');
+    if (friendshipArticle) {
+      friendshipArticle.addEventListener('click', () => {
+          window.location.href = '/Connecteam/articles/colleguefriendship';
+      });
+    }
+
+    const deadlineArticle = document.getElementById('I_deadline_friedship');
+    if (deadlineArticle) {
+      deadlineArticle.addEventListener('click', () => {
+          window.location.href = '/Connecteam/articles/deadlinecommunication';
+      });
+    }
+
+    const coworkingArticle = document.getElementById('I_coworking_friedship');
+    if (coworkingArticle) {
+      coworkingArticle.addEventListener('click', () => {
+          window.location.href = '/Connecteam/articles/developerscoworking';
+      });
+    }
+
     const case_yandex = document.getElementById('I_case_yandex');
     if (case_yandex) {
         case_yandex.addEventListener('click', () => {
-            window.location.href = '/cases/yandexrebranding';
+            window.location.href = '/Connecteam/cases/yandexrebranding';
         });
     }
     const case_sber = document.getElementById('I_case_sber');
     if (case_sber) {
         case_sber.addEventListener('click', () => {
-            window.location.href = '/cases/sber';
+            window.location.href = '/Connecteam/cases/sber';
         });
     }
 });
