@@ -532,6 +532,10 @@
     border-radius: var(--corner-15);
 }
 
+.W_generator h1{
+    text-align: center;
+}
+
 .W_case_main_content_block{
     display: flex;
     flex-direction: column;
@@ -559,6 +563,19 @@
     .W_preview_coming_soon_content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 967px) {
+    .W_generator{
+        width: 100%;
+    }
+
+    .W_form_group{
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
     }
 }
 
@@ -597,5 +614,15 @@
 
     .W_article_introduction{
         max-width: 100%;
+    }
+    
+    .W_generator, .W_case{
+        padding: var(--spacing-45) var(--spacing-80);
+    }
+}
+
+@media (max-width: 440px) {
+    .W_generator, .W_case{
+        padding: var(--spacing-45) var(--spacing-25);
     }
 }
