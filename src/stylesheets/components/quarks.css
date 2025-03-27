@@ -237,6 +237,18 @@
     pointer-events: none;
 }
 
+.Q_tip_line{
+    width: 3px;
+
+    padding: 0;
+
+    margin: 5px 0;
+
+    background: var(--color-purple);
+    border: none;
+    align-self: stretch;
+}
+
 @media (max-width: 967px) {
     #Q_about_cursor_one, #Q_about_cursor_two, #Q_about_cursor_three, #Q_about_photo_one, #Q_about_photo_two ,#Q_about_photo_three{
         display: none;

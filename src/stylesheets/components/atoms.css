@@ -212,6 +212,16 @@
     text-align: center;
 }
 
+.A_short_article_content_title{
+    text-align: center;
+    font: var(--font-45-500i);
+}
+
+.A_short_article_content_subtitle{
+    text-align: center;
+    font: var(--font-25-500i);
+}
+
 .A_preview_casino_description p{
     color: var(--color-lighter-gray);
     text-align: center;

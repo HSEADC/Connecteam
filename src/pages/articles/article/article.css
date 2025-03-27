@@ -29,16 +29,6 @@
     border-radius: var(--corner-15);
 }
 
-.W_article_main_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-50);
-
-    width: 66rem;
-
-}
-
 .W_article_main_content_block{
     display: flex;
     flex-direction: column;

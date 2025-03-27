@@ -136,6 +136,21 @@
     overflow: hidden;
 }
 
+.W_article_content .W_preview_materials_content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.W_article_content .W_preview_materials_card{
+    width: 100%;
+    min-width: 100%;
+}
+
+.W_article_content .W_cases_materials_card {
+    width: 100%;
+    min-width: 100%;
+}
+
 .W_preview_materials_content .W_preview_materials_card:nth-child(1), .W_preview_materials_content .W_preview_materials_card:nth-child(3){
     background: var(--color-white);
 }
@@ -671,6 +686,18 @@
     overflow: hidden;
 }
 
+.W_short_article_what_to_do, .W_short_article_what_not_to_do{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-25);
+}
+
+.W_short_article_situation{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-25);
+}
+
 @media (max-width: 1440px) {
     .W_preview_coming_soon_content .W_preview_coming_soon_case:nth-child(3){
         background: url('../../images/preview/code.webp') no-repeat center/cover;
@@ -707,6 +734,11 @@
         flex-direction: column;
 
         width: 100%;
+    }
+
+    .W_article_content .W_preview_materials_content{
+        display: flex;
+        flex-direction: column;
     }
 }
 

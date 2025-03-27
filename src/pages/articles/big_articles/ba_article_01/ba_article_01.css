@@ -161,6 +161,7 @@
 .W_article_main_content{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: var(--spacing-45);
 
     width: 100%
