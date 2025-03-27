@@ -573,10 +573,6 @@
     margin-top: 28rem;
 }
 
-.hidden {
-    display: none;
-}
-
 .W_interactive_start_content_block{
     display: flex;
     flex-direction: column;
@@ -636,6 +632,11 @@
 
     background: var(--color-white);
     border-radius: var(--corner-15);
+}
+
+.hidden{
+    display: none;
+
 }
 
 .W_generator h1{
@@ -778,6 +779,12 @@
 }
 
 
+@media (max-width: 850px) {
+    .W_header_interactive{
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     /* O_footer */
     .W_footer_social_media{
@@ -796,10 +803,6 @@
 
     .W_preview_stories_content{
         flex-direction: column;
-    }
-
-    .W_header_interactive{
-        display: none;
     }
 
     .W_article_main_content, .W_article_introduction, .W_article_main_content_block, .W_article, .W_article_main_content_image{

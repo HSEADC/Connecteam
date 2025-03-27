@@ -475,6 +475,18 @@
     background: url('../../images/A_about_preview_image.svg') no-repeat center/100%;
 }
 
+@media (max-width: 850px) {
+    .A_header_burger_menu_button{
+        display: block;
+
+        width: 28px;
+
+        height: 23px;
+
+        background: url('../../images/A_menubar_mobile_default.svg') no-repeat center/100%;
+    }
+}
+
 @media (max-width: 768px) {
     /* O_footer */
     .A_footer_social_media_text, .A_preview_card{
@@ -487,16 +499,6 @@
         height: 44px;
 
         background: url('../../images/A_header_logo_adaptive.svg') no-repeat center/100%;
-    }
-
-    .A_header_burger_menu_button{
-        display: block;
-
-        width: 28px;
-
-        height: 23px;
-
-        background: url('../../images/A_menubar_mobile_default.svg') no-repeat center/100%;
     }
 
     .A_preview_about_card{
