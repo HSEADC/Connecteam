@@ -104,6 +104,10 @@
     padding-right: 10rem;
 }
 
+#I_case_ibm, #I_case_spotify, #I_case_yandex, #I_case_sber{
+    cursor: pointer;
+}
+
 .Q_search_dropdown_backdrop{
     position: absolute;
     top: 0;

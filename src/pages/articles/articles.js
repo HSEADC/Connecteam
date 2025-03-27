@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (friendshipArticle) {
         friendshipArticle.addEventListener('click', () => {
-            window.location.href = '/Connecteam/articles/friendship';
+            window.location.href = '/Connecteam/articles/colleguefriendship';
         });
     }
 
