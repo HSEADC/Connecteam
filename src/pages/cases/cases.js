@@ -1,4 +1,5 @@
 import '../../index.css'
+import { Sticker } from '../../partials/A_sticker/A_sticker';
 
 document.addEventListener('DOMContentLoaded', function() {
     const tags = document.querySelectorAll('.A_filter_tag');
@@ -70,4 +71,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+Sticker({ imageSrc: '/Connecteam/images/stickers/sticker2body.svg', content: 'Чекнуть библиотеки', maxLength: 50 });
+Sticker({ imageSrc: '/Connecteam/images/stickers/sticker3body.svg', content: 'Созвон с лидом 21:00', maxLength: 50 });

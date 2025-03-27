@@ -27,6 +27,9 @@ module.exports = {
     ssa_article: './src/pages/articles/super_short_articles/ssa_article.js',
     test_01: './src/pages/tests/test_01.js',
     header: './src/partials/O_header/O_header.js',
+    error_404: './src/pages/errors/404.js',
+    error_500: './src/pages/errors/500.js',
+    error_505: './src/pages/errors/505.js',
   },
   output: {
     filename: '[name].[contenthash].js',
