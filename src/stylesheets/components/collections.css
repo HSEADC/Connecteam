@@ -30,3 +30,15 @@
 
     width: 100%;
 }
+
+.C_option_group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-10);
+  }
+
+  .C_radio_group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+  }

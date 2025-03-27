@@ -555,10 +555,22 @@
     background: var(--color-white);
 }
 
+.M_article_conclusion_gray{
+    background: var(--color-light-gray);
+}
+
 .M_article_conclusion_pink{
     color: var(--color-white);
 
     background: var(--color-pink);
+
+    transition: transform .2s;
+}
+
+.M_article_conclusion_purple{
+    color: var(--color-white);
+
+    background: var(--color-purple);
 
     transition: transform .2s;
 }

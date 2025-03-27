@@ -258,7 +258,7 @@
     background: url('../../images/Logo.svg') no-repeat center/100%
 }
 
-.A_header_nav_button{
+.A_header_nav_button, .A_header_nav_button:link{
    padding: var(--spacing-5) var(--spacing-15);
 
    color: var(--color-white);
@@ -317,6 +317,110 @@
 
     background: url('../../images/telefram_icon.svg') no-repeat center/100%;
 }
+
+.A_option_button {
+    padding: var(--spacing-10) var(--spacing-15);
+
+    background: var(--color-light-gray);
+    border-radius: var(--corner-20);
+
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .A_option_button:hover {
+    background: var(--color-light-blue);
+  }
+
+  .A_option_button.selected {
+    color: white;
+
+    background-color: var(--color-blue);
+  }
+
+  .A_dropdown {
+    padding: var(--spacing-10) var(--spacing-15);
+
+    background: var(--color-light-gray);
+    border-radius: var(--corner-20);
+
+    transition: all 0.2s;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+  }
+
+.A_loading_image{
+    width: 9rem;
+
+    height: 9rem;
+
+    background: url('../../images/A_loading_image.svg') no-repeat center/100%;
+}
+
+.A_interactive_start_generate_button {
+    padding: var(--spacing-10) var(--spacing-20);
+
+    color: var(--color-white);
+
+    background: var(--color-pink);
+    border-radius: var(--corner-20);
+    font: var(--font-button-text);
+    cursor: pointer;
+}
+
+.A_idea_block{
+    padding: var(--spacing-20) var(--spacing-30);
+
+    color: var(--color-grid-gray);
+
+    text-align: center;
+
+    background: var(--color-white);
+    border-radius: 10px;
+
+    transition: opacity 0.3s ease;
+
+    font: var(--font-35-500i);
+}
+
+
+.A_radio_checkmark {
+    position: relative;
+
+    width: 44px;
+
+    height: 44px;
+
+    margin-right: 10px;
+
+    background: var(--color-light-gray);
+    border-radius: 50%;
+
+    transition: all 0.3s;
+  }
+  
+  .A_radio_checkmark::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+
+    width: 21px;
+
+    height: 21px;
+
+    background: var(--color-blue);
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+    content: "";
+  }
+  
+  .M_radio_option input:checked ~ .A_radio_checkmark::after {
+    display: block;
+  }
 
 @media (max-width: 768px) {
     /* O_footer */
