@@ -17,12 +17,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     width: 15rem;
 
     height: 15rem;
+    cursor: grab;
   
     background-repeat: no-repeat;
+}
+
+.W_sticker:active {
+    cursor: grabbing;
 }
 
 /* Page - Index */
