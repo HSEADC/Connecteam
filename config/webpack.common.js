@@ -73,6 +73,14 @@ module.exports = {
   plugins: [
     ...htmlWebpackPlugins,
     ...htmlWebpackPartialsPlugins,
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, "../src/partials/analytics.html"),
+        location: "analytics",
+        template_filename: "*",
+        priority: "replace",
+      },
+    ]),
     new webpack.HotModuleReplacementPlugin(),
     new ThreeMinifierPlugin(),
     new CopyWebpackPlugin({
