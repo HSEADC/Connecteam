@@ -2,7 +2,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const ThreeMinifierPlugin = require('@yushijinhun/three-minifier-webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const HtmlWebpackPartialsPlugin = require('html-webpack-plugin')
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 
 const htmlWebpackPlugins = require('./webpack.pages')
 const htmlWebpackPartialsPlugins = require('./webpack.partials')
